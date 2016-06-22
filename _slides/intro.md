@@ -4,13 +4,15 @@ slide: 2
 
 ## Objectives for this lesson
 
-+ framework for collaborative workflow
-+ and ...
++ Review key challenges for collaborative projects
++ Identify attributes of reproducible research
++ Learn about a framework for distributed workflows
 
+---
 
 ## Specific achievements
 
-+ create a Team repository on GitHub
-+ clone your Team repository on GitHub
-+ push changes to `README.md`
-
++ Create a repository on GitHub
++ Add a project collaborator
++ Clone repositories using `git`
++ Push local changes to `README.md`
