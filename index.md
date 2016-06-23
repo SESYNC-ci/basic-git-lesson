@@ -9,7 +9,8 @@ layout: default
 [//]: # " * TOC "
 [//]: # " {:toc} "
 
-{% assign slides = site.slides | sort: "slide" %}
-{% for slide in slides %}
+{% for sorted in site.slide_sorter %}
+  {% capture id %}/slides/{{ sorted }}{% endcapture %}
+  {% assign slide = site.slides | where: "id", id | first %}
   {{ slide.content }}
 {% endfor %}

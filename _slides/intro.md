@@ -8,11 +8,11 @@ slide: 2
 + Identify attributes of reproducible research
 + Learn about a framework for distributed workflows
 
----
+<!--split-->
 
 ## Specific achievements
 
 + Create a repository on GitHub
-+ Add a project collaborator
 + Clone repositories using `git`
 + Push local changes to `README.md`
++ Add a project collaborator

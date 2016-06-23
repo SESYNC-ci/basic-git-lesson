@@ -10,3 +10,12 @@ baseurl: "/basic-git-lesson"
 markdown: kramdown
 collections:
   - slides
+slide_sorter:
+  - title
+  - intro
+  - challenges
+  - reproducible
+  - workflow
+  - github
+  - git
+  - collab

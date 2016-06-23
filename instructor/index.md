@@ -3,8 +3,9 @@ title: "Instructor View"
 layout: slides
 ---
 
-{% assign hslides = site.slides | sort: "slide" %}
-{% for hslide in hslides %}
+{% for sorted in site.slide_sorter %}
+  {% capture id %}/slides/{{ sorted }}{% endcapture %}
+  {% assign hslide = site.slides | where: "id", id | first %}
   <section>
     {% assign vslides = hslide.content | split: "<!--split-->" %}
     {% assign split =  vslides | size %}
