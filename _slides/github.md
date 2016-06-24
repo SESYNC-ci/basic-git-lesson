@@ -1,5 +1,4 @@
 ---
-slide: 5
 ---
 
 ## Create a GitHub Repository

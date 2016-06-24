@@ -1,5 +1,4 @@
 ---
-slide: 2
 ---
 
 ## Objectives for this lesson
@@ -13,6 +12,6 @@ slide: 2
 ## Specific achievements
 
 + Create a repository on GitHub
-+ Clone repositories using `git`
-+ Push local changes to `README.md`
-+ Add a project collaborator
++ Manage repositories using `git`
++ Publish your changes to the `README.md` file
++ Work with a collaborator on GitHub

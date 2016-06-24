@@ -1,5 +1,4 @@
 ---
-slide: 6
 ---
 
 ## Let's `git` Going!
@@ -9,6 +8,7 @@ The namesake of GitHub is the command-line-utility `git`. It performs the clone,
 ~~~
 git config --global user.name "%name%"
 git config --global user.email %email%
+git config --global push.default simple
 ~~~
 
 <!--split-->
@@ -16,7 +16,7 @@ git config --global user.email %email%
 ### Clone your repository
 
 ~~~
-cd ~/sandbox
+cd %sandbox%
 git clone https://github.com/%username%/test.git
 ~~~
 ~~~
@@ -85,7 +85,7 @@ git add .
 git commit -m "embellish README.md"
 ~~~
 ~~~
-[master %short hash%] updates
+[master %hash%] updates
  1 file changed, 8 insertions(+), 1 deletion(-)
 ~~~
 
@@ -98,12 +98,14 @@ git push
 ~~~
 ~~~
 Username for 'https://github.com': %username%
-Password for 'https://itcarroll@github.com': 
+Password for 'https://%username%@github.com': 
 Counting objects: 3, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (2/2), done.
 Writing objects: 100% (3/3), 353 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/itcarroll/test.git
-   %short hash 1%..%short hash 2%  master -> master
+   %hash%..%hash%  master -> master
 ~~~
+
+Now go check out your README.md on GitHub!

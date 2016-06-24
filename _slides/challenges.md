@@ -1,5 +1,4 @@
 ---
-slide: 3
 ---
 
 ## Key Challenges

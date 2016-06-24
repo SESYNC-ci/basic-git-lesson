@@ -8,8 +8,12 @@ baseurl: "/basic-git-lesson"
 # Jekyll Settings
 
 markdown: kramdown
+kramdown:
+  toc_levels: 1..2
 collections:
   - slides
+
+# Slide Order
 slide_sorter:
   - title
   - intro
@@ -19,3 +23,4 @@ slide_sorter:
   - github
   - git
   - collab
+  - conclude

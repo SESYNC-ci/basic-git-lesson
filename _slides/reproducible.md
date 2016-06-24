@@ -1,5 +1,4 @@
 ---
-slide: 4
 ---
 
 ## What is reproducible research?

@@ -1,5 +1,4 @@
 ---
-slide: 1
 ---
 
 # Collaborative & Reproducible Workflow

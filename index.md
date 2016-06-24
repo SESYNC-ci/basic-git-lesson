@@ -3,11 +3,11 @@ title: "Trainee View"
 layout: default
 ---
 
-[//]: # " ## Table of Contents "
-[//]: # " {:.no_toc} "
+## Table of Contents
+{:.no_toc}
 
-[//]: # " * TOC "
-[//]: # " {:toc} "
+* TOC
+{:toc}
 
 {% for sorted in site.slide_sorter %}
   {% capture id %}/slides/{{ sorted }}{% endcapture %}
