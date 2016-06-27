@@ -10,6 +10,7 @@ git config --global user.name "%name%"
 git config --global user.email %email%
 git config --global push.default simple
 ~~~
+{:.input}
 
 <!--split-->
 
@@ -19,6 +20,8 @@ git config --global push.default simple
 cd %sandbox%
 git clone https://github.com/%username%/test.git
 ~~~
+{:.input}
+
 ~~~
 Cloning into 'test'...
 remote: Counting objects: 3, done.
@@ -26,6 +29,7 @@ remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), done.
 Checking connectivity... done.
 ~~~
+{:.output}
 
 ![]({{ site.baseurl }}/images/repo_url.png)  
 **Hint:** copy your repo URL from right here.
@@ -34,11 +38,14 @@ Checking connectivity... done.
 cd test
 git status
 ~~~
+{:.input}
+
 ~~~
 On branch master
 Your branch is up-to-date with 'origin/master'.
 nothing to commit, working directory clean
 ~~~
+{:.output}
 
 <!--split-->
 
@@ -58,6 +65,7 @@ This project includes the following:
 
 Contact me at icarroll@sesync.org with any questions.
 ~~~
+{:.input}
 
 <!--split-->
 
@@ -66,6 +74,8 @@ Now, check the result of making changes to your repo.
 ~~~
 git status
 ~~~
+{:.input}
+
 ~~~
 On branch master
 Your branch is up-to-date with 'origin/master'.
@@ -77,6 +87,7 @@ Changes not staged for commit:
 		
 no changes added to commit (use "git add" and/or "git commit -a")		
 ~~~
+{:.output}
 
 Commit your changes with a descriptive but short commit message.
 
@@ -84,10 +95,13 @@ Commit your changes with a descriptive but short commit message.
 git add .
 git commit -m "embellish README.md"
 ~~~
+{:.input}
+
 ~~~
 [master %hash%] updates
  1 file changed, 8 insertions(+), 1 deletion(-)
 ~~~
+{:.output}
 
 <!--split-->
 
@@ -96,6 +110,8 @@ Push your commit back to **origin**.
 ~~~
 git push
 ~~~
+{:.input}
+
 ~~~
 Username for 'https://github.com': %username%
 Password for 'https://%username%@github.com': 
@@ -107,5 +123,6 @@ Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/itcarroll/test.git
    %hash%..%hash%  master -> master
 ~~~
+{:.output}
 
 Now go check out your README.md on GitHub!

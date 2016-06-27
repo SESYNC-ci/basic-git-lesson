@@ -1,9 +1,6 @@
 ---
 ---
 
-* TOC
-{:toc}
-
 ## Working with Collaborators
 
 True collaboration goes deeper than commenting on a final report, but integrated work on a project from start to finish raises workflow challenges. Be it data, a script, or a write-up, who has the most up-to-date version? Will a teammate's work overwrite any of your own? How do I recover the working version of code the PI broke?
@@ -23,6 +20,7 @@ The first step to collaborative workflows is granting access to the **origin** o
 Introduce yourself to your neighbour, and ask for his/her GitHub username.
 
 ![]({{ site.baseurl }}/images/repo_collab.png)
+{:.captioned}
 
 Add your neighbour as a collaborator, and **clone** his/her test repo.
 
@@ -31,13 +29,15 @@ cd %sandbox%
 git clone https://github.com/%not-my-username%/test.git not-my-test
 cd not-my-test
 ~~~
+{:.input}
 
 <!--split-->
 
 ### Merge Commits
 
 ![]({{ site.baseurl }}/images/atlassian_merge.svg){:width="30%"}  
-*[Image](https://www.atlassian.com/git/tutorials/using-branches) by Atlassian / [CC BY](http://creativecommons.org/licenses/by/2.5/au/)*
+*[Image][using-branches] by Atlassian / [CC BY]*
+{:.captioned}
 
 <!--split-->
 
@@ -47,6 +47,8 @@ Edit the README.md from your neighbour's repo, by adding a fourth bullet point.
 git commit -am 'Change to not-my-test README.md'
 git push
 ~~~
+{:.input}
+
 ~~~
 Username for 'https://github.com': %username%
 Password for 'https://%username%@github.com': 
@@ -58,6 +60,7 @@ Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/itcarroll/test.git
    %hash%..%hash%  master -> master
 ~~~
+{:.output}
 
 The **origin** for your local "test" repo now has a commit you don't have locally. Let's compound the problem by adding a local commit that your **origin** doesn't have. Change the title of your project in README.md in your local test repo. Then do the usual routine: commit & push.
 
@@ -66,13 +69,19 @@ cd %sandbox%
 cd test
 git commit -am 'updated the title'
 ~~~
+{:.input}
+
 ~~~
 [master %hash%] amazing
  1 file changed, 1 insertion(+), 1 deletion(-)
 ~~~
+{:.output}
+
 ~~~
 git push
 ~~~
+{:.input}
+
 ~~~
 To https://github.com/%username%/test.git
  ! [rejected]        master -> master (fetch first)
@@ -83,6 +92,7 @@ To https://github.com/%username%/test.git
  hint: (e.g., 'git pull ...') before pushing again.
  hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ~~~
+{:.output}
 
 Take a moment to read the message -- it gives a good explanation of what just happened.
 
@@ -93,6 +103,8 @@ Take a moment to read the message -- it gives a good explanation of what just ha
 ~~~
 git pull
 ~~~
+{:.input}
+
 ~~~
 remote: Counting objects: 3, done.
 remote: Compressing objects: 100% (2/2), done.
@@ -105,6 +117,7 @@ From https://github.com/%username%/test
     README.md | 1 +
 	 1 file changed, 1 insertion(+)
 ~~~
+{:.output}
 
 The message tells you about any changes made by this **merge commit**, which seamlessly integrates changes to the same file by multiple authors.
 
@@ -119,6 +132,8 @@ cd %sandbox%
 cd test
 git log
 ~~~
+{:.input}
+
 ~~~
 commit 0517b3b2258e6cce76770646f175dc8abfe9e148
 Merge: 8612809 26c2dcd
@@ -133,6 +148,7 @@ Date:   Tue Jul 26 13:48:57 2016 -0400
 
     amazing
 ~~~
+{:.output}
 
 See how helpful a concise & descriptive commit messages would be?
 
@@ -143,6 +159,8 @@ Let's investigate a commit we are not so sure about.
 ~~~
 git show 8612
 ~~~
+{:.input}
+
 ~~~
 commit 8612809b6eeea263a853783cf4c37a6862a31d22
 Author: Ian Carroll <icarroll@sesync.org>
@@ -161,10 +179,19 @@ index 521cb5d..24a865d 100644
 This project does the following:
  + nothing
 ~~~
+{:.output}
+
 ~~~
 git revert --no-edit 8612
 ~~~
+{:.input}
+
 ~~~
 [master b0aaef0] Revert "amazing"
  1 file changed, 1 insertion(+), 1 deletion(-)
 ~~~
+{:.output}
+
+
+[using-branches]: https://www.atlassian.com/git/tutorials/using-branches
+[CC BY]: http://creativecommons.org/licenses/by/2.5/au/
