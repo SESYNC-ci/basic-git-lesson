@@ -9,12 +9,11 @@ layout: slides
   <section>
     {% assign vslides = hslide.content | split: "<!--split-->" %}
     {% assign split =  vslides | size %}
-	{% if size == 1 %}
-	  {{ vslides | first }}
-	{% else %}
 	  {% for vslide in vslides %}
-	    <section>{{ vslide }}</section>
+      <section{% if hslide.background %} data-background="{{ site.baseurl }}{{ hslide.background }}"{% endif %}{% if hslide.class %} class="{{ hslide.class }}"{% endif %}>
+	    {{ vslide }}
+	  </section>
 	  {% endfor %}
-	{% endif %}
   </section>
 {% endfor %}
+

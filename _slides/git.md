@@ -62,10 +62,8 @@ This project includes the following:
 + nothing
 + zero
 + nada
-
-Contact me at icarroll@sesync.org with any questions.
 ~~~
-{:.input}
+{:.text-document title="README.md"}
 
 <!--split-->
 

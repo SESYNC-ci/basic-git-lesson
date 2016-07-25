@@ -21,9 +21,9 @@ Create a new "test" repository at [https://github.com/%username%](https://github
 ![]({{ site.baseurl }}/images/repo_files.png)
 {:.captioned}
 
-+ Note that you are looking at a branch called `master`.
-+ There is one commit.
-+ README.md is a Markdown file.
+- Note that you are looking at a branch called `master`.
+- There is one commit.
+- README.md is a Markdown file.
 
 <!--split-->
 
@@ -43,7 +43,9 @@ A worker **pulls** contributions from other teammates from the **origin** when r
 
 <!--split-->
 
-A commit is a unit of work; any collection of changes to files in the repository. After a worker creates a **clone**, the local copy is in the same place as the **origin**.
+A commit is a unit of work: any collection of changes to files in the repository.
+A versioned project is like a tree of commits, although the current tree has just one **branch**.
+After a worker creates a **clone**, the local copy is in the same place as the **origin**.
 
 ![]({{ site.baseurl }}/images/atlassian_clone.svg){:width="40%"}  
 *[Image][syncing] by Atlassian / [CC BY]*

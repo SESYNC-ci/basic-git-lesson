@@ -1,6 +1,6 @@
 # Site settings
 
-title: "Basic git Lesson"
+title: "Collaborative & Reproducible Workflows"
 email: "cyberhelp@sesync.org"
 description: "Learn tools for collaborative and reproducible research."
 baseurl: "/basic-git-lesson"
@@ -15,9 +15,9 @@ collections:
 slide_sorter:
   - title
   - intro
+  - goals
   - challenges
   - reproducible
-  - workflow
   - github
   - git
   - collab

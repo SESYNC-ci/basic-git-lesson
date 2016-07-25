@@ -33,18 +33,33 @@ cd not-my-test
 
 <!--split-->
 
-### Merge Commits
-
-![]({{ site.baseurl }}/images/atlassian_merge.svg){:width="30%"}  
-*[Image][using-branches] by Atlassian / [CC BY]*
-{:.captioned}
-
-<!--split-->
-
 Edit the README.md from your neighbour's repo, by adding a fourth bullet point.
 
 ~~~
-git commit -am 'Change to not-my-test README.md'
+# Welcome to My Project
+
+This project includes the following:
++ nothing
++ zero
++ nada
++ %your bullet point%
+~~~
+{:.text-document title="README.md"}
+
+Now do a commit & push. Note that we have tucked the "add" step into the commit with the argument "a".
+
+~~~
+git commit -am 'Add important bullet to README.md'
+~~~
+{:.input}
+
+~~~
+[master %hash%] amazing
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+~~~
+{:.output}
+
+~~~
 git push
 ~~~
 {:.input}
@@ -62,12 +77,28 @@ To https://github.com/itcarroll/test.git
 ~~~
 {:.output}
 
-The **origin** for your local "test" repo now has a commit you don't have locally. Let's compound the problem by adding a local commit that your **origin** doesn't have. Change the title of your project in README.md in your local test repo. Then do the usual routine: commit & push.
+<!--split-->
+
+The **origin** for your local "test" repo now has a commit you don't have locally -- the one your collaborator pushed. Let's compound the problem by adding a local commit that your **origin** doesn't have. Change the title of your project in README.md in your local test repo.
+
+~~~
+# Welcome to My *Amazing* Project
+
+This project includes the following:
++ nothing
++ zero
++ nada
+~~~
+{:.text-document title="README.md"}
+
+<!--split-->
+
+Try the usual routine: commit & push.
 
 ~~~
 cd %sandbox%
 cd test
-git commit -am 'updated the title'
+git commit -am 'amazing'
 ~~~
 {:.input}
 
@@ -120,6 +151,14 @@ From https://github.com/%username%/test
 {:.output}
 
 The message tells you about any changes made by this **merge commit**, which seamlessly integrates changes to the same file by multiple authors.
+
+<!--split-->
+
+### Merge Commits
+
+![]({{ site.baseurl }}/images/atlassian_merge.svg){:width="30%"}  
+*[Image][using-branches] by Atlassian / [CC BY]*
+{:.captioned}
 
 <!--split-->
 

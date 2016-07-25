@@ -10,7 +10,7 @@ layout: default
   <a name="{{ id }}"></a>
   
   {{ slide.content }}
-    
+
   [Top of Section](#{{ id }})
   {:.ToS}
   

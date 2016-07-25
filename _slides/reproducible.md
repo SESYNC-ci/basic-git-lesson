@@ -3,8 +3,8 @@
 
 ## What is reproducible research?
 
-Reproducibility is a core tenent of the scientific method.  
-An experiment should always be reported in enough detail for a skilled practitioner to duplicate the result.
+Reproducibility is a core tenent of the scientific method.
+Experiments are reported in sufficient detail for a skilled practitioner to duplicate the result.
 
 Does the same principle apply to data analysis? **You bet!**
 {:.fragment}
@@ -13,19 +13,18 @@ Does the same principle apply to data analysis? **You bet!**
 
 ### Hallmarks of reproducible research
 
-| **Reviewable**  | All details of the method used are easily accessible for peer review and community review.           |
+| **Reviewable**  | All details of the method used are easily accessible for peer review and community review.             |
+| **Auditable**   | Records exist to document how the methods and conclusions evolved, but may be private.                 |
 | **Replicable**  | Given sufficient resources, a skilled practitioner could duplicate the research without any guesswork. |
-| **Confirmable** | The same conclusions could be obtained *independently*, i.e. without the originator's involvement.     |
-| **Auditable**   | Records exist to document how the methods and conclusions evolved, but may be private.                  |
-| **Open**        | The orginator grants permissions for reuse and extension of the research products.                        |
+| **Open**        | The orginator grants permissions for reuse and extension of the research products.                     |
 
 [//]: # " Victoria Stodden et al. (2013) "
 
-<!--split-->
+Striving towards these goals has practical benefits, touching on many of the challenges just identified.
+{:.fragment data-fragment-index="1"}
 
-Aiming towards these lofty goals has immediate benefits:
-
-+ Keep teammates informed
-+ Easily revert mistakes
-+ DRY ("Don't Repeat Yourself")
-+ others?
+- Reviewable ⬄ write-ups and thoroughly-commented scripts shared with collaborators
+- Auditable ⬄ versioned work, ability to revert mistakes
+- Replicable ⬄ "one-click" file & data sharing
+- Open ⬄ GitHub (or similar) based centralized workflow
+{:.fragment data-fragment-index="1"}
