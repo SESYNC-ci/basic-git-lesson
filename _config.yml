@@ -14,7 +14,8 @@ collections:
 # Slide Order
 slide_sorter:
   - title
-  - intro
+  - intro-1
+  - intro-2
   - goals
   - challenges
   - reproducible

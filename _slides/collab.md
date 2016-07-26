@@ -46,6 +46,8 @@ This project includes the following:
 ~~~
 {:.text-document title="README.md"}
 
+<!--split-->
+
 Now do a commit & push. Note that we have tucked the "add" step into the commit with the argument "a".
 
 ~~~

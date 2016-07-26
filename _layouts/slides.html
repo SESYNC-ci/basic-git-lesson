@@ -24,20 +24,25 @@
 	 img + br + em {
 	     font-size: 0.5em !Important;
 	 }
+	 
 	 .reveal section p {
 	     margin-top: 2em;
 	     margin-bottom: 1em;
 	 }
+	 
 	 .reveal .slides section.right-third {
 	     width: 50%;
 	     margin-left: 85vw;
 	 }
+	 
 	 .input pre {
 	     background-color: #EBECE4;
 	 }
+	 
 	 .output pre {
 	     background-color: #FFFFFF;
 	 }
+	 
 	 .text-document.highlighter-rouge pre {
 	     background-color: #000000;
 	     margin: 2px auto;
@@ -63,6 +68,20 @@
 	     display: block;
 	 }     
 
+	 .reveal pre {
+	     font-size: 100%;
+	 }
+
+	 .reveal {
+             font-size: 42px;
+	 }
+	 
+	 p.on-white {
+	     background-color: rgba(255,255,255,0.75);
+	     border: 2px solid rgba(255,255,255,0.75);
+	     border-radius: 15px;
+	 }
+	 
 	</style>
 
     </head>
@@ -83,9 +102,9 @@
 	<script src="{{ site.baseurl }}/reveal/js/reveal.js"></script>
 	<script>
 	 Reveal.initialize({
-	     width: 1920,
+	     width: 1900,
 	     height: 1200,
-	     margin: 0.2,
+	     margin: 0.1,
 	     transition: 'default',
 	 });
 	 

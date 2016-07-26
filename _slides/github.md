@@ -5,20 +5,20 @@
 
 Create a new "test" repository at [https://github.com/%username%](https://github.com/itcarroll/){:target='_blank'}, initializing the repo with a "README.md".
 
-![]({{ site.baseurl }}/images/new_repo.png)  
+![]({{ site.baseurl }}/images/new_repo.png){:width="30%"}  
 {:.fragment .captioned}
 
-![]({{ site.baseurl }}/images/repo_name.png)  
+![]({{ site.baseurl }}/images/repo_name.png){:width="30%"}  
 {:.fragment .captioned}
 
-![]({{ site.baseurl }}/images/repo_readme.png)  
+![]({{ site.baseurl }}/images/repo_readme.png){:width="30%"}  
 {:.fragment .captioned}
 
 <!--split-->
 
 ### What's in a "repo"?
 
-![]({{ site.baseurl }}/images/repo_files.png)
+![]({{ site.baseurl }}/images/repo_files.png){:width="30%"}  
 {:.captioned}
 
 - Note that you are looking at a branch called `master`.
