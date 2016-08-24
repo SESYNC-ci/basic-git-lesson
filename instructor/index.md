@@ -1,6 +1,6 @@
 ---
-title: "Instructor View"
-layout: slides
+reveal: https://cdn.rawgit.com/hakimel/reveal.js/3.3.0
+layout: slideshow
 ---
 
 {% for sorted in site.slide_sorter %}

@@ -3,7 +3,8 @@
 title: "Collaborative & Reproducible Workflows"
 email: "cyberhelp@sesync.org"
 description: "Learn tools for collaborative and reproducible research."
-baseurl: "/basic-git-lesson"
+baseurl: /basic-git-lesson
+styleurl: https://rawgit.com/sesync-ci/lesson-stylesheets/master
 
 # Jekyll Settings
 

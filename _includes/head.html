@@ -8,46 +8,51 @@
     
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+    <link rel="stylesheet" href="{{ site.styleurl }}/css/lesson.css">
+
     <style type="text/css">
 
-     {% include main.css %}
-      
+     table {
+	 margin-bottom: 15px;
+     }
+
+     table th, table td {
+	 padding: 5px 10px;
+     }
+
+     table > thead > .header {
+	 background: transparent;
+     }
+
+     table > thead > tr > td, table > thead > tr > th,
+     table > tbody > tr > td, table > tbody > tr > th,
+     table > tfoot > tr > td, table > tfoot > tr > th {
+	 border: 1px solid #DDD;
+     }
+
+     table > thead > tr > th,
+     table > thead > tr > td {
+	 border-bottom-width: 2px;
+     }
+
+     table tbody > tr:nth-of-type(2n+1) {
+	 background-color: #F9F9F9;
+     }
+
      p.captioned {
 	 text-align: center;
      }
-     
+
      .captioned em {
 	 font-size: 0.6em;
      }
-     
+
      .ToS {
 	 text-align: right;
      }
-     
-     .input.highlighter-rouge pre {
-	 background-color: #EBECE4;
-     }
-
-     .input.highlighter-rouge code {
-	 background-color: transparent;
-     }
-
-     .output.highlighter-rouge pre {
-	 background-color: #ECECC7;
-     }
-
-     .output.highlighter-rouge code {
-	 background-color: transparent;
-     }
 
      .text-document.highlighter-rouge pre {
-	 background-color: #000000;
-     	 border-radius: 0px 0px 5px 5px;
-     }
-     
-     .text-document.highlighter-rouge code {
-	 background-color: transparent;
-	 color: #FFFFFF;
+	 border-radius: 0px 0px 5px 5px;
      }
      
      div.text-document::before {
