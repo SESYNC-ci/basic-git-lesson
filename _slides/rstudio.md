@@ -250,18 +250,18 @@ missing <- setdiff(requirements,
 Check, from the console, your number of missing packages:
 
 ~~~
-length(missing)
+length(missing) == 0
 ~~~
 {:.input}
 
-Your result will depend on whether you installed these packages already. We can let the script decide what to do with this information.
+Your result will be `TRUE` or `FALSE`, depending on whether you installed all the packages already. We can let the script decide what to do with this information.
 
 <!--split-->
 
-The keyword `if` is part of the R language's syntax for flow control. The statement in the body (between `{` and `}`) only evaluates if the argument (between `(` and `)`) evaluates to TRUE or is non-zero.
+The keyword `if` is part of the R language's syntax for flow control. The statement in the body (between `{` and `}`) only evaluates if the argument (between `(` and `)`) evaluates to TRUE.
 
 ~~~
-if (length(missing)) {
+if (length(missing) != 0) {
   install.packages(missing)
 }
 ~~~
