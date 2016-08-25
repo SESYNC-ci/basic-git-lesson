@@ -254,7 +254,7 @@ length(missing)
 ~~~
 {:.input}
 
-Your result will depend on whether you installed these packages already. We can let the script decide what to do with this information:
+Your result will depend on whether you installed these packages already. We can let the script decide what to do with this information.
 
 <!--split-->
 
