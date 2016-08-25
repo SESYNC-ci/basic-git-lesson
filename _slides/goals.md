@@ -3,15 +3,15 @@
 
 ## Objectives for this lesson
 
-- Review key challenges for collaborative projects
-- Identify attributes of reproducible research
 - Learn about a framework for distributed workflows
+- Identify attributes of reproducible research
+- Use RStudio to begin managing a workflow
 
 <!--split-->
 
 ## Specific achievements
 
+- Access a public repository through RStudio
 - Create a repository on GitHub
-- Manage repositories using `git`
-- Publish your changes to the `README.md` file
-- Work with a collaborator on GitHub
+- Publish changes to a project file
+- Execute a few basic R commands

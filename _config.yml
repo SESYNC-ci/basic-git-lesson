@@ -1,10 +1,22 @@
-# Site settings
+# Site Settings
 
-title: "Collaborative & Reproducible Workflows"
+title: "Reproducible Workflows in RStudio"
 email: "cyberhelp@sesync.org"
 description: "Learn tools for collaborative and reproducible research."
 baseurl: /basic-git-lesson
 styleurl: https://rawgit.com/sesync-ci/lesson-stylesheets/master
+
+# Slide Settings
+slide_sorter:
+  - title
+  - workflows
+  - intro
+  - goals
+  - reproducible
+  - github
+  - rstudio
+  - git
+  - conclude
 
 # Jekyll Settings
 
@@ -12,15 +24,9 @@ markdown: kramdown
 collections:
   - slides
 
-# Slide Order
-slide_sorter:
-  - title
-  - intro-1
-  - intro-2
-  - goals
-  - challenges
-  - reproducible
-  - github
-  - git
-  - collab
-  - conclude
+defaults:
+  -
+    scope:
+      path: ''
+    values:
+      layout: 'default'

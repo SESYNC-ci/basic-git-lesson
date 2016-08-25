@@ -1,7 +1,7 @@
 ---
 ---
 
-## What is reproducible research?
+## A Plug for Reproducible Research
 
 Reproducibility is a core tenent of the scientific method.
 Experiments are reported in sufficient detail for a skilled practitioner to duplicate the result.
@@ -11,7 +11,7 @@ Does the same principle apply to data analysis? **You bet!**
 
 <!--split-->
 
-### Hallmarks of reproducible research
+### Hallmarks of reproducible research:
 
 | **Reviewable**  | All details of the method used are easily accessible for peer review and community review.             |
 | **Auditable**   | Records exist to document how the methods and conclusions evolved, but may be private.                 |
@@ -20,11 +20,12 @@ Does the same principle apply to data analysis? **You bet!**
 
 [//]: # " Victoria Stodden et al. (2013) "
 
-Striving towards these goals has practical benefits, touching on many of the challenges just identified.
-{:.fragment data-fragment-index="1"}
+<!--split-->
 
-- Reviewable ⬄ write-ups and thoroughly-commented scripts shared with collaborators
-- Auditable ⬄ versioned work, ability to revert mistakes
-- Replicable ⬄ "one-click" file & data sharing
-- Open ⬄ GitHub (or similar) based centralized workflow
-{:.fragment data-fragment-index="1"}
+### Use your workflow to achieve these same goals:
+
+| **Reviewable** | Write-ups and thoroughly-commented scripts shared among collaborators          |
+| **Auditable**  | Versioned project history, used to revert mistakes when necessary              |
+| **Replicable** | "One-click" file & data sharing, as well as streamlined recreation of analyses |
+| **Open**       | GitHub (or similar) based centralized workflow                                 |
+

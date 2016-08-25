@@ -1,6 +1,5 @@
 ---
-title: "Trainee View"
-layout: default
+style: /css/lesson.css
 ---
 
 {% for sorted in site.slide_sorter %}

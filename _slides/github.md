@@ -1,49 +1,45 @@
 ---
 ---
 
-## Create a GitHub Repository
+### What's a GitHub? What's a "repo"?
 
-Create a new "test" repository at [https://github.com/%username%](https://github.com/itcarroll/){:target='_blank'}, initializing the repo with a "README.md".
+Open up the [repository](https://github.com/SESYNC-ci/handouts){:target=""} that provides the "handouts" for this workshop.
 
-![]({{ site.baseurl }}/images/new_repo.png){:width="30%"}  
-{:.fragment .captioned}
-
-![]({{ site.baseurl }}/images/repo_name.png){:width="30%"}  
-{:.fragment .captioned}
-
-![]({{ site.baseurl }}/images/repo_readme.png){:width="30%"}  
-{:.fragment .captioned}
-
-<!--split-->
-
-### What's in a "repo"?
-
-![]({{ site.baseurl }}/images/repo_files.png){:width="30%"}  
-{:.captioned}
-
-- Note that you are looking at a branch called `master`.
-- There is one commit.
-- README.md is a Markdown file.
+- README.md is a Markdown file giving basic information about the repository.
+- There is a list of files, including a folder for data.
+- You are looking at a branch called `master`.
+- The commit history is available from the top bar.
+- The "Clone or download" button provides a URL.
 
 <!--split-->
 
 ### Centralized Workflow
 
-![]({{ site.baseurl }}/images/atlassian_workflow.svg){:width="30%"}  
+![]({{ site.baseurl }}/images/atlassian_workflow.svg){:width="50%"}  
 *[Image][comparing-workflows] by Atlassian / [CC BY]*
 {:.captioned}
 
 The **origin** is the central repository, in this case it lives on GitHub. Every member of the team gets a **local** copy of the entire project, called a **clone**.
 
-![]({{ site.baseurl }}/images/atlassian_pull.svg){:width="30%"}  
-*[Image][comparing-workflows] by Atlassian / [CC BY]*
-{:.captioned}
+<!--split-->
 
-A worker **pulls** contributions from other teammates from the **origin** when ready, and she **pushes** updates to the **origin** when ready to share her own work.
+### Clone the `handouts` repo in RStudio
+
+- Create a new project from version control.
+- Enter the handouts repository URL.
+- Choose a location where you want a new folder (containing the cloned repository) created.
 
 <!--split-->
 
-A commit is a unit of work: any collection of changes to files in the repository.
+![]({{ site.baseurl }}/images/atlassian_pull.svg){:width="50%"}  
+*[Image][comparing-workflows] by Atlassian / [CC BY]*
+{:.captioned}
+
+Cloning is the initial **pull** of the entire project and all its history. In general, a worker **pulls** the work of other teammates from the **origin** when ready to incorporate their work, and she **pushes** updates to the **origin** when ready to contribute work of her own work.
+
+<!--split-->
+
+A commit is a unit of work: any collection of changes to one or more files in the repository.
 A versioned project is like a tree of commits, although the current tree has just one **branch**.
 After a worker creates a **clone**, the local copy is in the same place as the **origin**.
 
@@ -53,7 +49,7 @@ After a worker creates a **clone**, the local copy is in the same place as the *
 
 <!--split-->
 
-A **pull** applies commits copied from the **origin** to your local repo, syncing them up.
+A **pull**, or initially a **clone**, applies commits copied from the **origin** to your local repo, syncing them up.
 
 ![]({{ site.baseurl }}/images/atlassian_after_pull.svg){:width="40%"}  
 *[Image][syncing] by Atlassian / [CC BY]*
