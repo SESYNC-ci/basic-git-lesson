@@ -10,6 +10,8 @@ This software is an example of an *integrated development environment* and focus
 
 R is both a **language** and an **interpreter**.
 
+<!--split-->
+
 ## The Console
 
 The interpreter accepts R commands interactively through the console. Basic math are valid commands in the R language:
@@ -59,6 +61,8 @@ seq(1, 100)
 ~~~
 {:.output}
 
+<!--split-->
+
 ## The Editor
 
 The console is for evaluating commands you don't intend to keep or reuse. It's useful for testing commands and poking around. The editor is where you compose scripts that will process data, perform analyses, code up visualizations, and even compose reports.
@@ -76,14 +80,16 @@ vals <- c(5, 6, 12)
 
 <!--split-->
 
-The elements of this statement, from right to left are
+The elements of this statement, from right to left are:
 
-1. `)` is the closing paren of a function call
-1. `5, 6, 12` are three arguments or parameters to the function
-1. `(` is the opening paren of a function call
-1. `c` is the name of the function
-1. ` <- ` is an operator that assigns what's named on the left to equal the result of the expression on the right
-1. `vals` is the name of a variable
+- `)` is the closing paren of a function call
+- `5, 6, 12` are three arguments or parameters to the function
+- `(` is the opening paren of a function call
+- `c` is the name of the function
+- ` <- ` is an operator that assigns what's named on the left to equal the result of the expression on the right
+- `vals` is the name of a variable
+
+<!--split-->
 
 Question
 : Why call `vals` a "variable" and `c` a "function"?
@@ -152,7 +158,7 @@ We'll make a function to extract the first row and column of its argument, for w
 
 ~~~
 function(df) {
-    result <- df[[1]]
+    result <- df[[1, 1]]
     return result
 }
 ~~~
@@ -175,12 +181,14 @@ first <- function(df) {
 ~~~
 first(data)
 ~~~
-{:input}
+{:.input}
 
 ~~~
 [1] 5
 ~~~
 {:.output}
+
+<!--split-->
 
 Question
 : Can you explain the result of entering `first(vals)` into the console?
@@ -192,7 +200,9 @@ Answer
 
 ## Save your work
 
-Yes, save 'lesson-1.R' to file. But I mean *really* save it, by commiting it to your project and syncing up to a GitHub repository.
+Do save the 'lesson-1.R' file.
+
+But I mean *really* save your work, by commiting it to your project and syncing up to a GitHub repository.
 
 1. Go to the `git` tab in RStudio
 1. Select `commit` to open the "Review Changes" window
@@ -207,7 +217,7 @@ Yes, save 'lesson-1.R' to file. But I mean *really* save it, by commiting it to 
 Create a new repository on your GitHub page, name it whatever you like, but leave it empty (no README!).
 
 ![]({{ site.baseurl }}/images/new_repo.png){:width="60%"}  
-{:.fragment .captioned}
+{:.captioned}
 
 Once it's created, find the "Clone or download" URL.
 
@@ -226,20 +236,29 @@ Open the "Review Changes" window again and notice that your branch is ahead of o
 The last thing we'll do before taking a break, is let R install any packages you'll need today. But we'll learn something new along the way.
 
 ~~~
-requirements <- c('tidyr', 'ggplot2', 'RSQLite', 'rmarkdown')
-missing <- setdiff(requirements, rownames(installed.packages()))
+requirements <- c('tidyr',
+                  'ggplot2',
+				  'RSQLite',
+				  'rmarkdown')
+missing <- setdiff(requirements,
+                   rownames(installed.packages()))
 ~~~
 {:.text-document title='lesson-1.R'}
 
 <!--split-->
+
+Check, from the console, your number of missing packages:
 
 ~~~
 length(missing)
 ~~~
 {:.input}
 
-The keyword `if` is part of the R language's syntax for flow control. The statement in the body (between `{` and `}`) only evaluates if the argument (between `(` and `)`) evaluates to TRUE or is non-zero.
+Your result will depend on whether you installed these packages already. We can let the script decide what to do with this information:
 
+<!--split-->
+
+The keyword `if` is part of the R language's syntax for flow control. The statement in the body (between `{` and `}`) only evaluates if the argument (between `(` and `)`) evaluates to TRUE or is non-zero.
 
 ~~~
 if (length(missing)) {
