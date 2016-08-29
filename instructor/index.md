@@ -1,6 +1,7 @@
 ---
-reveal: https://cdn.rawgit.com/hakimel/reveal.js/3.3.0
 layout: slideshow
+reveal-theme: /css/theme/sky.css
+style: /1.0.0/css/slideshow.css
 ---
 
 {% for sorted in site.slide_sorter %}

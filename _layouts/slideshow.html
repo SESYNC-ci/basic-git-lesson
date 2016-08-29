@@ -11,14 +11,14 @@
 	<meta name="description"
 	      content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-	<link rel="stylesheet" href="{{ page.reveal }}/css/reveal.css">
-	<link rel="stylesheet" href="{{ page.reveal }}/css/theme/sky.css" id="theme">
+	<link rel="stylesheet" href="{{ site.reveal }}/css/reveal.css">
+	<link rel="stylesheet" href="{{ site.reveal }}{{ page.reveal-theme }}" id="theme">
 	
 	<!--[if lt IE 9]>
-            <script src="{{ page.reveal }}/lib/js/html5shiv.js"></script>
+            <script src="{{ site.reveal }}/lib/js/html5shiv.js"></script>
 	<![endif]-->
 
-	<link rel="stylesheet" href="{{ site.styleurl }}/css/slideshow.css">	
+	<link rel="stylesheet" href="{{ site.styleurl }}{{ page.style }}">	
 	
     </head>
     
@@ -34,8 +34,8 @@
       
 	</div>
 
-	<script src="{{ page.reveal }}/lib/js/head.min.js"></script>
-	<script src="{{ page.reveal }}/js/reveal.js"></script>
+	<script src="{{ site.reveal }}/lib/js/head.min.js"></script>
+	<script src="{{ site.reveal }}/js/reveal.js"></script>
 	<script>
 	 Reveal.initialize({
 
@@ -51,13 +51,13 @@
 	     dependencies: [
 
 		 // Zoom in and out with Alt+click
-		 { src: '{{ page.reveal }}/plugin/zoom-js/zoom.js', async: true },
+		 { src: '{{ site.reveal }}/plugin/zoom-js/zoom.js', async: true },
 
 		 // Speaker notes
-		 { src: '{{ page.reveal }}/plugin/notes/notes.js', async: true },
+		 { src: '{{ site.reveal }}/plugin/notes/notes.js', async: true },
 
 		 // MathJax
-		 { src: '{{ page.reveal }}/plugin/math/math.js', async: true },
+		 { src: '{{ site.reveal }}/plugin/math/math.js', async: true },
 	     ],
 	 });
 	</script>
