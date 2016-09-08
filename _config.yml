@@ -4,11 +4,12 @@ title: "Reproducible Workflows in RStudio"
 email: "cyberhelp@sesync.org"
 description: "Learn tools for collaborative and reproducible research."
 baseurl: /basic-git-lesson
-# styleurl: https://rawgit.com/sesync-ci/lesson-stylesheets/master
-styleurl: https://cdn.rawgit.com/SESYNC-ci/lesson-stylesheets
+#styleurl: https://cdn.rawgit.com/SESYNC-ci/lesson-stylesheets/1.0.0
+styleurl: https://rawgit.com/SESYNC-ci/lesson-stylesheets/master
 reveal: https://cdn.rawgit.com/hakimel/reveal.js/3.3.0
 
 # Slide Settings
+
 slide_sorter:
   - title
   - workflows
@@ -24,10 +25,3 @@ slide_sorter:
 markdown: kramdown
 collections:
   - slides
-
-defaults:
-  -
-    scope:
-      path: ''
-    values:
-      layout: 'default'

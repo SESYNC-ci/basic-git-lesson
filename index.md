@@ -1,5 +1,6 @@
 ---
-style: /1.0.0/css/lesson.css
+layout: default
+style: /css/lesson.css
 ---
 
 {% for sorted in site.slide_sorter %}

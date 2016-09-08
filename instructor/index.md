@@ -1,7 +1,7 @@
 ---
 layout: slideshow
 reveal-theme: /css/theme/sky.css
-style: /1.0.0/css/slideshow.css
+style: /css/slideshow.css
 ---
 
 {% for sorted in site.slide_sorter %}
