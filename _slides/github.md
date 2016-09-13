@@ -1,9 +1,9 @@
 ---
 ---
 
-### What's a GitHub? What's a "repo"?
+## What's a GitHub? What's a "repo"?
 
-Open up the [repository](https://github.com/SESYNC-ci/handouts){:target=""} that provides the "handouts" for this workshop.
+Open up the [repository](https://github.com/SESYNC-ci/handouts){:target="_blank"} that provides the "handouts" for this workshop.
 
 - README.md is a Markdown file giving basic information about the repository.
 - There is a list of files, including a folder for data.
@@ -13,21 +13,13 @@ Open up the [repository](https://github.com/SESYNC-ci/handouts){:target=""} that
 
 <!--split-->
 
-### Centralized Workflow
+## Centralized Workflow
 
 ![]({{ site.baseurl }}/images/atlassian_workflow.svg){:width="50%"}  
 *[Image][comparing-workflows] by Atlassian / [CC BY]*
 {:.captioned}
 
 The **origin** is the central repository, in this case it lives on GitHub. Every member of the team gets a **local** copy of the entire project, called a **clone**.
-
-<!--split-->
-
-### Clone the `handouts` repo in RStudio
-
-- Create a new project from version control.
-- Enter the handouts repository URL.
-- Choose a location where you want a new folder (containing the cloned repository) created.
 
 <!--split-->
 

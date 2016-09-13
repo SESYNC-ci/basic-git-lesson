@@ -1,7 +1,7 @@
 ---
 ---
 
-## Summary
+## Where to from here?
 
 The repository you created is an example of the heart of a distributed workflow. Putting the **origin** of your project on GitHub (or similar) will make it accessible not only by your collaborators, but also availabe for review and extension by your research community.
 

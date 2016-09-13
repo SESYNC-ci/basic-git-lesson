@@ -7,6 +7,9 @@ baseurl: /basic-git-lesson
 #styleurl: https://cdn.rawgit.com/sesync-ci/lesson-stylesheets/1.0.0
 styleurl: https://rawgit.com/sesync-ci/lesson-stylesheets/master
 reveal: https://cdn.rawgit.com/hakimel/reveal.js/3.3.0
+authors:
+  -Ian Carroll
+lesson: 1
 
 # Slide Settings
 
@@ -17,7 +20,9 @@ slide_sorter:
   - goals
   - reproducible
   - github
-  - rstudio
+#  - rstudio
+  - readme
+  - save
   - conclude
 
 # Jekyll Settings

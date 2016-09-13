@@ -11,7 +11,8 @@
 
 ## Real Research Workflows
 
-A professor at UC Berkeley, Carl Boettiger, is a strong advocate for open science.
-We can navigate to the results of his careful workflows at [www.carlboettiger.info](http://www.carlboettiger.info).
+A professor at UC Berkeley, [Carl Boettiger](http://www.carlboettiger.info), is a strong advocate for open science who publishes clear & reproducible workflows.
 
-The work leading up to his ["Pretty Darn Good Control"](http://github.com/cboettig/pdg_control) publication is on GitHub, a website integrated with the `git` version control system that work together as a system for project management, collaboration and sharing.
+The work leading up to ["Pretty Darn Good Control"](http://github.com/cboettig/pdg_control) is on [GitHub](http://github.com), a website integrated with the `git` version control system.
+
+`git` and cloud services like GitHub work well as a system for project management, collaboration and sharing.
