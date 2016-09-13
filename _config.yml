@@ -1,6 +1,6 @@
-# Site Settings
+# Site
 
-title: "Reproducible Workflows in RStudio"
+title: "Collaborative & Reproducible Workflows"
 email: "cyberhelp@sesync.org"
 description: "Learn tools for collaborative and reproducible research."
 baseurl: /basic-git-lesson
@@ -8,10 +8,10 @@ baseurl: /basic-git-lesson
 styleurl: https://rawgit.com/sesync-ci/lesson-stylesheets/master
 reveal: https://cdn.rawgit.com/hakimel/reveal.js/3.3.0
 authors:
-  -Ian Carroll
+  - Ian Carroll
 lesson: 1
 
-# Slide Settings
+# Slides
 
 slide_sorter:
   - title
@@ -25,7 +25,7 @@ slide_sorter:
   - save
   - conclude
 
-# Jekyll Settings
+# Jekyll
 
 markdown: kramdown
 collections:
