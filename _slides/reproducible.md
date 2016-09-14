@@ -29,3 +29,8 @@ Does the same principle apply to data analysis? **You bet!**
 | **Replicable** | "One-click" file & data sharing, as well as streamlined recreation of analyses |
 | **Open**       | GitHub (or similar) based centralized workflow                                 |
 
+<!--split-->
+
+## Also, there's this ...
+
+<iframe src="https://www.whitehouse.gov/blog/2016/03/09/leveraging-american-ingenuity-through-reusable-and-open-source-software" width="100%" height="280"></iframe>
