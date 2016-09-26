@@ -33,8 +33,8 @@ The `system` function in `lesson-1.R` sends the string directly to the operating
 ~~~
 # Configure git
 
-system("git config --global user.name "Ian Carroll")
-system("git config --global user.name icarroll@sesync.org)
+system("git config --global user.name '%Full Name%'")
+system("git config --global user.name %email%")
 ~~~
 {:.text-document title="lesson-1.R"}
 
