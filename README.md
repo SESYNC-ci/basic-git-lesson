@@ -9,3 +9,5 @@
 -- a merge conflict with upstream.   --
 -------------------------------------->
 
+[lesson]: http://sesync-ci.github.io/basic-git-lesson
+[slideshow]: http://sesync-ci.github.io/basic-git-lesson/instructor
