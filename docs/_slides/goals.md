@@ -7,7 +7,7 @@
 - Identify attributes of reproducible research
 - Use RStudio to begin managing a workflow
 
-<!--split-->
+===
 
 ## Specific achievements
 

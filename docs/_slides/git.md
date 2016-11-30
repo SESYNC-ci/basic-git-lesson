@@ -12,7 +12,7 @@ git config --global push.default simple
 ~~~
 {:.input}
 
-<!--split-->
+===
 
 ### Clone your repository
 
@@ -47,7 +47,7 @@ nothing to commit, working directory clean
 ~~~
 {:.output}
 
-<!--split-->
+===
 
 ### Edit README.md
 
@@ -65,7 +65,7 @@ This project includes the following:
 ~~~
 {:.text-document title="README.md"}
 
-<!--split-->
+===
 
 Now, check the result of making changes to your repo.
 
@@ -101,7 +101,7 @@ git commit -m "embellish README.md"
 ~~~
 {:.output}
 
-<!--split-->
+===
 
 Push your commit back to **origin**.
 

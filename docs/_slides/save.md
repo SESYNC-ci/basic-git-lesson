@@ -13,7 +13,7 @@ But I mean *really* save your work, by commiting it to your project with a versi
 1. Enter a descriptive message about the commit.
 1. Commit!
 
-<!--split-->
+===
 
 ## Create a GitHub repository
 
@@ -24,7 +24,7 @@ Create a new repository on your GitHub page, name it whatever you like, but leav
 
 Once it's created, find the "Clone or download" URL beginning with "https://".
 
-<!--split-->
+===
 
 ## Configure git
 
@@ -44,7 +44,7 @@ Question
 Answer
 : A space usually means the end of a string, the quotes are an alternative way to demarcate the bounds of a string.
 
-<!--split-->
+===
 
 ## Change origin repo
 
@@ -57,7 +57,7 @@ system("git remote set-url origin https://github.com/%username%/%repo%")
 ~~~
 {:.text-document title="lesson-1.R"}
 
-<!--split-->
+===
 
 ## Push
 

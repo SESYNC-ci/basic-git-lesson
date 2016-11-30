@@ -9,7 +9,7 @@ Experiments are reported in sufficient detail for a skilled practitioner to dupl
 Does the same principle apply to data analysis? **You bet!**
 {:.fragment}
 
-<!--split-->
+===
 
 ### Hallmarks of reproducible research:
 
@@ -20,7 +20,7 @@ Does the same principle apply to data analysis? **You bet!**
 
 [//]: # " Victoria Stodden et al. (2013) "
 
-<!--split-->
+===
 
 ### Use your workflow to achieve these same goals:
 
@@ -29,8 +29,5 @@ Does the same principle apply to data analysis? **You bet!**
 | **Replicable** | "One-click" file & data sharing, as well as streamlined recreation of analyses |
 | **Open**       | GitHub (or similar) based centralized workflow                                 |
 
-<!--split-->
+===
 
-## Also, there's this ...
-
-<iframe src="https://www.whitehouse.gov/blog/2016/03/09/leveraging-american-ingenuity-through-reusable-and-open-source-software" width="100%" height="280"></iframe>

@@ -13,7 +13,7 @@ A centralized workflow, managed by `git`, helps answer these questions.
 
 What's the catch? It only works with text. We'll address non-textual components of your project later on.
 
-<!--split-->
+===
 
 The first step to collaborative workflows is granting access to the **origin** of your project.
 
@@ -31,7 +31,7 @@ cd not-my-test
 ~~~
 {:.input}
 
-<!--split-->
+===
 
 Edit the README.md from your neighbour's repo, by adding a fourth bullet point.
 
@@ -46,7 +46,7 @@ This project includes the following:
 ~~~
 {:.text-document title="README.md"}
 
-<!--split-->
+===
 
 Now do a commit & push. Note that we have tucked the "add" step into the commit with the argument "a".
 
@@ -79,7 +79,7 @@ To https://github.com/itcarroll/test.git
 ~~~
 {:.output}
 
-<!--split-->
+===
 
 The **origin** for your local "test" repo now has a commit you don't have locally -- the one your collaborator pushed. Let's compound the problem by adding a local commit that your **origin** doesn't have. Change the title of your project in README.md in your local test repo.
 
@@ -93,7 +93,7 @@ This project includes the following:
 ~~~
 {:.text-document title="README.md"}
 
-<!--split-->
+===
 
 Try the usual routine: commit & push.
 
@@ -129,7 +129,7 @@ To https://github.com/%username%/test.git
 
 Take a moment to read the message -- it gives a good explanation of what just happened.
 
-<!--split-->
+===
 
 ### Take the Hint!
 
@@ -154,7 +154,7 @@ From https://github.com/%username%/test
 
 The message tells you about any changes made by this **merge commit**, which seamlessly integrates changes to the same file by multiple authors.
 
-<!--split-->
+===
 
 ### Merge Commits
 
@@ -162,7 +162,7 @@ The message tells you about any changes made by this **merge commit**, which sea
 *[Image][using-branches] by Atlassian / [CC BY]*
 {:.captioned}
 
-<!--split-->
+===
 
 ### Checkout the Log
 
@@ -193,7 +193,7 @@ Date:   Tue Jul 26 13:48:57 2016 -0400
 
 See how helpful a concise & descriptive commit messages would be?
 
-<!--split-->
+===
 
 Let's investigate a commit we are not so sure about.
 

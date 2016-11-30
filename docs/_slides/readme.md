@@ -10,7 +10,7 @@ This software is an example of an *integrated development environment* and focus
 
 R is both a **language** and an **interpreter**.
 
-<!--split-->
+===
 
 ## Integration with `git`
 
@@ -20,7 +20,7 @@ Under the File menu, create a new project from a remote version control reposito
 
 ![]({{ site.baseurl }}/images/new_project.png){:width=60%}
 
-<!--split-->
+===
 
 ## Files under version control
 
@@ -28,7 +28,7 @@ Software is written in plain text, and version control is design for software de
 
 For this reason, a plain text editor is a core element of the IDE. The editor in RStudio is good for any kind of text documents: you could edit R scripts, C++ code, LaTeX documents, or even CSV files.
 
-<!--split-->
+===
 
 ## README.md
 
