@@ -71,12 +71,12 @@ So we're not starting from scratch in the editor, let's use RStudio to clone the
 
 ===
 
-Open up 'lesson-1.R' in the editor, and follow along by replacing the `...` placeholders with the code here.
+Open up '{{ site.handouts }}' in the editor, and follow along by replacing the `...` placeholders with the code here.
 
 ~~~
 vals <- c(5, 6, 12)
 ~~~
-{:.text-document title='lesson-1.R'}
+{:.text-document title='{{ site.handouts }}'}
 
 ===
 
@@ -104,7 +104,7 @@ The variable `vals` held a vector, which if we made into the column of a table w
 ~~~
 data <- data.frame(counts = vals)
 ~~~
-{:.text-document title='lesson-1.R'}
+{:.text-document title='{{ site.handouts }}'}
 
 ===
 
@@ -150,7 +150,7 @@ function(...) {
 	return(...)
 }
 ~~~
-{:.text-document title='lesson-1.R'}
+{:.text-document title='{{ site.handouts }}'}
 
 ===
 
@@ -162,7 +162,7 @@ function(df) {
     return result
 }
 ~~~
-{:.text-document title='lesson-1.R'}
+{:.text-document title='{{ site.handouts }}'}
 
 Note that `df` doesn't exist until we call the function, which gives the recipe for how `df` will be handled.
 
@@ -176,7 +176,7 @@ first <- function(df) {
     return result
 }
 ~~~
-{:.text-document title='lesson-1.R'}
+{:.text-document title='{{ site.handouts }}'}
 
 ~~~
 first(data)

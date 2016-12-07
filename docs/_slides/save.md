@@ -28,7 +28,7 @@ Once it's created, find the "Clone or download" URL beginning with "https://".
 
 ## Configure git
 
-The `system` function in `lesson-1.R` sends the string directly to the operating system, which uses the `git` program itself to do something we can't do through RStudio. 
+The `system` function in `{{ site.handouts }}` sends the string directly to the operating system, which uses the `git` program itself to do something we can't do through RStudio. 
 
 ~~~
 # Configure git
@@ -36,7 +36,7 @@ The `system` function in `lesson-1.R` sends the string directly to the operating
 system("git config --global user.name '%Full Name%'")
 system("git config --global user.name %email%")
 ~~~
-{:.text-document title="lesson-1.R"}
+{:.text-document title="{{ site.handouts }}"}
 
 Question
 : Why did I put spaces around my name but not my e-mail
@@ -55,7 +55,7 @@ Open "Tools" > "Project Options" > "Git/SVN", notice that the orign is the SESYN
 
 system("git remote set-url origin https://github.com/%username%/%repo%")
 ~~~
-{:.text-document title="lesson-1.R"}
+{:.text-document title="{{ site.handouts }}"}
 
 ===
 
