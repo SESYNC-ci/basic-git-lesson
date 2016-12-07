@@ -28,6 +28,3 @@ Does the same principle apply to data analysis? **You bet!**
 | **Auditable**  | Versioned project history, used to revert mistakes when necessary              |
 | **Replicable** | "One-click" file & data sharing, as well as streamlined recreation of analyses |
 | **Open**       | GitHub (or similar) based centralized workflow                                 |
-
-===
-
