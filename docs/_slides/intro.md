@@ -4,6 +4,7 @@ class: right-third
 ---
 
 ## Distributed Workflows
+{: style="color: #FFFFFF; font-weight: 500;"}
 
 A single collaboration model -- the centralized workflow -- dominates collaborative research.
 There is a central hub, and everyone synchronizes their work to it.

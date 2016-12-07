@@ -6,12 +6,12 @@
 Reproducibility is a core tenent of the scientific method.
 Experiments are reported in sufficient detail for a skilled practitioner to duplicate the result.
 
-Does the same principle apply to data analysis? **You bet!**
+Does the same principle apply to modeling and data analysis? **You bet!**
 {:.fragment}
 
 ===
 
-### Hallmarks of reproducible research:
+## Hallmarks of reproducible research:
 
 | **Reviewable**  | All details of the method used are easily accessible for peer review and community review.             |
 | **Auditable**   | Records exist to document how the methods and conclusions evolved, but may be private.                 |
@@ -22,7 +22,7 @@ Does the same principle apply to data analysis? **You bet!**
 
 ===
 
-### Use your workflow to achieve these same goals:
+## Use your workflow to achieve these same goals:
 
 | **Reviewable** | Write-ups and thoroughly-commented scripts shared among collaborators          |
 | **Auditable**  | Versioned project history, used to revert mistakes when necessary              |

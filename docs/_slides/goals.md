@@ -11,7 +11,7 @@
 
 ## Specific achievements
 
-- Access a public repository through RStudio
-- Create a repository on GitHub
-- Publish changes to a project file
-- Execute a few basic R commands
+- Create a `git` repository on GitHub
+- Make commits to a project file
+- Synchronize to a repository with RStudio
+- Collaborate with another GitHub user

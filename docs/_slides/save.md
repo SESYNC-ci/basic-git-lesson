@@ -1,64 +1,43 @@
 ---
 ---
 
-## Save your work
+## Create a new file
 
-Do save the `README.md` file.
+Create a new file called `model.nlogo`.
 
-But I mean *really* save your work, by commiting it to your project with a version control system (that's `git`!).
+~~~
+to setup
+  clear-all
+  create-turtles 100 [ setxy random-xcor random-ycor ]
+  reset-ticks
+end
+~~~
+{:.text-document title="model.nlogo"}
+
+===
+
+## Track it with git
+
+Before you can commit changes involving `model.nlogo`, you have to tell the version control system (that's `git`!) to watch for changes to this file.
 
 1. Go to the `git` tab in RStudio
 1. Select `commit` to open the "Review Changes" window
-1. Select the file(s) you want to commit.
+1. Select "Staged" to add (hence "A") the new file.
 1. Enter a descriptive message about the commit.
 1. Commit!
-
-===
-
-## Create a GitHub repository
-
-Create a new repository on your GitHub page, name it whatever you like, but leave it empty (no README!).
-
-![]({{ site.baseurl }}/images/new_repo.png){:width="60%"}  
-{:.captioned}
-
-Once it's created, find the "Clone or download" URL beginning with "https://".
-
-===
-
-## Configure git
-
-The `system` function in `{{ site.handouts }}` sends the string directly to the operating system, which uses the `git` program itself to do something we can't do through RStudio. 
-
-~~~
-# Configure git
-
-system("git config --global user.name '%Full Name%'")
-system("git config --global user.name %email%")
-~~~
-{:.text-document title="{{ site.handouts }}"}
-
-Question
-: Why did I put spaces around my name but not my e-mail
-
-Answer
-: A space usually means the end of a string, the quotes are an alternative way to demarcate the bounds of a string.
-
-===
-
-## Change origin repo
-
-Open "Tools" > "Project Options" > "Git/SVN", notice that the orign is the SESYNC-CI organization's URL.
-
-~~~
-# Set a new origin URL
-
-system("git remote set-url origin https://github.com/%username%/%repo%")
-~~~
-{:.text-document title="{{ site.handouts }}"}
 
 ===
 
 ## Push
 
 Open the "Review Changes" window again and notice that your branch is ahead of origin/master! Push those commit(s) to your GitHub repo.
+
+===
+
+## Challenge
+
+1. Copy/write in full code for a model from the lesson on NetLogo Programming.
+1. Commit and push your work.
+1. Now create a new RStudio project from your neighbour's repository.
+1. Add a comment to explain what part of the code does.
+1. Commit and push your work.
