@@ -11,9 +11,9 @@ authors:
 # Slides
 
 slide_sorter:
+  - goals
   - workflows
   - intro
-  - goals
   - reproducible
   - github
   - repo

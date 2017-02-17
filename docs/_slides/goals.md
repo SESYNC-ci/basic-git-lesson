@@ -3,9 +3,9 @@
 
 ## Objectives for this lesson
 
-- Learn about a framework for distributed workflows
+- Learn about centralized workflows
 - Identify attributes of reproducible research
-- Use RStudio to begin managing a workflow
+- See how RStudio + git facilitates collaboration
 
 ===
 
