@@ -14,13 +14,13 @@ slide_sorter:
   - goals
   - workflows
   - intro
-  - reproducible
+#  - reproducible
   - github
-  - repo
-  - collab
+#  - repo
+#  - collab
   - readme
   - save
-  - conclude
+#  - conclude
   
 #####################################
 # Only modify content above or risk #

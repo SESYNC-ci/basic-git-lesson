@@ -3,17 +3,12 @@
 
 ## Create a new file
 
-Copy the `.nlogo` file saved from the NetLogo Programming lesson into this directory:
+Use the editor to create a new file
 
 ~~~
-turtles-own [energy]
-
-...
-
-@#$#@#$#@
-GRAPHICS-WINDOW
+blah blah blah
 ~~~
-{:.text-document title="model.nlogo"}
+{:.text-document title="blah.txt"}
 
 ===
 
@@ -29,16 +24,19 @@ Before you can commit changes involving a new file, you have to tell the version
 
 ===
 
-## Push
+## Push (but not yet!)
 
-Open the "Review Changes" window again and notice that your branch is ahead of origin/master! Push those commit(s) to your GitHub repo.
+Open the "Review Changes" window again and notice that your branch is ahead of origin/master! You could then push those commit(s) to your Bitbucket repo.
+
+Since we all just created the same file, that's not a good idea!
 
 ===
 
-## Challenge
+## Undoing things
 
-1. Enter a description into the "WHAT IS IT?" section of the NetLogo model.
-1. Commit and push your work.
-1. Now create a new RStudio project from your neighbour's repository.
-1. Add a comment to explain what part of the code does.
-1. Commit and push your work.
+Before you have commited anything, you can continue to update files however you like. The safe way to undo a commit is to apply a new commit that "reverts" the one you want to change.
+
+~~~
+system("git revert <SHA>")
+~~~
+{:.input}
