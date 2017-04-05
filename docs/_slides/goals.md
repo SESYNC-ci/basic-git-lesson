@@ -11,15 +11,7 @@
 
 ## Specific achievements
 
-- Add commits to a `git` repository on Bitbucket
+- Create a `git` repository on GitHub
 - Make commits to a project file
-- Synchronize a repository with RStudio
-- Handle a merge conflict with grace
-
-===
-
-## Status check
-
-- Name entered on Etherpad?
-- Successful login at *rstudio.sesync.org*?
-- Successful login at *bitbucket.org*?
+- Synchronize to a repository with RStudio
+- Collaborate with another GitHub user

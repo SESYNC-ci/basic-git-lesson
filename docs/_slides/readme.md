@@ -25,7 +25,7 @@ Under the File menu, create a new project from a remote version control reposito
 
 Software is written in plain text, and version control is design for software development. A scripted workflow relies heavilly on plain text files, but may include different file types for figures or data.
 
-For this reason, a plain text editor is a core element of the IDE. The editor in RStudio is good for any kind of text documents: you could edit R scripts, NetLogo models, LaTeX documents, Stata scripts, or even CSV files.
+For this reason, a plain text editor is a core element of the IDE. The editor in RStudio is good for any kind of text documents: you could edit R scripts, NetLogo models, LaTeX documents, or even CSV files.
 
 ===
 
@@ -34,6 +34,7 @@ For this reason, a plain text editor is a core element of the IDE. The editor in
 The `system` function sends a given string directly to the operating system, which uses the `git` program itself to do something we can't do through RStudio. 
 
 ~~~
-system("git config user.email <bitbucket-email>")
+system("git config user.name '<Full Name>'")
+system("git config user.email '<email>'")
 ~~~
 {:.input}

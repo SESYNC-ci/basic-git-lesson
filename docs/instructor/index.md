@@ -9,7 +9,7 @@ reveal-theme: /css/theme/sky.css
 # {{ site.title }}
 {:style="text-transform: none;"}
 
-Online Lesson with *{{ site.instructor }}*
+Lesson {{ site.lesson }} with *{{ site.instructor }}*
 
 </section>
 

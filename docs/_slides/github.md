@@ -1,15 +1,15 @@
 ---
 ---
 
-## What's a Bitbucket? What's a "repo"?
+## What's a GitHub? What's a "repo"?
 
-Open up the 'test' repository (check Etherpad for ULR).
+Open up the [repository](https://github.com/SESYNC-ci/handouts){:target="_blank"} that provides the "handouts" for this workshop.
 
-- `README.md` is a Markdown file giving basic information about the repository
-- The `Source` is a list of files
-- You are looking at a branch called `master`
-- The `Commits` show the history of the project
-- The `Overview` includes the clone URL.
+- `README.md` is a Markdown file giving basic information about the repository.
+- There is a list of files, including a folder for data.
+- You are looking at a branch called `master`.
+- The commit history is available from the top bar.
+- The "Clone or download" button provides a URL.
 
 ===
 
@@ -19,7 +19,7 @@ Open up the 'test' repository (check Etherpad for ULR).
 *[Image][comparing-workflows] by Atlassian / [CC BY]*
 {:.captioned}
 
-The **origin** is the central repository, in this case it lives on Bitbucket. Every member of the team gets a **local** copy of the entire project, called a **clone**.
+The **origin** is the central repository, in this case it lives on GitHub. Every member of the team gets a **local** copy of the entire project, called a **clone**.
 
 ===
 
