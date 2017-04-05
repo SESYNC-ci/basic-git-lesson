@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Collaborative & Reproducible Workflows</title>
+<meta name="description" content="Learn about git and GitHub.">
+<link rel="canonical" href="https://sesync-ci.github.io/basic-git-lesson/instructor/">
+
+	  <link rel="stylesheet" href="https://cdn.rawgit.com/hakimel/reveal.js/3.3.0/css/reveal.css">
+	  <link rel="stylesheet" href="https://cdn.rawgit.com/hakimel/reveal.js/3.3.0/css/theme/sky.css" id="theme">
+	  <!--[if lt IE 9]>
+      <script src="https://cdn.rawgit.com/hakimel/reveal.js/3.3.0/lib/js/html5shiv.js"></script>
+	  <![endif]-->
+	  <link rel="stylesheet" href="/basic-git-lesson/css/slideshow.css">
+  </head>
+  <body>
+	  <div class="reveal">
+	    <div class="slides">
+        
+        
+<section>
+
+  <h1 style="text-transform: none;" id="collaborative--reproducible-workflows">Collaborative &amp; Reproducible Workflows</h1>
+
+  <p>Online Lesson with <em>Ian Carroll</em></p>
+
+</section>
+
+<section>
+
+
+<section>
+<h2 id="objectives-for-this-lesson">Objectives for this lesson</h2>
+
+<ul>
+  <li>Learn about centralized workflows</li>
+  <li>Identify attributes of reproducible research</li>
+  <li>See how RStudio + git facilitates collaboration</li>
+</ul>
+
+
+</section>
+
+<section>
+
+
+<h2 id="specific-achievements">Specific achievements</h2>
+
+<ul>
+  <li>Add commits to a <code class="highlighter-rouge">git</code> repository on Bitbucket</li>
+  <li>Make commits to a project file</li>
+  <li>Synchronize a repository with RStudio</li>
+  <li>Handle a merge conflict with grace</li>
+</ul>
+
+
+</section>
+
+<section>
+
+
+<h2 id="status-check">Status check</h2>
+
+<ul>
+  <li>Name entered on Etherpad?</li>
+  <li>Successful login at <em>rstudio.sesync.org</em>?</li>
+  <li>Successful login at <em>bitbucket.org</em>?</li>
+</ul>
+
+</section>
+
+</section>
+
+<section>
+
+
+<section>
+<h2 id="overview">Overview</h2>
+
+<p>As your collaborative research moves from conception, through data collection, modeling and analysis, to publishing and other forms of dissemination, it’s components can fracture, lose their development history, and – worst of all – become conflicted or lost.</p>
+
+<p>In this session, we’ll discuss a high level strategy to organize your workflow and introduce an accompanying software solution, <code class="highlighter-rouge">git</code>.</p>
+
+
+</section>
+
+<section>
+
+
+<h2 id="workflow-diagram">Workflow diagram</h2>
+
+<p class="captioned"><img src="/basic-git-lesson/images/rp-overview.jpg" alt="" width="60%" /><br />
+<em>Credit: <a href="http://cacm.acm.org/blogs/blog-cacm/169199-data-science-workflow-overview-and-challenges">Philip Guo</a></em></p>
+
+
+</section>
+
+<section>
+
+
+<h2 id="pipeline-componenets">Pipeline componenets</h2>
+
+<p class="captioned"><img src="/basic-git-lesson/images/rp-overview-pipe.jpg.svg" alt="" width="60%" /><br />
+<em>Credit: <a href="http://cacm.acm.org/blogs/blog-cacm/169199-data-science-workflow-overview-and-challenges">Philip Guo</a></em></p>
+
+</section>
+
+</section>
+
+<section>
+
+
+<section data-background="/basic-git-lesson/images/fremantleferris41.JPG" class="right-third">
+<h2 style="color: #FFFFFF; font-weight: 500;" id="centralized-workflow">Centralized Workflow</h2>
+
+<p class="on-white">The hub stores all the project files.
+The spokes are researchers, who work independently on personal copies of the entire project.
+The integrety of the project is maintained by rules, enforced by the hub, for synchronizing the hub and spoke copies.</p>
+
+</section>
+
+</section>
+
+<section>
+
+
+<section>
+<h2 id="whats-a-bitbucket-whats-a-repo">What’s a Bitbucket? What’s a “repo”?</h2>
+
+<p>Open up the ‘test’ repository (check Etherpad for ULR).</p>
+
+<ul>
+  <li><code class="highlighter-rouge">README.md</code> is a Markdown file giving basic information about the repository</li>
+  <li>The <code class="highlighter-rouge">Source</code> is a list of files</li>
+  <li>You are looking at a branch called <code class="highlighter-rouge">master</code></li>
+  <li>The <code class="highlighter-rouge">Commits</code> show the history of the project</li>
+  <li>The <code class="highlighter-rouge">Overview</code> includes the clone URL.</li>
+</ul>
+
+
+</section>
+
+<section>
+
+
+<h2 id="centralized-workflow">Centralized Workflow</h2>
+
+<p class="captioned"><img src="/basic-git-lesson/images/atlassian_workflow.svg" alt="" width="50%" /><br />
+<em><a href="https://www.atlassian.com/git/tutorials/comparing-workflows">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
+
+<p>The <strong>origin</strong> is the central repository, in this case it lives on Bitbucket. Every member of the team gets a <strong>local</strong> copy of the entire project, called a <strong>clone</strong>.</p>
+
+
+</section>
+
+<section>
+
+
+<p class="captioned"><img src="/basic-git-lesson/images/atlassian_pull.svg" alt="" width="50%" /><br />
+<em><a href="https://www.atlassian.com/git/tutorials/comparing-workflows">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
+
+<p>Cloning is the initial <strong>pull</strong> of the entire project and all its history. In general, a worker <strong>pulls</strong> the work of other teammates from the <strong>origin</strong> when ready to incorporate their work, and she <strong>pushes</strong> updates to the <strong>origin</strong> when ready to contribute work of her own work.</p>
+
+
+</section>
+
+<section>
+
+
+<p>A commit is a unit of work: any collection of changes to one or more files in the repository.
+A versioned project is like a tree of commits, although the current tree has just one <strong>branch</strong>.
+After a worker creates a <strong>clone</strong>, the local copy is in the same place as the <strong>origin</strong>.</p>
+
+<p class="captioned"><img src="/basic-git-lesson/images/atlassian_clone.png" alt="" width="30%" style="border: none; box-shadow: none;" /><br />
+<em><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
+
+
+</section>
+
+<section>
+
+
+<p>A <strong>pull</strong>, or initially a <strong>clone</strong>, applies commits copied from the <strong>origin</strong> to your local repo, syncing them up.</p>
+
+<p class="captioned"><img src="/basic-git-lesson/images/atlassian_after_pull_top.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
+<em><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
+
+
+</section>
+
+<section>
+
+
+<p>A <strong>pull</strong>, or initially a <strong>clone</strong>, applies commits copied from the <strong>origin</strong> to your local repo, syncing them up.</p>
+
+<p class="captioned"><img src="/basic-git-lesson/images/atlassian_after_pull_bottom.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
+<em><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
+
+
+</section>
+
+<section>
+
+
+<p>A <strong>push</strong> copies local commits to the <strong>origin</strong> and applies them remotely.</p>
+
+<p class="captioned"><img src="/basic-git-lesson/images/atlassian_after_push_top.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
+<em><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
+
+
+</section>
+
+<section>
+
+
+<p>A <strong>push</strong> copies local commits to the <strong>origin</strong> and applies them remotely.</p>
+
+<p class="captioned"><img src="/basic-git-lesson/images/atlassian_after_push_bottom.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
+<em><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
+
+
+</section>
+
+</section>
+
+<section>
+
+
+<section>
+<h2 id="rstudio-projects">RStudio Projects</h2>
+
+<p>This software is an example of an <em>integrated development environment</em> and focuses on</p>
+
+<ol>
+  <li>Editing scripts written in the R language.</li>
+  <li>Running R language commands or programs in the R interpreter.</li>
+  <li>Helping to manage many components of a collaborative project using version control.</li>
+</ol>
+
+
+</section>
+
+<section>
+
+
+<h2 id="integration-with-git">Integration with <code class="highlighter-rouge">git</code></h2>
+
+<p>RStudio provides convenient access to the core tools provided by <code class="highlighter-rouge">git</code>, so any project can also be a repository.</p>
+
+<p>Under the File menu, create a new project from a remote version control repository.</p>
+
+<p><img src="/basic-git-lesson/images/new_project.png" alt="" /></p>
+
+
+</section>
+
+<section>
+
+
+<h2 id="files-under-version-control">Files under version control</h2>
+
+<p>Software is written in plain text, and version control is design for software development. A scripted workflow relies heavilly on plain text files, but may include different file types for figures or data.</p>
+
+<p>For this reason, a plain text editor is a core element of the IDE. The editor in RStudio is good for any kind of text documents: you could edit R scripts, NetLogo models, LaTeX documents, Stata scripts, or even CSV files.</p>
+
+
+</section>
+
+<section>
+
+
+<h2 id="configure-git">Configure git</h2>
+
+<p>The <code class="highlighter-rouge">system</code> function sends a given string directly to the operating system, which uses the <code class="highlighter-rouge">git</code> program itself to do something we can’t do through RStudio.</p>
+
+<div class="input highlighter-rouge"><pre class="highlight"><code>system("git config user.email &lt;bitbucket-email&gt;")
+</code></pre>
+</div>
+
+</section>
+
+</section>
+
+<section>
+
+
+<section>
+<h2 id="create-a-new-file">Create a new file</h2>
+
+<p>Use the editor to create a new file</p>
+
+<div class="text-document highlighter-rouge" title="blah.txt"><pre class="highlight"><code>blah blah blah
+</code></pre>
+</div>
+
+
+</section>
+
+<section>
+
+
+<h2 id="track-it-with-git">Track it with git</h2>
+
+<p>Before you can commit changes involving a new file, you have to tell the version control system (that’s <code class="highlighter-rouge">git</code>!) to watch it..</p>
+
+<ol>
+  <li>Go to the <code class="highlighter-rouge">git</code> tab in RStudio</li>
+  <li>Select <code class="highlighter-rouge">commit</code> to open the “Review Changes” window</li>
+  <li>Select “Staged” to add (hence “A”) the new file.</li>
+  <li>Enter a descriptive message about the commit.</li>
+  <li>Commit!</li>
+</ol>
+
+
+</section>
+
+<section>
+
+
+<h2 id="push-but-not-yet">Push (but not yet!)</h2>
+
+<p>Open the “Review Changes” window again and notice that your branch is ahead of origin/master! You could then push those commit(s) to your Bitbucket repo.</p>
+
+<p>Since we all just created the same file, that’s not a good idea!</p>
+
+
+</section>
+
+<section>
+
+
+<h2 id="undoing-things">Undoing things</h2>
+
+<p>Before you have commited anything, you can continue to update files however you like. The safe way to undo a commit is to apply a new commit that “reverts” the one you want to change.</p>
+
+<div class="input highlighter-rouge"><pre class="highlight"><code>system("git revert &lt;SHA&gt;")
+</code></pre>
+</div>
+
+</section>
+
+</section>
+
+
+
+	    </div>
+	  </div>
+    <script>
+     var collection = document.getElementsByClassName("notes");
+     for (var i = 0; i < collection.length; i++) {
+         var p = collection[i];
+         var aside = document.createElement("aside");
+         aside.className = p.className;
+         aside.innerHTML = p.innerHTML;
+         p.replaceWith(aside);         
+         };     
+    </script>
+	  <script src="https://cdn.rawgit.com/hakimel/reveal.js/3.3.0/lib/js/head.min.js"></script>
+	  <script src="https://cdn.rawgit.com/hakimel/reveal.js/3.3.0/js/reveal.js"></script>
+	  <script>
+	   Reveal.initialize({
+	       // Size
+	       width: 1200,
+	       height: 800,
+	       margin: 0.1,
+	       // Controls
+	       controls: false,
+	       // Transition
+	       transition: "none",
+	       // Plugins
+	       dependencies: [
+		         // Zoom in and out with Alt+click
+		         { src: "https://cdn.rawgit.com/hakimel/reveal.js/3.3.0/plugin/zoom-js/zoom.js", async: true },
+		         // Speaker notes
+		         { src: "https://cdn.rawgit.com/hakimel/reveal.js/3.3.0/plugin/notes/notes.js", async: true },
+		         // MathJax
+		         { src: "https://cdn.rawgit.com/hakimel/reveal.js/3.3.0/plugin/math/math.js", async: true },
+	       ],
+	   });
+	  </script>
+  </body>
+</html>
