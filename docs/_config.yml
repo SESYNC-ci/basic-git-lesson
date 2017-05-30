@@ -1,16 +1,9 @@
 # Lesson
 
-title:
-handouts:
-tag:
-lesson:
-instructor:
-authors:
-
 title: Collaborative & Reproducible Workflows
 handouts: worksheet.R
 tag: v0.0
-lesson: 3
+lesson: 3a
 instructor: Ian Carroll
 authors:
  - Ian Carroll
