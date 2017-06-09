@@ -39,6 +39,3 @@ Open the "Review Changes" window again and notice that your branch is ahead of o
 
 1. Enter a description into the "WHAT IS IT?" section of the NetLogo model.
 1. Commit and push your work.
-1. Now create a new RStudio project from your neighbour's repository.
-1. Add a comment to explain what part of the code does.
-1. Commit and push your work.

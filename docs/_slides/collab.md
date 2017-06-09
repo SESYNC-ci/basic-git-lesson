@@ -51,3 +51,8 @@ Goals
 
 Always write a meaningful commit message when you save!
 
+## Challenge
+
+1. Create a new RStudio project from your neighbour's repository.
+1. Add a comment to explain what part of the code does.
+1. Commit and push your work.

@@ -12,14 +12,14 @@ authors:
 
 slide_sorter:
   - goals
-  - workflows
   - intro
   - reproducible
+  - workflows
   - github
   - repo
-  - collab
   - readme
   - save
+  - collab
   - conclude
   
 #####################################
