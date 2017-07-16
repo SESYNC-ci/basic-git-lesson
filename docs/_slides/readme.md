@@ -11,30 +11,56 @@ This software is an example of an *integrated development environment* and focus
 
 ===
 
-## Integration with `git`
+## Integration with git
 
-RStudio provides convenient access to the core tools provided by `git`, so any project can also be a repository.
-
-Under the File menu, create a new project from a remote version control repository.
+RStudio provides convenient access to the core tools provided by `git`, so any project can also be a repository. Under the File menu, create a new project from a remote version control repository.
 
 ![]({{ site.baseurl }}/images/new_project.png){:width=60%}
 
 ===
 
-## Files under version control
+## Configure git
 
-Software is written in plain text, and version control is design for software development. A scripted workflow relies heavilly on plain text files, but may include different file types for figures or data.
+Every commit has an author. For GitHub to attribute commits to your account, configure `git` with your GitHub username and associated e-mail address.
 
-For this reason, a plain text editor is a core element of the IDE. The editor in RStudio is good for any kind of text documents: you could edit R scripts, NetLogo models, LaTeX documents, or even CSV files.
+~~~
+## Configure git
+
+git config --global user.name ...
+git config --global user.email ...
+~~~
+{:.text-document title="{{ site.handouts }}"}
 
 ===
 
-## Configure git
+## Configure your clone
 
-The `system` function sends a given string directly to the operating system, which uses the `git` program itself to do something we can't do through RStudio. 
+The "handouts" repository is currently linked---via URL---to the "hub" you cloned from SESYNC's repositories on GitHub. To transfer the repository to the newly created repository owned by you, set the URL to the one provided and push all the things.
 
 ~~~
-system("git config user.name '<Full Name>'")
-system("git config user.email '<email>'")
+## Change the "origin" remote URL and push
+
+git remote set-url origin ...
+git push --all
 ~~~
-{:.input}
+{:.text-document title="{{ site.handouts }}"}
+
+Save your `{{ site.handouts }}` and select "Run Script" to execute these shell commands.
+
+===
+
+## Files under version control
+
+A scripted pipeline relies heavilly on plain text files (the scripts), but may include different file types for figures or data. Any file in this directory that is under version control is monitored for differences from the committed state of the project. Files must be added to at least one commit before they are tracked.
+
+===
+
+## Commit & push
+
+The first change you made to the handouts repository are your edits to `{{ site.handouts }}`. You have saved them, but you haven't committed them to the repository.
+
+1. On the `git` tab in RStudio, select commit
+1. Check the modifications to "Stage"
+1. Add a commit message
+1. Commit
+1. Push

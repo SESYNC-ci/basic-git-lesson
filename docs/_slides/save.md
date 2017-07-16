@@ -3,17 +3,17 @@
 
 ## Create a new file
 
-Copy the `.nlogo` file saved from the NetLogo Programming lesson into this directory:
+Create a new text file in the RStudio editor as below, adding yourself as the first collaborator.
 
 ~~~
-turtles-own [energy]
+## Project Collaborators
 
-...
-
-@#$#@#$#@
-GRAPHICS-WINDOW
+- ...
+- My neighbor!
 ~~~
-{:.text-document title="model.nlogo"}
+{:.text-document title="collaborators.md"}
+
+In the final part of the lesson, we'll have a project collaborator replace "My neighbor!" with his or her name.
 
 ===
 
@@ -31,11 +31,10 @@ Before you can commit changes involving a new file, you have to tell the version
 
 ## Push
 
-Open the "Review Changes" window again and notice that your branch is ahead of origin/master! Push those commit(s) to your GitHub repo.
+Look at the `git` tab again and notice that your branch is ahead of origin/master! Push those commit(s) to your GitHub repo.
 
 ===
 
-## Challenge
+## Exercise 1
 
-1. Enter a description into the "WHAT IS IT?" section of the NetLogo model.
-1. Commit and push your work.
+Modify the `collaborators.md` file again to add a third "TBD" collaborator, and push the modification to the origin as one commit.

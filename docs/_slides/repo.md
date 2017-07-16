@@ -9,26 +9,17 @@ Sign in or create a GitHub account.
 
 ## Create a GitHub repository
 
-Create a new repository on your GitHub page, name it whatever you like, but do check the box to create a "README".
+Create a new repository on your GitHub page.
 
 ![]({{ site.baseurl }}/images/new_repo.png){:width="60%"}  
 {:.captioned}
 
-Once it's created, find the "Clone or download" URL beginning with "https://". We'll need that later.
+1. Name the repository "handouts".
+1. Add a short "tag line" for your Summer Institute experience.
+1. Leave all the boxes (includeing the "README") un-checked.
 
 ===
 
-## README.md
+## Empty repository
 
-To begin making this project your own, modify the README. Tell us something about why you're here!
-
-~~~
-# SESYNC Spatial ABM Course
-
-Goals
-
-- Learn to build Spatial ABMs!
-~~~
-{:.text-document title="README.md"}
-
-The ".md" extension stands for "markdown", which is a syntax for simple plain text "formatting". Add a commit message when you save.
+You have created an empty repository. The quick start information is emphasizing that you'll need the URL beginning with "git@github...". We'll get to that in a minute.

@@ -1,9 +1,9 @@
 # Lesson
 
-title: Collaborative & Reproducible Workflows
-handouts: worksheet.R
+title: Collaborative Workflows & Reproducible Pipelines
+handouts: worksheet.sh
 tag: v0.0
-lesson: 3a
+lesson: 2
 instructor: Ian Carroll
 authors:
  - Ian Carroll
@@ -15,7 +15,7 @@ slide_sorter:
   - intro
   - reproducible
   - workflows
-  - github
+  - terms
   - repo
   - readme
   - save

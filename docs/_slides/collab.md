@@ -9,23 +9,21 @@ True collaboration goes deeper than commenting on a final report, but integrated
 - Will a teammate's work overwrite any of your own?
 - How do I recover the working version of code the PI broke?
 
-A centralized workflow, managed by `git`, helps answer these questions.
+Centralized workflows, managed by `git`, helps answer these questions.
 
 ===
 
-## Centralized Workflow
+## Project Integrity
 
 - The **origin** becomes the official up-to-date repo, *even* if your work is a few commits ahead.
-- Diverging projects are easily reintegrated with a **merge** algorithm.
+- Diverging files are easily reintegrated with a **merge** algorithm.
 - The complete project history is available to **checkout**.
 
-Note, version control works really well with text. Non-textual components of your project (e.g. spatial data) need advanced treatment.
+Note, version control works really well with text. Non-textual components of your project (e.g. large or binary data) need advanced treatment.
 
 ===
 
-The first step to collaborative workflows is granting access to the **origin** of your project.
-
-Introduce yourself to your neighbour, and ask for his/her GitHub username.
+The first step to collaborative workflows is granting access to the **origin** of your project. Introduce yourself to your neighbour, and ask for his/her GitHub username.
 
 ![]({{ site.baseurl }}/images/repo_collab.png)
 {:.captioned}
@@ -36,23 +34,21 @@ Add your neighbour as a collaborator, and accept your neighbours invitation to c
 
 ## Editing on GitHub
 
-Edit the README.md from your neighbour's repo, by adding more goals to their README.
+Go to your neighbors repository on GitHub, and open `collaborators.md`. The text below shows "My Neighbor!" where you should see your neighbor's name. Edit the file in your neighbour's repo, by replacing the remaining "My neighbor!" with your own name.
 
 ~~~
-# SESYNC Spatial ABMs Course
+## Project Collaborators
 
-Goals
-
-- Learn to build Spatial ABMs!
-- Work with a team.
-
+- My neighbor!
+- ...
+- TBD
 ~~~
-{:.text-document title="README.md"}
+{:.text-document title="collaborators.md"}
 
 Always write a meaningful commit message when you save!
 
-## Challenge
+===
 
-1. Create a new RStudio project from your neighbour's repository.
-1. Add a comment to explain what part of the code does.
-1. Commit and push your work.
+## Exercise 2
+
+Create a new RStudio project from your neighbour's repository. Note the name you choose during project creation in RStudio does not have to be "handouts", i.e. it does not have to match the name of the repostitory on GitHub. Make further changes to the `collaborators.md` file, then commit & push.

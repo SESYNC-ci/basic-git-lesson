@@ -13,18 +13,18 @@ Does the same principle apply to modeling and data analysis? **You bet!**
 
 ## Hallmarks of reproducible research:
 
-| **Reviewable**  | All details of the method used are easily accessible for peer review and community review.             |
-| **Auditable**   | Records exist to document how the methods and conclusions evolved, but may be private.                 |
-| **Replicable**  | Given sufficient resources, a skilled practitioner could duplicate the research without any guesswork. |
-| **Open**        | The orginator grants permissions for reuse and extension of the research products.                     |
+| **Reviewable** | All details of the method used are easily accessible for peer review and community review.             |
+| **Auditable**  | Records exist to document how the methods and conclusions evolved, but may be private.                 |
+| **Replicable** | Given sufficient resources, a skilled practitioner could duplicate the research without any guesswork. |
+| **Open**       | The orginator grants permissions for reuse and extension of the research products.                     |
 
 [//]: # " Victoria Stodden et al. (2013) "
 
 ===
 
-## Use your workflow to achieve these same goals:
+## Let your workflow help achieve these same goals:
 
-| **Reviewable** | Write-ups and thoroughly-commented scripts shared among collaborators          |
-| **Auditable**  | Versioned project history, used to revert mistakes when necessary              |
-| **Replicable** | "One-click" file & data sharing, as well as streamlined recreation of analyses |
-| **Open**       | GitHub (or similar) based centralized workflow                                 |
+| Thoroughly-comment scripts and share continusously with collaborators         | **Reviewable** |
+| Maintain project history to correct mistakes when necessary                   | **Auditable**  |
+| Provide "one-click" file & data sharing, of a streamlined analysis "pipeline" | **Replicable** |
+| Publically release on GitHub (or similar) with (implied) open licensing       | **Open**       |
