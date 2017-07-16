@@ -10,4 +10,4 @@
 -------------------------------------->
 
 [lesson]: http://sesync-ci.github.io/basic-git-lesson
-[slideshow]: http://sesync-ci.github.io/basic-git-lesson/instructor
+[slideshow]: http://sesync-ci.github.io/basic-git-lesson/slides
