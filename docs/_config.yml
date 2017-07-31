@@ -1,12 +1,14 @@
 # Site
 
 title: Collaborative Workflows & Reproducible Pipelines
-handouts: worksheet.sh
+handouts:
+  - worksheet.sh
+  - worksheet.R
 tag: v0.0
 lesson: 1
 instructor: Ian Carroll
 authors:
- - Ian Carroll
+  - Ian Carroll
 
 # Slides
 
@@ -19,7 +21,6 @@ slide_sorter:
   - repo
   - config
   - paths
-  - save
   - collab
   - conclude
   

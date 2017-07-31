@@ -23,4 +23,5 @@ Integrating `git` with cloud services like GitHub creates a complete system for 
 
 A **workflow** describes how your team collaboratively creates the code, software environment and integrations that comprise the pipeline. Collaborative workflows require communication&mdash;version control systems facilitate it.
 
-![]({{ site.baseurl }}/images/sketch.jpg)
+![]({{ site.baseurl }}/images/sketch.jpg){:width="60%"}  
+{:.captioned}

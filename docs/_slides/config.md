@@ -15,7 +15,8 @@ This software is an example of an *integrated development environment* and focus
 
 RStudio provides convenient access to the core tools provided by `git`, so any project can also be a repository. Under the File menu, create a new project from a remote version control repository.
 
-![]({{ site.baseurl }}/images/new_project.png){:width=60%}
+![]({{ site.baseurl }}/images/new_project.png){:width=60%}  
+{:.captioned}
 
 ===
 
@@ -29,7 +30,7 @@ Every commit has an author. For GitHub to attribute commits to your account, con
 git config --global user.name ...
 git config --global user.email ...
 ~~~
-{:.text-document title="{{ site.handouts }}"}
+{:.text-document title="{{ site.handouts[0] }}"}
 
 ===
 
@@ -43,15 +44,15 @@ The "handouts" repository is currently linked---via URL---to the "hub" you clone
 git remote set-url origin ...
 git push --all
 ~~~
-{:.text-document title="{{ site.handouts }}"}
+{:.text-document title="{{ site.handouts[0] }}"}
 
-Save your `{{ site.handouts }}` and select "Run Script" to execute these shell commands.
+Save your `{{ site.handouts[0] }}` and select "Run Script" to execute these shell commands.
 
 ===
 
 ## Commit & push
 
-The first change you made to the handouts repository are your edits to `{{ site.handouts }}`. You have saved them, but you haven't committed them to the repository.
+The first change you made to the handouts repository are your edits to `{{ site.handouts[0] }}`. You have saved them, but you haven't committed them to the repository.
 
 1. On the `git` tab in RStudio, select commit
 1. Check the modifications to "Stage"

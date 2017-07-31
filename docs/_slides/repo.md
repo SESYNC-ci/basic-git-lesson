@@ -31,3 +31,4 @@ You have created an empty repository. The quick start information provides clues
 Or choose to import an existing repository, which already has a history of commits.
 
 ![]({{ site.baseurl }}/images/import_repo.png){:width="60%"}  
+{:.captioned}
