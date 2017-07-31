@@ -49,12 +49,6 @@ Save your `{{ site.handouts }}` and select "Run Script" to execute these shell c
 
 ===
 
-## Files under version control
-
-A scripted pipeline relies heavilly on plain text files (the scripts), but may include different file types for figures or data. Any file in this directory that is under version control is monitored for differences from the committed state of the project. Files must be added to at least one commit before they are tracked.
-
-===
-
 ## Commit & push
 
 The first change you made to the handouts repository are your edits to `{{ site.handouts }}`. You have saved them, but you haven't committed them to the repository.

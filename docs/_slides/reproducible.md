@@ -6,7 +6,7 @@
 Reproducibility is a core tenent of the scientific method.
 Experiments are reported in sufficient detail for a skilled practitioner to duplicate the result.
 
-Does the same principle apply to modeling and data analysis? **You bet!**
+The principle equally applies to modeling and data analysis.
 {:.fragment}
 
 ===

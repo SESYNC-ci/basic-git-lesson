@@ -17,7 +17,8 @@ slide_sorter:
   - workflows
   - terms
   - repo
-  - readme
+  - config
+  - paths
   - save
   - collab
   - conclude

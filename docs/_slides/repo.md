@@ -11,7 +11,7 @@ Sign in or create a GitHub account.
 
 Create a new repository on your GitHub page.
 
-![]({{ site.baseurl }}/images/new_repo.png){:width="60%"}  
+![]({{ site.baseurl }}/images/new_repo-1.png){:width="60%"}  
 {:.captioned}
 
 1. Name the repository "handouts".
@@ -22,4 +22,12 @@ Create a new repository on your GitHub page.
 
 ## Empty repository
 
-You have created an empty repository. The quick start information is emphasizing that you'll need the URL beginning with "git@github...". We'll get to that in a minute.
+You have created an empty repository. The quick start information provides clues on how to create your first commit.
+
+===
+
+## Imported repository
+
+Or choose to import an existing repository, which already has a history of commits.
+
+![]({{ site.baseurl }}/images/import_repo.png){:width="60%"}  
