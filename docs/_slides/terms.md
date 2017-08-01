@@ -1,7 +1,7 @@
 ---
 ---
 
-## What's a GitHub? What's a "repo"?
+## What's a GitHub?
 
 Open up the [repository](https://github.com/SESYNC-ci/handouts){:target="_blank"} that provides the "handouts" for this workshop.
 

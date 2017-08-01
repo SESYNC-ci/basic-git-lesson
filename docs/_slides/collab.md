@@ -19,7 +19,7 @@ Centralized workflows, managed by `git`, helps answer these questions.
 - Diverging files are easily reintegrated with a **merge** algorithm.
 - The complete project history is available to **checkout**.
 
-Note, version control works really well with text. Non-textual components of your project (e.g. large or binary data) need advanced treatment.
+Note, version control works really well with text. Non-textual components of your project (e.g. large or binary data) rarely live in a repository.
 
 ===
 
@@ -63,18 +63,18 @@ Modify the `collaborators.md` file again to add a third "TBD" collaborator, and 
 
 ===
 
-The first step to collaborative workflows is granting access to the **origin** of your project. Introduce yourself to your neighbour, and ask for his/her GitHub username.
+The first step to collaborative workflows is granting access to the **origin** of your project. Introduce yourself to your neighbor, and ask for his/her GitHub username.
 
 ![]({{ site.baseurl }}/images/repo_collab.png)
 {:.captioned}
 
-Add your neighbour as a collaborator, and accept your neighbours invitation to collaborate!
+Add your neighbor as a collaborator, and accept your neighbor's invitation to collaborate!
 
 ===
 
 ## Editing on GitHub
 
-Go to your neighbors repository on GitHub, and open `collaborators.md`. The text below shows "My Neighbor!" where you should see your neighbor's name. Edit the file in your neighbour's repo, by replacing the remaining "My neighbor!" with your own name.
+Go to your neighbors repository on GitHub, and open `collaborators.md`. The text below shows "My Neighbor!" where you should see your neighbor's name. Edit the file in your neighbor's repo, by replacing the remaining "My neighbor!" with your own name.
 
 ~~~
 ## Project Collaborators
@@ -91,4 +91,4 @@ Always write a meaningful commit message when you save!
 
 ## Exercise 2
 
-Create a new RStudio project from your neighbour's repository. Note the name you choose during project creation in RStudio does not have to be "handouts", i.e. it does not have to match the name of the repostitory on GitHub. Make further changes to the `collaborators.md` file, then commit & push.
+Create a new RStudio project from your neighbor's repository. Note the name you choose during project creation in RStudio does not have to be "handouts", i.e. it does not have to match the name of the repository on GitHub. Make further changes to the `collaborators.md` file, then commit & push.
