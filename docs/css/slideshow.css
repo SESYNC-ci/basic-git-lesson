@@ -10,7 +10,11 @@ img + br + em {
     max-height: 300px;
 }
 
-.reveal img[alt^="plot of"] {
+.reveal .output {
+    display: none;
+}
+
+.reveal .input + p.captioned {
     display: none;
 }
 
@@ -27,7 +31,7 @@ img + br + em {
 .text-document.highlighter-rouge pre {
     background-color: #000000;
     margin: 2px auto;
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 0 0 5px 5px;
 }
 
 .text-document.highlighter-rouge code {

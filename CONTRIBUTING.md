@@ -81,7 +81,7 @@ git remote set-url origin git@github.com:SESYNC-ci/$LESSON-lesson.git
 git push
 ```
 
-Everythin above is standardized across lessons, the following is where the real work begins! First, go to the lesson repository's GitHub settings and select `master/docs` as the GitHub Pages source. Configure `README.md` by commiting the following to the `README.md` file, after replacing `$LESSON` with the new lesson's name.
+Everything above is standardized across lessons, the following is where the real work begins! First, go to the lesson repository's GitHub settings and select `master/docs` as the GitHub Pages source. Configure `README.md` by commiting the following to the `README.md` file, after replacing `$LESSON` with the new lesson's name.
 
 ```
 [lesson]: https://sesync-ci.github.io/$LESSON-lesson
@@ -133,7 +133,7 @@ A lesson should be archived after any event in which it is presented&mdash;eithe
 - `styleurl` refers to a release of `lesson-style`
 
 The corresponing releases must exist:
-- The lesson's repository needs a release corresponding to `tag` that includes any data and worksheets in a `handouts.zip` "binary" attachement.
+- The lesson's repository needs a release corresponding to `tag` that includes any data and worksheets in a `handouts.zip` "binary" attachment.
 - After updating the `styleurl`, create the release in `lesson-style` before archiving any lessons
 
 ## Upstream
