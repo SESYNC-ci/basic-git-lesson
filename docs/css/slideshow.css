@@ -6,6 +6,10 @@ img + br + em {
     font-size: 90%;
 }
 
+.reveal .output pre code {
+    max-height: 300px;
+}
+
 .reveal img[alt^="plot of"] {
     display: none;
 }
@@ -18,10 +22,6 @@ img + br + em {
 .reveal .slides section.right-third {
     width: 50%;
     margin-left: 45vw;
-}
-
-.reveal pre code {
-    max-height: 30vh;
 }
 
 .text-document.highlighter-rouge pre {
