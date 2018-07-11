@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Collaborative Workflows & Reproducible Pipelines</title>
+<meta name="description" content="Learn about git and GitHub">
+<link rel="canonical" href="https://sesync-ci.github.io/basic-git-lesson/course/archive.html">
+<link rel="stylesheet" href="/basic-git-lesson/css/default.css">
+<link rel="stylesheet" href="/basic-git-lesson/css/static.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+
+	  <link rel="stylesheet" href="https://cdn.rawgit.com/sesync-ci/lesson-style/v1.2/docs/css/static.css">
+  </head>
+  <body>
+	  <div class="page-content">
+	    <div class="wrapper">
+        
+        
+<h1 style="text-transform: none;" id="collaborative-workflows--reproducible-pipelines">Collaborative Workflows &amp; Reproducible Pipelines</h1>
+
+<p>Lesson 2 with <em>Ian Carroll</em></p>
+
+<h2 id="contents">Contents</h2>
+
+<ul>
+  <li><a href="#/slides/goals">Objectives for this lesson</a></li>
+  <li><a href="#/slides/intro">Centralized Workflow</a></li>
+  <li><a href="#/slides/reproducible">A Plug for Reproducible Research</a></li>
+  <li><a href="#/slides/workflows">Reproducible research: the end result</a></li>
+  <li><a href="#/slides/terms">What’s a GitHub? What’s a “repo”?</a></li>
+  <li><a href="#/slides/repo">Get Started with GitHub</a></li>
+  <li><a href="#/slides/readme">RStudio Projects</a></li>
+  <li><a href="#/slides/save">Create a new file</a></li>
+  <li><a href="#/slides/collab">Working with Collaborators</a></li>
+  <li><a href="#/slides/conclude">Where to from here?</a></li>
+</ul>
+
+<hr />
+
+<p><a name="/slides/goals"></a></p>
+
+<h2 id="objectives-for-this-lesson">Objectives for this lesson</h2>
+
+<ul>
+  <li>Learn about centralized workflows</li>
+  <li>Identify attributes of reproducible research</li>
+  <li>See how RStudio + git facilitates collaboration</li>
+</ul>
+
+<h2 id="specific-achievements">Specific achievements</h2>
+
+<ul>
+  <li>Create a git repository on GitHub</li>
+  <li>Make commits to a project file</li>
+  <li>Synchronize to a repository with RStudio</li>
+  <li>Collaborate with another GitHub user</li>
+</ul>
+
+<h2 id="overview">Overview</h2>
+
+<p>As your research project moves from conception, through data collection, modeling and analysis, to publishing and other forms of dissemination, it’s components can fracture, lose their development history, and—worst of all—become conflicted or lost.</p>
+
+<p>This lesson gives a high level strategy to organize your collaborative workflow and introduces accompanying software and cloud solutions.</p>
+
+<p class="ToS"><a href="#/slides/goals">Top of Section</a></p>
+
+<hr />
+
+<p><a name="/slides/intro"></a></p>
+
+<h2 style="color: #FFFFFF; font-weight: 500;" id="centralized-workflow">Centralized Workflow</h2>
+
+<p class="notes">One strategy for distributed work among a team of scientists—the centralized workflow—dominates collaborative research.</p>
+
+<p class="on-white">A <strong>central hub</strong> stores project files and their history. Researchers are <strong>spokes</strong> on the wheel, working on private copies of the project. Project integrity is maintained by rules, enforced at the hub, for <strong>synchronizing</strong> between hub and spokes.</p>
+
+<p class="ToS"><a href="#/slides/intro">Top of Section</a></p>
+
+<hr />
+
+<p><a name="/slides/reproducible"></a></p>
+
+<h2 id="a-plug-for-reproducible-research">A Plug for Reproducible Research</h2>
+
+<p>Reproducibility is a core tenent of the scientific method.
+Experiments are reported in sufficient detail for a skilled practitioner to duplicate the result.</p>
+
+<p class="fragment">Does the same principle apply to modeling and data analysis? <strong>You bet!</strong></p>
+
+<h2 id="hallmarks-of-reproducible-research">Hallmarks of reproducible research:</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Reviewable</strong></td>
+      <td>All details of the method used are easily accessible for peer review and community review.</td>
+    </tr>
+    <tr>
+      <td><strong>Auditable</strong></td>
+      <td>Records exist to document how the methods and conclusions evolved, but may be private.</td>
+    </tr>
+    <tr>
+      <td><strong>Replicable</strong></td>
+      <td>Given sufficient resources, a skilled practitioner could duplicate the research without any guesswork.</td>
+    </tr>
+    <tr>
+      <td><strong>Open</strong></td>
+      <td>The orginator grants permissions for reuse and extension of the research products.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="let-your-workflow-help-achieve-these-same-goals">Let your workflow help achieve these same goals:</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Thoroughly-comment scripts and share continusously with collaborators</td>
+      <td><strong>Reviewable</strong></td>
+    </tr>
+    <tr>
+      <td>Maintain project history to correct mistakes when necessary</td>
+      <td><strong>Auditable</strong></td>
+    </tr>
+    <tr>
+      <td>Provide “one-click” file &amp; data sharing, of a streamlined analysis “pipeline”</td>
+      <td><strong>Replicable</strong></td>
+    </tr>
+    <tr>
+      <td>Publically release on GitHub (or similar) with (implied) open licensing</td>
+      <td><strong>Open</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="ToS"><a href="#/slides/reproducible">Top of Section</a></p>
+
+<hr />
+
+<p><a name="/slides/workflows"></a></p>
+
+<h2 id="reproducible-research-the-end-result">Reproducible research: the end result</h2>
+
+<p>A professor at UC Berkeley, <a href="http://www.carlboettiger.info">Carl Boettiger</a>, is a strong advocate for open science who publishes clear &amp; reproducible pipelines. The work leading up to the paper <a href="http://github.com/cboettig/pdg_control">“Pretty Darn Good Control”</a> is on <a href="http://github.com">GitHub</a>, a website integrated with the <code class="highlighter-rouge">git</code> version control system.</p>
+
+<p>Integrating <code class="highlighter-rouge">git</code> with cloud services like GitHub creates a complete system for project management, collaboration and sharing.</p>
+
+<h2 id="using-collaborative-workflows-">Using collaborative workflows …</h2>
+
+<p class="captioned"><img src="/basic-git-lesson/images/rp-overview.jpg" alt="" width="60%" /><br />
+<em>Credit: <a href="http://cacm.acm.org/blogs/blog-cacm/169199-data-science-workflow-overview-and-challenges">Philip Guo</a></em></p>
+
+<h2 id="-to-construct-a-single-pipeline">… to construct a single pipeline</h2>
+
+<p class="captioned"><img src="/basic-git-lesson/images/rp-overview-pipe.jpg.svg" alt="" width="60%" /><br />
+<em>Credit: <a href="http://cacm.acm.org/blogs/blog-cacm/169199-data-science-workflow-overview-and-challenges">Philip Guo</a></em></p>
+
+<p class="ToS"><a href="#/slides/workflows">Top of Section</a></p>
+
+<hr />
+
+<p><a name="/slides/terms"></a></p>
+
+<h2 id="whats-a-github-whats-a-repo">What’s a GitHub? What’s a “repo”?</h2>
+
+<p>Open up the <a href="https://github.com/SESYNC-ci/handouts" target="_blank">repository</a> that provides the “handouts” for this workshop.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">README.md</code> is a Markdown file giving basic information about the repository.</li>
+  <li>There is a list of files, including a folder for data.</li>
+  <li>You are looking at a branch called <code class="highlighter-rouge">master</code>.</li>
+  <li>The commit history is available from the top bar.</li>
+  <li>The “Clone or download” button provides a URL.</li>
+</ul>
+
+<h2 id="centralized-workflow">Centralized Workflow</h2>
+
+<p class="captioned"><img src="/basic-git-lesson/images/atlassian_workflow.svg" alt="" width="50%" /><br />
+<em><a href="https://www.atlassian.com/git/tutorials/comparing-workflows">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
+
+<p>The <strong>origin</strong> is the central repository, in this case it lives on GitHub. Every member of the team gets a <strong>local</strong> copy of the entire project, called a <strong>clone</strong>.</p>
+
+<p class="captioned"><img src="/basic-git-lesson/images/atlassian_pull.svg" alt="" width="50%" /><br />
+<em><a href="https://www.atlassian.com/git/tutorials/comparing-workflows">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
+
+<p>Cloning is the initial <strong>pull</strong> of the entire project and all its history. In general, a worker <strong>pulls</strong> the work of other teammates from the <strong>origin</strong> when ready to incorporate their work, and she <strong>pushes</strong> updates to the <strong>origin</strong> when ready to contribute work of her own work.</p>
+
+<p>A commit is a unit of work: any collection of changes to one or more files in the repository.
+A versioned project is like a tree of commits, although the current tree has just one <strong>branch</strong>.
+After a worker creates a <strong>clone</strong>, the local copy is in the same place as the <strong>origin</strong>.</p>
+
+<p class="captioned"><img src="/basic-git-lesson/images/atlassian_clone.png" alt="" width="30%" style="border: none; box-shadow: none;" /><br />
+<em><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
+
+<p>A <strong>pull</strong>, or initially a <strong>clone</strong>, applies commits copied from the <strong>origin</strong> to your local repo, syncing them up.</p>
+
+<p class="captioned"><img src="/basic-git-lesson/images/atlassian_after_pull_top.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
+<em><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
+
+<p>A <strong>pull</strong>, or initially a <strong>clone</strong>, applies commits copied from the <strong>origin</strong> to your local repo, syncing them up.</p>
+
+<p class="captioned"><img src="/basic-git-lesson/images/atlassian_after_pull_bottom.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
+<em><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
+
+<p>A <strong>push</strong> copies local commits to the <strong>origin</strong> and applies them remotely.</p>
+
+<p class="captioned"><img src="/basic-git-lesson/images/atlassian_after_push_top.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
+<em><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
+
+<p>A <strong>push</strong> copies local commits to the <strong>origin</strong> and applies them remotely.</p>
+
+<p class="captioned"><img src="/basic-git-lesson/images/atlassian_after_push_bottom.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
+<em><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
+
+<p class="ToS"><a href="#/slides/terms">Top of Section</a></p>
+
+<hr />
+
+<p><a name="/slides/repo"></a></p>
+
+<h2 id="get-started-with-github">Get Started with GitHub</h2>
+
+<p>Sign in or create a GitHub account.</p>
+
+<h2 id="create-a-github-repository">Create a GitHub repository</h2>
+
+<p>Create a new repository on your GitHub page.</p>
+
+<p class="captioned"><img src="/basic-git-lesson/images/new_repo.png" alt="" width="60%" /></p>
+
+<ol>
+  <li>Name the repository “handouts”.</li>
+  <li>Add a short “tag line” for your Summer Institute experience.</li>
+  <li>Leave all the boxes (includeing the “README”) un-checked.</li>
+</ol>
+
+<h2 id="empty-repository">Empty repository</h2>
+
+<p>You have created an empty repository. The quick start information is emphasizing that you’ll need the URL beginning with “git@github…”. We’ll get to that in a minute.</p>
+
+<p class="ToS"><a href="#/slides/repo">Top of Section</a></p>
+
+<hr />
+
+<p><a name="/slides/readme"></a></p>
+
+<h2 id="rstudio-projects">RStudio Projects</h2>
+
+<p>This software is an example of an <em>integrated development environment</em> and focuses on</p>
+
+<ol>
+  <li>Editing scripts written in the R language.</li>
+  <li>Running R language commands or programs in the R interpreter.</li>
+  <li>Helping to manage many components of a collaborative project using version control.</li>
+</ol>
+
+<h2 id="integration-with-git">Integration with git</h2>
+
+<p>RStudio provides convenient access to the core tools provided by <code class="highlighter-rouge">git</code>, so any project can also be a repository. Under the File menu, create a new project from a remote version control repository.</p>
+
+<p><img src="/basic-git-lesson/images/new_project.png" alt="" /></p>
+
+<h2 id="configure-git">Configure git</h2>
+
+<p>Every commit has an author. For GitHub to attribute commits to your account, configure <code class="highlighter-rouge">git</code> with your GitHub username and associated e-mail address.</p>
+
+<div class="text-document highlighter-rouge" title="worksheet-2.sh"><pre class="highlight"><code>## Configure git
+
+git config --global user.name ...
+git config --global user.email ...
+</code></pre>
+</div>
+
+<h2 id="configure-your-clone">Configure your clone</h2>
+
+<p>The “handouts” repository is currently linked—via URL—to the “hub” you cloned from SESYNC’s repositories on GitHub. To transfer the repository to the newly created repository owned by you, set the URL to the one provided and push all the things.</p>
+
+<div class="text-document highlighter-rouge" title="worksheet-2.sh"><pre class="highlight"><code>## Change the "origin" remote URL and push
+
+git remote set-url origin ...
+git push --all
+</code></pre>
+</div>
+
+<p>Save your <code class="highlighter-rouge">worksheet-2.sh</code> and select “Run Script” to execute these shell commands.</p>
+
+<h2 id="files-under-version-control">Files under version control</h2>
+
+<p>A scripted pipeline relies heavilly on plain text files (the scripts), but may include different file types for figures or data. Any file in this directory that is under version control is monitored for differences from the committed state of the project. Files must be added to at least one commit before they are tracked.</p>
+
+<h2 id="commit--push">Commit &amp; push</h2>
+
+<p>The first change you made to the handouts repository are your edits to <code class="highlighter-rouge">worksheet-2.sh</code>. You have saved them, but you haven’t committed them to the repository.</p>
+
+<ol>
+  <li>On the <code class="highlighter-rouge">git</code> tab in RStudio, select commit</li>
+  <li>Check the modifications to “Stage”</li>
+  <li>Add a commit message</li>
+  <li>Commit</li>
+  <li>Push</li>
+</ol>
+
+<p class="ToS"><a href="#/slides/readme">Top of Section</a></p>
+
+<hr />
+
+<p><a name="/slides/save"></a></p>
+
+<h2 id="create-a-new-file">Create a new file</h2>
+
+<p>Create a new text file in the RStudio editor as below, adding yourself as the first collaborator.</p>
+
+<div class="text-document highlighter-rouge" title="collaborators.md"><pre class="highlight"><code>## Project Collaborators
+
+- ...
+- My neighbor!
+</code></pre>
+</div>
+
+<p>In the final part of the lesson, we’ll have a project collaborator replace “My neighbor!” with his or her name.</p>
+
+<h2 id="track-it-with-git">Track it with git</h2>
+
+<p>Before you can commit changes involving a new file, you have to tell the version control system (that’s <code class="highlighter-rouge">git</code>!) to watch it..</p>
+
+<ol>
+  <li>Go to the <code class="highlighter-rouge">git</code> tab in RStudio</li>
+  <li>Select <code class="highlighter-rouge">commit</code> to open the “Review Changes” window</li>
+  <li>Select “Staged” to add (hence “A”) the new file.</li>
+  <li>Enter a descriptive message about the commit.</li>
+  <li>Commit!</li>
+</ol>
+
+<h2 id="push">Push</h2>
+
+<p>Look at the <code class="highlighter-rouge">git</code> tab again and notice that your branch is ahead of origin/master! Push those commit(s) to your GitHub repo.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+
+<p>Modify the <code class="highlighter-rouge">collaborators.md</code> file again to add a third “TBD” collaborator, and push the modification to the origin as one commit.</p>
+
+<p class="ToS"><a href="#/slides/save">Top of Section</a></p>
+
+<hr />
+
+<p><a name="/slides/collab"></a></p>
+
+<h2 id="working-with-collaborators">Working with Collaborators</h2>
+
+<p>True collaboration goes deeper than commenting on a final report, but integrated work on a project from start to finish raises workflow challenges.</p>
+
+<ul>
+  <li>Be it data, a script, or a write-up, who has the most up-to-date version?</li>
+  <li>Will a teammate’s work overwrite any of your own?</li>
+  <li>How do I recover the working version of code the PI broke?</li>
+</ul>
+
+<p>Centralized workflows, managed by <code class="highlighter-rouge">git</code>, helps answer these questions.</p>
+
+<h2 id="project-integrity">Project Integrity</h2>
+
+<ul>
+  <li>The <strong>origin</strong> becomes the official up-to-date repo, <em>even</em> if your work is a few commits ahead.</li>
+  <li>Diverging files are easily reintegrated with a <strong>merge</strong> algorithm.</li>
+  <li>The complete project history is available to <strong>checkout</strong>.</li>
+</ul>
+
+<p>Note, version control works really well with text. Non-textual components of your project (e.g. large or binary data) need advanced treatment.</p>
+
+<p>The first step to collaborative workflows is granting access to the <strong>origin</strong> of your project. Introduce yourself to your neighbour, and ask for his/her GitHub username.</p>
+
+<p class="captioned"><img src="/basic-git-lesson/images/repo_collab.png" alt="" /></p>
+
+<p>Add your neighbour as a collaborator, and accept your neighbours invitation to collaborate!</p>
+
+<h2 id="editing-on-github">Editing on GitHub</h2>
+
+<p>Go to your neighbors repository on GitHub, and open <code class="highlighter-rouge">collaborators.md</code>. The text below shows “My Neighbor!” where you should see your neighbor’s name. Edit the file in your neighbour’s repo, by replacing the remaining “My neighbor!” with your own name.</p>
+
+<div class="text-document highlighter-rouge" title="collaborators.md"><pre class="highlight"><code>## Project Collaborators
+
+- My neighbor!
+- ...
+- TBD
+</code></pre>
+</div>
+
+<p>Always write a meaningful commit message when you save!</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+
+<p>Create a new RStudio project from your neighbour’s repository. Note the name you choose during project creation in RStudio does not have to be “handouts”, i.e. it does not have to match the name of the repostitory on GitHub. Make further changes to the <code class="highlighter-rouge">collaborators.md</code> file, then commit &amp; push.</p>
+
+<p class="ToS"><a href="#/slides/collab">Top of Section</a></p>
+
+<hr />
+
+<p><a name="/slides/conclude"></a></p>
+
+<h2 id="where-to-from-here">Where to from here?</h2>
+
+<ul>
+  <li>
+    <p>The repository you created is an example of the heart of a distributed workflow. Putting the <strong>origin</strong> of your project on GitHub (or similar) will make it accessible not only by your collaborators, but also availabe for review and extension by your research community.</p>
+  </li>
+  <li class="fragment">
+    <p>Sharing project files, including managing multiple “copies” during development or at public release, in a hub-and-spokes workflow is a streamlined <strong>cloning</strong> process. The <strong>origin</strong> always has the “gold standard” version of any documents: conflicts must be resolved in the local clone before new commits can be shared.</p>
+  </li>
+  <li class="fragment">
+    <p>Using advanced <code class="highlighter-rouge">git</code> to manage contributions to the project as a branching and merging “tree” of commits accomplishes two objectives. First, work can safely proceed in parallel, even on the same documents. Second, a recoverable (and auditable) trail of changes is immediately available in the project history.</p>
+  </li>
+</ul>
+
+<p class="ToS"><a href="#/slides/conclude">Top of Section</a></p>
+
+<hr />
+
+
+
+	    </div>
+	  </div>
+  </body>
+</html>
