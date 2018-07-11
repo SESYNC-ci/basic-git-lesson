@@ -1,7 +1,7 @@
 ---
 ---
 
-## A Plug for Reproducible Research
+## A Plug for Reproducibility
 
 Reproducibility is a core tenent of the scientific method.
 Experiments are reported in sufficient detail for a skilled practitioner to duplicate the result.
@@ -11,7 +11,7 @@ The principle equally applies to modeling and data analysis.
 
 ===
 
-## Hallmarks of reproducible research:
+### Hallmarks of reproducible research
 
 | **Reviewable** | All details of the method used are easily accessible for peer review and community review.             |
 | **Auditable**  | Records exist to document how the methods and conclusions evolved, but may be private.                 |
@@ -22,9 +22,9 @@ The principle equally applies to modeling and data analysis.
 
 ===
 
-## Let your workflow help achieve these same goals:
+### Let your workflow help
 
-| Thoroughly-comment scripts and share continusously with collaborators         | **Reviewable** |
-| Maintain project history to correct mistakes when necessary                   | **Auditable**  |
-| Provide "one-click" file & data sharing, of a streamlined analysis "pipeline" | **Replicable** |
-| Publically release on GitHub (or similar) with (implied) open licensing       | **Open**       |
+| **Reviewable** | Thoroughly-comment scripts and share continuously with collaborators          |
+| **Auditable**  | Maintain project history to correct mistakes when necessary                   | 
+| **Replicable** | Provide "one-click" file & data sharing, of a streamlined analysis "pipeline" | 
+| **Open**       | Publically release on GitHub (or similar) with (implied) open licensing       | 

@@ -3,26 +3,27 @@
 title: Collaborative Workflows & Reproducible Pipelines
 handouts:
   - worksheet.sh
-  - worksheet.R
-tag: v0.1
-lesson: 1
+tag: v0.2
+lesson: 3
 instructor: Ian Carroll
+example:
+  user: itcarroll
+  email: icarroll@sesync.org
 authors:
   - Ian Carroll
 
 # Slides
 
 slide_sorter:
-  - goals
   - intro
-  - reproducible
-  - workflows
-  - terms
-  - repo
+  - pipelines
+  - goals
   - config
-  - paths
+  - terms
   - collab
+  - reproducible
   - conclude
+#  - paths ## deal with symlinks in the dvc lesson
   
 #####################################
 # Only modify content above or risk #

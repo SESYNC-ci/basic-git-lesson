@@ -1,12 +1,10 @@
-#!/bin/sh
+# configure git
 
-## Configure git
 git config --global user.name ...
 git config --global user.email ...
+git commit --no-edit --amend --reset-author
 
-## Change the "origin" remote URL
-git remote set-url origin ...
+# link your local repository to the origin repository on GitHub
 
-## Set the SESYNC-CI repository upstream and pull updates
-git remote add upstream https://github.com/sesync-ci/handouts.git
-git pull upstream master
+git remote add origin ...
+git push -u origin master

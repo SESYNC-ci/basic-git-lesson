@@ -1,21 +1,9 @@
 ---
 ---
 
-## What's a GitHub?
+## Syncing Repos
 
-Open up the [repository](https://github.com/SESYNC-ci/handouts){:target="_blank"} that provides the "handouts" for this workshop.
-
-- `README.md` is a Markdown file giving basic information about the repository.
-- There is a list of files, including a folder for data.
-- You are looking at a branch called `master`.
-- The commit history is available from the top bar.
-- The "Clone or download" button provides a URL.
-
-===
-
-## Centralized Workflow
-
-![]({{ site.baseurl }}/images/atlassian_workflow.svg){:width="50%"}  
+![]({{ site.baseurl }}/images/atlassian_workflow.svg){:width="50%" style="border: none; box-shadow: none;"}  
 *[Image][comparing-workflows] by Atlassian / [CC BY]*
 {:.captioned}
 
@@ -23,7 +11,7 @@ The **origin** is the central repository, in this case it lives on GitHub. Every
 
 ===
 
-![]({{ site.baseurl }}/images/atlassian_pull.svg){:width="50%"}  
+![]({{ site.baseurl }}/images/atlassian_pull.svg){:width="50%" style="border: none; box-shadow: none;"}  
 *[Image][comparing-workflows] by Atlassian / [CC BY]*
 {:.captioned}
 
@@ -31,9 +19,9 @@ Cloning is the initial **pull** of the entire project and all its history. In ge
 
 ===
 
-A commit is a unit of work: any collection of changes to one or more files in the repository.
-A versioned project is like a tree of commits, although the current tree has just one **branch**.
-After a worker creates a **clone**, the local copy is in the same place as the **origin**.
+A git repository is a network of commits, although the current network is a tree
+with just one **branch**. After a worker creates a **clone**, the local repo is
+in the same state as the **origin**.
 
 ![]({{ site.baseurl }}/images/atlassian_clone.png){:width="30%" style="border: none; box-shadow: none;"}  
 *[Image][syncing] by Atlassian / [CC BY]*
@@ -41,7 +29,8 @@ After a worker creates a **clone**, the local copy is in the same place as the *
 
 ===
 
-A **pull**, or initially a **clone**, applies commits copied from the **origin** to your local repo, syncing them up.
+A **pull**, or initially a **clone**, applies commits copied from the **origin**
+to your local repo, syncing them up.
 
 ![]({{ site.baseurl }}/images/atlassian_after_pull_top.png){:width="40%" style="border: none; box-shadow: none;"}  
 *[Image][syncing] by Atlassian / [CC BY]*
@@ -71,8 +60,27 @@ A **push** copies local commits to the **origin** and applies them remotely.
 *[Image][syncing] by Atlassian / [CC BY]*
 {:.captioned}
 
+===
 
+An essential component of the centralized workflow is the ability to merge
+commit histories that have diverged. Any fork in the history has to be
+re-integrated, and git does this automatically through merging.
+
+![]({{ site.baseurl }}/images/atlassian_before_merge.svg){:width="50%" style="border: none; box-shadow: none;"}  
+*[Image][using-branches] by Atlassian / [CC BY]*
+{:.captioned}
+
+===
+
+The **origin** will not accept a push before merging. In order to preserve
+integrity, the contributor is always responsible for overseeing the merge on a
+local **clone**.
+
+![]({{ site.baseurl }}/images/atlassian_after_merge.svg){:width="50%" style="border: none; box-shadow: none;"}  
+*[Image][using-branches] by Atlassian / [CC BY]*
+{:.captioned}
+
+[using-branches]: https://www.atlassian.com/git/tutorials/
 [comparing-workflows]: https://www.atlassian.com/git/tutorials/comparing-workflows
 [syncing]: https://www.atlassian.com/git/tutorials/syncing/git-pull
 [CC BY]: http://creativecommons.org/licenses/by/2.5/au/
-
