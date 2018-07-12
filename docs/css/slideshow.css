@@ -39,11 +39,11 @@ img + br + em {
 }
 
 .reveal .slides section.right-third {
-    width: 50%;
-    margin-left: 45vw;
+    width: 60%;
+    margin-left: 20vw;
 }
 
-.reveal .slides h2.right-third {
+.reveal .slides .right-third h2 {
     color: #FFFFFF;
     font-weight: 500;
 }
