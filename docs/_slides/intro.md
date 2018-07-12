@@ -4,7 +4,6 @@ class: right-third
 ---
 
 ## Centralized Workflow
-{:.right-third}
 
 As your research project moves from conception, through data collection,
 modeling and analysis, to publishing and other forms of dissemination, it’s
