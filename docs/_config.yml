@@ -21,9 +21,9 @@ slide_sorter:
   - config
   - terms
   - collab
+  - paths
   - reproducible
   - conclude
-#  - paths ## deal with symlinks in the dvc lesson
   
 #####################################
 # Only modify content above or risk #

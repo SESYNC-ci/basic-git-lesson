@@ -1,35 +1,35 @@
 ---
 ---
 
-## Files under version control
+## What about Data?
 
-A scripted pipeline relies heavily on plain text files (the scripts), but may include different file types for figures or even some data. Any file in this directory that is under version control is monitored for differences from the committed state of the project. Files must be added to at least one commit before they are tracked.
+The scripts tha execute your pipeline are plain text files, but the project may include other file types for figures, and possibly even some data sets.
+
+- Non-text files get little benefit from `git`, and have large costs.
+- Large data files should be un-tracked, or live elsewhere (as an "integration")
 
 ===
 
-## Integrations not under version control
+## External Data
 
 The most common pipeline integration is shared data storage.
 
 - Local area network file share (e.g. Z:\\\\...)
 - Cloud storeage (e.g. Dropbox, Google Drive)
-- Database (e.g. lab PostgreSQL server)
+- Database (e.g. a PostgreSQL server)
 
 ===
 
-## Path to shared data
+## Link to the Data
 
-The best practice is to script the creation of links to shared data files, and any other integrations. For example, the following R script sets up a shortcut to the location of your data files (e.g. in a shared folder) as a relative path inside your repository.
+One good practice is creating "symbolic links" (a.k.a. shortcuts) to data files
+that live outside a project repo, that work when your code looks inside the
+repo for data.
 
 ~~~r
-# create a shortcut to your data
-
 file.symlink(
   from = ...,
   to = 'data'
 )
-    
-# confirm that data is accessible
-file.exists('data/README.md')
 ~~~
-{:.text-document title='{{ site.handouts[1] }}'}
+{:.input title="Console"}
