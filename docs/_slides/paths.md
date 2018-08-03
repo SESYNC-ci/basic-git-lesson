@@ -34,6 +34,8 @@ file.symlink(
 ~~~
 {:.input title="Console"}
 
+===
+
 The shortcut works like a normal path to your data---you could easilly
 add all your data to a commit by accident with `git add .`. To avoid
 this, tell git to "ignore" all files and folders below `data/`.

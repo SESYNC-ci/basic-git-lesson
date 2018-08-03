@@ -427,6 +427,16 @@ repo for data.</p>
 </span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
+<p>The shortcut works like a normal path to your data—you could easilly
+add all your data to a commit by accident with <code class="highlighter-rouge">git add .</code>. To avoid
+this, tell git to “ignore” all files and folders below <code class="highlighter-rouge">data/</code>.</p>
+
+<div class="text-document highlighter-rouge" title=".gitignore"><div class="highlight"><pre class="highlight"><code>/data/**
+</code></pre></div></div>
+
+<p class="notes">The leading <code class="highlighter-rouge">/</code> refers to the root of the git repository, not to the
+root of your filesystem.</p>
+
 <p class="ToS"><a href="#/slides/paths">Top of Section</a></p>
 
 <hr />
