@@ -7,23 +7,6 @@ RStudio provides a GUI to the core tools provided by git. Login to your RStudio 
 
 ===
 
-### Create a Spoke
-
-Any RStudio "project" can also be a local git repository. Under the File menu,
-create a new project from the *existing directory* of worksheets and other
-files.
-
-===
-
-![]({{ site.baseurl }}/images/new_project.png){:width=60%}  
-{:.captioned}
-
-If the project already existed on GitHub or another git server, you would
-instead want to clone the poject by choosing "Version Control".
-{:.notes}
-
-===
-
 ### Initialize git
 
 Convert your RStudio project to a git repository by enabling version control,
