@@ -37,7 +37,7 @@ to let your collaborators update this list with their own name, so only include 
 ~~~
 ## Collaborators
 
-- {{ site.instructor }}
+- {{ site.example.name }}
 ~~~
 {:.text-document.no-eval title="README.md"}
 
@@ -80,32 +80,44 @@ the settings tab.
 
 ===
 
-Introduce yourself to your neighbor and assign the two roles below. Each of you
-should watch the other perform their assigned steps.
+Introduce yourself to your neighbor and assign split the two roles below between you. Be sure to watch eachother perform the steps assigned to your individual roles.
 
 1. Owner: add your neighbor as a collaborator.
 1. Collaborator: accept your neighbor's emailed invitation.
 
 ===
 
-### Clone
+### Create a Second Spoke
 
-1. Collaborator: Create a new RStudio project from "Version Control", using any *available* project directory name.
-1. Owner: Verify two commits by you in your repo history on GitHub.
+The **Collaborator** now needs to create a new project in RStudio by cloning the
+**Owner's** project. Under the "File" menu item, choose to create a New Project,
+and then choose "Version Control".
+
+You cannot use the same name for two project folders! Before cloning, the
+**Collaborators** should close their project and rename or delete their "handouts"
+folder.
+{:.notes}
+
+===
+
+![]({{ site.baseurl }}/images/new_project.png){:width=60%}  
+{:.captioned}
 
 ===
 
 ### Push & Pull
 
 1. Collaborator: Add your name to the list in the "README.md".
-1. Collaborator: Stage, commit, and push your modifications.
-1. Owner: Pull (the down arrow) to apply your neighbor's commit.
+1. Collaborator: Stage, commit, and push (up arrow) your modifications.
+1. Owner: Pull (down arrow) to apply your neighbor's commit.
 
 ===
 
 ### Merge
 
-You both realize it would have been good to include your affiliation along with your name. Do you need to circulate "README.md" to each collaborator in sequence for an update? No!
+You both realize it would have been good to include your affiliation along with
+your name. Do you need to circulate "README.md" to each collaborator in sequence
+for an update? No!
 
 1. Ower **AND** Collaborator: edit your entry in the "README.md"
 1. Ower **AND** Collaborator: stage, commit, & push.

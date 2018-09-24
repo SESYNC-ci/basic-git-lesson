@@ -3,14 +3,14 @@
 
 ## RStudio + git
 
-RStudio provides a GUI to the core tools provided by git. Login to your RStudio Server account and upload `handouts.zip`. Click on "handouts.Rproj" to open the directory as a "project".
+RStudio provides a GUI to the core tools provided by git. Login to your RStudio Server account and upload `handouts.zip`. Click on "handouts.Rproj" to open the directory as a project.
 
 ===
 
 ### Initialize git
 
 Convert your RStudio project to a git repository by enabling version control,
-available from the file menu under Tools > Version Control > Project Setup.
+available from the menu bar under "Tools" > "Version Control" > "Project Setup".
 
 ===
 

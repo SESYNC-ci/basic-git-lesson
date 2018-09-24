@@ -7,8 +7,9 @@ tag: v0.2
 lesson: 3
 instructor: Ian Carroll
 example:
-  user: itcarroll
-  email: icarroll@sesync.org
+  name: J. Doe
+  user: jdoe
+  email: jdoe@sesync.org
 authors:
   - Ian Carroll
 

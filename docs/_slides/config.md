@@ -3,31 +3,14 @@
 
 ## RStudio + git
 
-RStudio provides a GUI to the core tools provided by git. Login to your RStudio Server account and upload `handouts.zip`. Click on "handouts.Rproj" to open the directory as a "project".
-
-===
-
-### Create a Spoke
-
-Any RStudio "project" can also be a local git repository. Under the File menu,
-create a new project from the *existing directory* of worksheets and other
-files.
-
-===
-
-![]({{ site.baseurl }}/images/new_project.png){:width=60%}  
-{:.captioned}
-
-If the project already existed on GitHub or another git server, you would
-instead want to clone the poject by choosing "Version Control".
-{:.notes}
+RStudio provides a GUI to the core tools provided by git. Login to your RStudio Server account and upload `handouts.zip`. Click on "handouts.Rproj" to open the directory as a project.
 
 ===
 
 ### Initialize git
 
 Convert your RStudio project to a git repository by enabling version control,
-available from the file menu under Tools > Version Control > Project Setup.
+available from the menu bar under "Tools" > "Version Control" > "Project Setup".
 
 ===
 

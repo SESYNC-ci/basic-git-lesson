@@ -37,7 +37,7 @@ to let your collaborators update this list with their own name, so only include 
 ~~~
 ## Collaborators
 
-- {{ site.instructor }}
+- {{ site.example.name }}
 ~~~
 {:.text-document.no-eval title="README.md"}
 
@@ -80,8 +80,7 @@ the settings tab.
 
 ===
 
-Introduce yourself to your neighbor and assign the two roles below. Each of you
-should watch the other perform their assigned steps.
+Introduce yourself to your neighbor and assign split the two roles below between you. Be sure to watch eachother perform the steps assigned to your individual roles.
 
 1. Owner: add your neighbor as a collaborator.
 1. Collaborator: accept your neighbor's emailed invitation.
