@@ -45,3 +45,17 @@ adding the line `/data/**` to the ".gitignore" file in your repo. The leading
 `/` refers to the root of the git repository, not to the root of your
 filesystem.
 {:.notes}
+
+===
+
+## Data best practices
+
+1. Separate raw data from derived data
+
+2. Make raw data read-only
+   * raw data files don't get modified
+   * script reads in raw data, does processing/cleaning, outputs derived data file
+
+3. Separate outputs (figures, tables, maps) from data and code
+
+

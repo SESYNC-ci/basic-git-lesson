@@ -40,3 +40,27 @@ environment and integrations that comprise the *pipeline*. By analogy to a physi
 
 Collaborative workflows require communication---developing a pipeline under
 version control facilitates it.
+
+===
+
+## Keys to making reproducibility easier
+
+1. Be consistent throughout the research data process in naming files and directories, etc.
+
+2. Use machine and human readable file names  
+   * Use "_" and "-" to delimit words in file names; don't use spaces or capital letters
+   * Don't use special characters ($@&*%) or punctuation
+   * Use names that are informative and descriptive to human users
+
+3. Use one directory/repository for one project
+
+4. Separate code from data
+
+5. Use README files
+   * Document your repository with descriptions of the contents and purpose of the files
+   * Describe how the files relate to one another
+
+
+
+
+
