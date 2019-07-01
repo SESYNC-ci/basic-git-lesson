@@ -14,7 +14,7 @@ available from the menu bar under "Tools" > "Version Control" > "Project Setup".
 
 ===
 
-![]({{ site.baseurl }}/images/git-init.png){:width=60%}  
+![]({% include asset.html path="images/git-init.png" %}){:width=60%}  
 {:.captioned}
 
 Adding a git repository creates a hidden folder in your project called ".git",
@@ -60,7 +60,7 @@ git config --global user.name {{ site.example.user }}
 git config --global user.email {{ site.example.email }}
 git commit --no-edit --amend --reset-author
 ~~~
-{:.text-document title="{{ site.handouts[0] }}"}
+{:.text-document title="{{ site.data.lesson.handouts[0] }}"}
 
 Revisit the commit history to confirm that the author information has been
 amended for the first commit. In the future, configure your `user.name` and `user.email` before starting a project, so you do not have to ammend any commits.
@@ -73,7 +73,7 @@ amended for the first commit. In the future, configure your `user.name` and `use
 Sign in or sign up on [GitHub](https://github.com), then create an empty
 repository.
 
-![]({{ site.baseurl }}/images/new_repo-1.png){:width="50%"}  
+![]({% include asset.html path="images/new_repo-1.png" %}){:width="50%"}  
 {:.captioned}
 
 ===
@@ -92,7 +92,7 @@ explains how to finish configuration of your local git repo.
 git remote add origin https://github.com/{{ site.example.user }}/handouts.git
 git push -u origin master
 ~~~
-{:.text-document title="{{ site.handouts[0] }}"}
+{:.text-document title="{{ site.data.lesson.handouts[0] }}"}
 
 ===
 

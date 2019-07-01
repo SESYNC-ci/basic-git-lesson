@@ -1,0 +1,22 @@
+title: Collaborative Workflows & Reproducible Pipelines
+handouts:
+  - worksheet.sh
+tag: v0.2
+lesson: 3
+instructor: Ian Carroll
+example:
+  name: J. Doe
+  user: jdoe
+  email: jdoe@sesync.org
+authors:
+  - Ian Carroll
+sorter:
+  - intro
+  - pipelines
+  - goals
+  - config
+  - terms
+  - collab
+  - paths
+  - reproducible
+  - conclude

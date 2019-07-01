@@ -75,7 +75,7 @@ Even on public GitHub repos, only the owner has "push access" by default. The
 owner can allow any other GitHub user to push by inviting collaborators under
 the settings tab.
 
-![]({{ site.baseurl }}/images/repo_collab.png)
+![]({% include asset.html path="images/repo_collab.png" %})
 {:.captioned}
 
 ===
@@ -100,7 +100,7 @@ folder.
 
 ===
 
-![]({{ site.baseurl }}/images/new_project.png){:width=60%}  
+![]({% include asset.html path="images/new_project.png" %}){:width=60%}  
 {:.captioned}
 
 ===
