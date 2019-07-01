@@ -10,11 +10,11 @@
 <title>Collaborative Workflows & Reproducible Pipelines</title>
 <meta name="description" content="Learn about git and GitHub">
 <link rel="canonical" href="https://sesync-ci.github.io/basic-git-lesson/course/archive.html">
-<link rel="stylesheet" href="/basic-git-lesson/css/default.css">
-<link rel="stylesheet" href="/basic-git-lesson/css/static.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sesync-ci/lesson-style@v3.0/docs/assets/css/default.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sesync-ci/lesson-style@v3.0/docs/assets/css/static.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
 
-	  <link rel="stylesheet" href="https://cdn.rawgit.com/sesync-ci/lesson-style/v1.2/docs/css/static.css">
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sesync-ci/lesson-style@v1.2/docs/css/static.css">
   </head>
   <body>
 	  <div class="page-content">
@@ -152,12 +152,12 @@ Experiments are reported in sufficient detail for a skilled practitioner to dupl
 
 <h2 id="using-collaborative-workflows-">Using collaborative workflows …</h2>
 
-<p class="captioned"><img src="/basic-git-lesson/images/rp-overview.jpg" alt="" width="60%" /><br />
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/rp-overview.jpg" alt="" width="60%" /><br />
 <em>Credit: <a href="http://cacm.acm.org/blogs/blog-cacm/169199-data-science-workflow-overview-and-challenges">Philip Guo</a></em></p>
 
 <h2 id="-to-construct-a-single-pipeline">… to construct a single pipeline</h2>
 
-<p class="captioned"><img src="/basic-git-lesson/images/rp-overview-pipe.jpg.svg" alt="" width="60%" /><br />
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/rp-overview-pipe.jpg.svg" alt="" width="60%" /><br />
 <em>Credit: <a href="http://cacm.acm.org/blogs/blog-cacm/169199-data-science-workflow-overview-and-challenges">Philip Guo</a></em></p>
 
 <p class="ToS"><a href="#/slides/workflows">Top of Section</a></p>
@@ -180,12 +180,12 @@ Experiments are reported in sufficient detail for a skilled practitioner to dupl
 
 <h2 id="centralized-workflow">Centralized Workflow</h2>
 
-<p class="captioned"><img src="/basic-git-lesson/images/atlassian_workflow.svg" alt="" width="50%" /><br />
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/atlassian_workflow.svg" alt="" width="50%" /><br />
 <em><a href="https://www.atlassian.com/git/tutorials/comparing-workflows">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
 
 <p>The <strong>origin</strong> is the central repository, in this case it lives on GitHub. Every member of the team gets a <strong>local</strong> copy of the entire project, called a <strong>clone</strong>.</p>
 
-<p class="captioned"><img src="/basic-git-lesson/images/atlassian_pull.svg" alt="" width="50%" /><br />
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/atlassian_pull.svg" alt="" width="50%" /><br />
 <em><a href="https://www.atlassian.com/git/tutorials/comparing-workflows">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
 
 <p>Cloning is the initial <strong>pull</strong> of the entire project and all its history. In general, a worker <strong>pulls</strong> the work of other teammates from the <strong>origin</strong> when ready to incorporate their work, and she <strong>pushes</strong> updates to the <strong>origin</strong> when ready to contribute work of her own work.</p>
@@ -194,27 +194,27 @@ Experiments are reported in sufficient detail for a skilled practitioner to dupl
 A versioned project is like a tree of commits, although the current tree has just one <strong>branch</strong>.
 After a worker creates a <strong>clone</strong>, the local copy is in the same place as the <strong>origin</strong>.</p>
 
-<p class="captioned"><img src="/basic-git-lesson/images/atlassian_clone.png" alt="" width="30%" style="border: none; box-shadow: none;" /><br />
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/atlassian_clone.png" alt="" width="30%" style="border: none; box-shadow: none;" /><br />
 <em><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
 
 <p>A <strong>pull</strong>, or initially a <strong>clone</strong>, applies commits copied from the <strong>origin</strong> to your local repo, syncing them up.</p>
 
-<p class="captioned"><img src="/basic-git-lesson/images/atlassian_after_pull_top.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/atlassian_after_pull_top.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
 <em><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
 
 <p>A <strong>pull</strong>, or initially a <strong>clone</strong>, applies commits copied from the <strong>origin</strong> to your local repo, syncing them up.</p>
 
-<p class="captioned"><img src="/basic-git-lesson/images/atlassian_after_pull_bottom.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/atlassian_after_pull_bottom.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
 <em><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
 
 <p>A <strong>push</strong> copies local commits to the <strong>origin</strong> and applies them remotely.</p>
 
-<p class="captioned"><img src="/basic-git-lesson/images/atlassian_after_push_top.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/atlassian_after_push_top.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
 <em><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
 
 <p>A <strong>push</strong> copies local commits to the <strong>origin</strong> and applies them remotely.</p>
 
-<p class="captioned"><img src="/basic-git-lesson/images/atlassian_after_push_bottom.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/atlassian_after_push_bottom.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
 <em><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
 
 <p class="ToS"><a href="#/slides/terms">Top of Section</a></p>
@@ -231,7 +231,7 @@ After a worker creates a <strong>clone</strong>, the local copy is in the same p
 
 <p>Create a new repository on your GitHub page.</p>
 
-<p class="captioned"><img src="/basic-git-lesson/images/new_repo.png" alt="" width="60%" /></p>
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/new_repo.png" alt="" width="60%" /></p>
 
 <ol>
   <li>Name the repository “handouts”.</li>
@@ -263,7 +263,7 @@ After a worker creates a <strong>clone</strong>, the local copy is in the same p
 
 <p>RStudio provides convenient access to the core tools provided by <code class="highlighter-rouge">git</code>, so any project can also be a repository. Under the File menu, create a new project from a remote version control repository.</p>
 
-<p><img src="/basic-git-lesson/images/new_project.png" alt="" /></p>
+<p><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/new_project.png" alt="" /></p>
 
 <h2 id="configure-git">Configure git</h2>
 
@@ -374,7 +374,7 @@ git push --all
 
 <p>The first step to collaborative workflows is granting access to the <strong>origin</strong> of your project. Introduce yourself to your neighbour, and ask for his/her GitHub username.</p>
 
-<p class="captioned"><img src="/basic-git-lesson/images/repo_collab.png" alt="" /></p>
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/repo_collab.png" alt="" /></p>
 
 <p>Add your neighbour as a collaborator, and accept your neighbours invitation to collaborate!</p>
 

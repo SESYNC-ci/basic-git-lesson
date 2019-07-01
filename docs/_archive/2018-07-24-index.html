@@ -11,9 +11,9 @@
 <meta name="description" content="Learn to use git with GitHub.">
 <link rel="canonical"
   href="http://cyberhelp.sesync.org/basic-git-lesson/course/archive.html">
-<link href="https://cdn.rawgit.com/sesync-ci/lesson-style/v2.0/docs/css/default.css" rel="stylesheet">
-<link href="https://cdn.rawgit.com/sesync-ci/lesson-style/v2.0/docs/css/syntax.css" rel="stylesheet">
-<link href="https://cdn.rawgit.com/sesync-ci/lesson-style/v2.0/docs/css/static.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/sesync-ci/lesson-style@v2.0/docs/css/default.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/sesync-ci/lesson-style@v2.0/docs/css/syntax.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/sesync-ci/lesson-style@v2.0/docs/css/static.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
@@ -144,7 +144,7 @@ version control facilitates it.</p>
 create a new project from the <em>existing directory</em> of worksheets and other
 files.</p>
 
-<p class="captioned"><img src="/basic-git-lesson/images/new_project.png" alt="" /></p>
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/new_project.png" alt="" /></p>
 
 <p class="notes">If the project already existed on GitHub or another git server, you would
 instead want to clone the poject by choosing “Version Control”.</p>
@@ -154,7 +154,7 @@ instead want to clone the poject by choosing “Version Control”.</p>
 <p>Convert your RStudio project to a git repository by enabling version control,
 available from the file menu under Tools &gt; Version Control &gt; Project Setup.</p>
 
-<p class="captioned"><img src="/basic-git-lesson/images/git-init.png" alt="" /></p>
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/git-init.png" alt="" /></p>
 
 <p class="notes">Adding a git repository creates a hidden folder in your project called “.git”,
 storing all the data about your project’s current and past state.</p>
@@ -199,7 +199,7 @@ amended for the first commit. In the future, configure your <code class="highlig
 <p>Sign in or sign up on <a href="https://github.com">GitHub</a>, then create an empty
 repository.</p>
 
-<p class="captioned"><img src="/basic-git-lesson/images/new_repo-1.png" alt="" width="50%" /></p>
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/new_repo-1.png" alt="" width="50%" /></p>
 
 <ol>
   <li>Give your repository the same name as your RStudio project.</li>
@@ -235,12 +235,12 @@ GitHub is a rich platform for managing projects and inspecting the history.</p>
 
 <h2 id="syncing-repos">Syncing Repos</h2>
 
-<p class="captioned"><img src="/basic-git-lesson/images/atlassian_workflow.svg" alt="" width="50%" style="border: none; box-shadow: none;" /><br />
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/atlassian_workflow.svg" alt="" width="50%" style="border: none; box-shadow: none;" /><br />
 <em><a href="https://www.atlassian.com/git/tutorials/comparing-workflows">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
 
 <p>The <strong>origin</strong> is the central repository, in this case it lives on GitHub. Every member of the team gets a <strong>local</strong> copy of the entire project, called a <strong>clone</strong>.</p>
 
-<p class="captioned"><img src="/basic-git-lesson/images/atlassian_pull.svg" alt="" width="50%" style="border: none; box-shadow: none;" /><br />
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/atlassian_pull.svg" alt="" width="50%" style="border: none; box-shadow: none;" /><br />
 <em><a href="https://www.atlassian.com/git/tutorials/comparing-workflows">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
 
 <p>Cloning is the initial <strong>pull</strong> of the entire project and all its history. In general, a worker <strong>pulls</strong> the work of other teammates from the <strong>origin</strong> when ready to incorporate their work, and she <strong>pushes</strong> updates to the <strong>origin</strong> when ready to contribute work of her own work.</p>
@@ -249,42 +249,42 @@ GitHub is a rich platform for managing projects and inspecting the history.</p>
 with just one <strong>branch</strong>. After a worker creates a <strong>clone</strong>, the local repo is
 in the same state as the <strong>origin</strong>.</p>
 
-<p class="captioned"><img src="/basic-git-lesson/images/atlassian_clone.png" alt="" width="30%" style="border: none; box-shadow: none;" /><br />
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/atlassian_clone.png" alt="" width="30%" style="border: none; box-shadow: none;" /><br />
 <em><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
 
 <p>A <strong>pull</strong>, or initially a <strong>clone</strong>, applies commits copied from the <strong>origin</strong>
 to your local repo, syncing them up.</p>
 
-<p class="captioned"><img src="/basic-git-lesson/images/atlassian_after_pull_top.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/atlassian_after_pull_top.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
 <em><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
 
 <p>A <strong>pull</strong>, or initially a <strong>clone</strong>, applies commits copied from the <strong>origin</strong> to your local repo, syncing them up.</p>
 
-<p class="captioned"><img src="/basic-git-lesson/images/atlassian_after_pull_bottom.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/atlassian_after_pull_bottom.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
 <em><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
 
 <p>A <strong>push</strong> copies local commits to the <strong>origin</strong> and applies them remotely.</p>
 
-<p class="captioned"><img src="/basic-git-lesson/images/atlassian_after_push_top.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/atlassian_after_push_top.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
 <em><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
 
 <p>A <strong>push</strong> copies local commits to the <strong>origin</strong> and applies them remotely.</p>
 
-<p class="captioned"><img src="/basic-git-lesson/images/atlassian_after_push_bottom.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/atlassian_after_push_bottom.png" alt="" width="40%" style="border: none; box-shadow: none;" /><br />
 <em><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
 
 <p>An essential component of the centralized workflow is the ability to merge
 commit histories that have diverged. Any fork in the history has to be
 re-integrated, and git does this automatically through merging.</p>
 
-<p class="captioned"><img src="/basic-git-lesson/images/atlassian_before_merge.svg" alt="" width="50%" style="border: none; box-shadow: none;" /><br />
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/atlassian_before_merge.svg" alt="" width="50%" style="border: none; box-shadow: none;" /><br />
 <em><a href="https://www.atlassian.com/git/tutorials/">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
 
 <p>The <strong>origin</strong> will not accept a push before merging. In order to preserve
 integrity, the contributor is always responsible for overseeing the merge on a
 local <strong>clone</strong>.</p>
 
-<p class="captioned"><img src="/basic-git-lesson/images/atlassian_after_merge.svg" alt="" width="50%" style="border: none; box-shadow: none;" /><br />
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/atlassian_after_merge.svg" alt="" width="50%" style="border: none; box-shadow: none;" /><br />
 <em><a href="https://www.atlassian.com/git/tutorials/">Image</a> by Atlassian / <a href="http://creativecommons.org/licenses/by/2.5/au/">CC BY</a></em></p>
 
 <p class="ToS"><a href="#/slides/terms">Top of Section</a></p>
@@ -358,7 +358,7 @@ origin/master”. Push the commit to your GitHub repo.</p>
 owner can allow any other GitHub user to push by inviting collaborators under
 the settings tab.</p>
 
-<p class="captioned"><img src="/basic-git-lesson/images/repo_collab.png" alt="" /></p>
+<p class="captioned"><img src="https://cdn.jsdelivr.net/gh/sesync-ci/basic-git-lesson@v0.2/docs/assets/images/repo_collab.png" alt="" /></p>
 
 <p>Introduce yourself to your neighbor and assign the two roles below. Each of you
 should watch the other perform their assigned steps.</p>
