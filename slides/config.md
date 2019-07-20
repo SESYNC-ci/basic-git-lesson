@@ -3,7 +3,14 @@
 
 ## RStudio + git
 
-RStudio provides a GUI to the core tools provided by git. Login to your RStudio Server account and upload `handouts.zip`. Click on "handouts.Rproj" to open the directory as a project.
+Login to your RStudio Server account and upload `handouts.zip`. Click on `handouts/handouts.Rproj` to open the directory as a project.
+
+RStudio provides a GUI to the core tools provided by git. Every folder that
+contains a "*.Rproj" file is an RStudio project (simply a collection of files
+and configuration settings). We use `git` to turn our project into a
+"repository", a term from the software development community that encompases a
+project along with its development history.
+{:.notes}
 
 ===
 
@@ -56,14 +63,18 @@ For GitHub to associate commits with your account, configure git with your
 GitHub username and email address.
 
 ~~~bash
-git config --global user.name {{ site.example.user }}
-git config --global user.email {{ site.example.email }}
+git config --global user.name {{ site.data.lesson.example.user }}
+git config --global user.email {{ site.data.lesson.example.email }}
 git commit --no-edit --amend --reset-author
 ~~~
 {:.text-document title="{{ site.data.lesson.handouts[0] }}"}
 
 Revisit the commit history to confirm that the author information has been
-amended for the first commit. In the future, configure your `user.name` and `user.email` before starting a project, so you do not have to ammend any commits.
+amended for the first commit. In the future, configure your `user.name` and
+`user.email` before starting a project, so you do not have to ammend any
+commits. This is a one-time configuration for each computer on which you use
+RStudio, so you don't have to repeat this for any subsequent repositories you
+create on this machine.
 {:.notes}
 
 ===
@@ -89,10 +100,10 @@ made in RStudio without conflict. The quick start information provided by GitHub
 explains how to finish configuration of your local git repo.
 
 ~~~bash
-git remote add origin https://github.com/{{ site.example.user }}/handouts.git
+git remote add origin https://github.com/{{ site.data.lesson.example.user }}/handouts.git
 git push -u origin master
 ~~~
-{:.text-document title="{{ site.data.lesson.handouts[0] }}"}
+{:.text-document title="Console"}
 
 ===
 

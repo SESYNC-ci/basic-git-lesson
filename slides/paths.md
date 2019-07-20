@@ -7,7 +7,7 @@ The scripts tha execute your pipeline are plain text files, but the project may 
 
 - Non-text files get little benefit from `git`, and have large costs.
 - Large data files should not be version controlled by `git` and usually live outside the repo (as an "integration").
-- Private information should not be committed to `git`.
+- Private information (e.g. personal data) should not be committed to a public repository.
 
 ===
 
@@ -16,7 +16,7 @@ The scripts tha execute your pipeline are plain text files, but the project may 
 The most common pipeline integration is shared data storage.
 
 - Local area network file share (e.g. "Z:\\\\...")
-- Cloud storeage (e.g. Dropbox, Google Drive)
+- Cloud storage (e.g. Dropbox, Google Drive)
 - Database (e.g. a PostgreSQL server)
 
 ===
@@ -34,8 +34,6 @@ file.symlink(
 )
 ~~~
 {:.input title="Console"}
-
-===
 
 The shortcut works like a normal path to your data---which could be risky on
 certain operating systems or early versions (before 1.6) of "git". It is

@@ -3,7 +3,8 @@
 
 ## Future Directions
 
-- Share your work for reuse and extension.
+- Learn more git: merge conflicts, reversion, and branching!
+- {:.fragment} Share your work for reuse and extension.
 - {:.fragment} Make trying new analysis as easy as branching.
 - {:.fragment} Contribute beyond your own projects.
 

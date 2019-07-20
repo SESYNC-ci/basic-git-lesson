@@ -3,7 +3,7 @@
 
 ## Syncing Repos
 
-![]({% include asset.html path="images/atlassian_workflow.svg" %}){:width="50%" style="border: none; box-shadow: none;"}  
+![]({% include asset.html path="images/atlassian_workflow.svg" %}){:width="70%" style="border: none; box-shadow: none;"}  
 *[Image][comparing-workflows] by Atlassian / [CC BY]*
 {:.captioned}
 
@@ -11,7 +11,7 @@ The **origin** is the central repository, in this case it lives on GitHub. Every
 
 ===
 
-![]({% include asset.html path="images/atlassian_pull.svg" %}){:width="50%" style="border: none; box-shadow: none;"}  
+![]({% include asset.html path="images/atlassian_pull.svg" %}){:width="70%" style="border: none; box-shadow: none;"}  
 *[Image][comparing-workflows] by Atlassian / [CC BY]*
 {:.captioned}
 
@@ -20,35 +20,36 @@ Cloning is the initial **pull** of the entire project and all its history. In ge
 ===
 
 A git repository is a network of commits, although the current network is a tree
-with just one **branch**. After a worker creates a **clone**, the local repo is
+with no splits. After a worker creates a **clone**, the local repo is
 in the same state as the **origin**.
 
-![]({% include asset.html path="images/atlassian_clone.png" %}){:width="30%" style="border: none; box-shadow: none;"}  
+![]({% include asset.html path="images/atlassian_clone.png" %}){:width="40%" style="border: none; box-shadow: none;"}  
+*[Image][syncing] by Atlassian / [CC BY]*
+{:.captioned}
+
+===
+
+When the origin has commits that do not exist in the local repo, it has gotten ahead and a **pull** is required to synchronize state.
+
+![]({% include asset.html path="images/atlassian_after_pull_top.png" %}){:width="60%" style="border: none; box-shadow: none;"}  
 *[Image][syncing] by Atlassian / [CC BY]*
 {:.captioned}
 
 ===
 
 A **pull**, or initially a **clone**, applies commits copied from the **origin**
-to your local repo, syncing them up.
+to your local repo, as if you had created identical commits locally.
 
-![]({% include asset.html path="images/atlassian_after_pull_top.png" %}){:width="40%" style="border: none; box-shadow: none;"}  
+![]({% include asset.html path="images/atlassian_after_pull_bottom.png" %}){:width="60%" style="border: none; box-shadow: none;"}  
 *[Image][syncing] by Atlassian / [CC BY]*
 {:.captioned}
 
 ===
 
-A **pull**, or initially a **clone**, applies commits copied from the **origin** to your local repo, syncing them up.
+In the opposite situation, commits created locally are not immediately
+synchronized to the **origin**.
 
-![]({% include asset.html path="images/atlassian_after_pull_bottom.png" %}){:width="40%" style="border: none; box-shadow: none;"}  
-*[Image][syncing] by Atlassian / [CC BY]*
-{:.captioned}
-
-===
-
-A **push** copies local commits to the **origin** and applies them remotely.
-
-![]({% include asset.html path="images/atlassian_after_push_top.png" %}){:width="40%" style="border: none; box-shadow: none;"}  
+![]({% include asset.html path="images/atlassian_after_push_top.png" %}){:width="60%" style="border: none; box-shadow: none;"}  
 *[Image][syncing] by Atlassian / [CC BY]*
 {:.captioned}
 
@@ -56,29 +57,37 @@ A **push** copies local commits to the **origin** and applies them remotely.
 
 A **push** copies local commits to the **origin** and applies them remotely.
 
-![]({% include asset.html path="images/atlassian_after_push_bottom.png" %}){:width="40%" style="border: none; box-shadow: none;"}  
+![]({% include asset.html path="images/atlassian_after_push_bottom.png" %}){:width="60%" style="border: none; box-shadow: none;"}  
 *[Image][syncing] by Atlassian / [CC BY]*
 {:.captioned}
 
 ===
 
-An essential component of the centralized workflow is the ability to merge
-commit histories that have diverged. Any fork in the history has to be
-re-integrated, and git does this automatically through merging.
+An essential component of version control is the ability to merge
+commit histories that have diverged.
 
-![]({% include asset.html path="images/atlassian_before_merge.svg" %}){:width="50%" style="border: none; box-shadow: none;"}  
+![]({% include asset.html path="images/atlassian_before_merge.svg" %}){:width="60%" style="border: none; box-shadow: none;"}  
 *[Image][using-branches] by Atlassian / [CC BY]*
 {:.captioned}
+
+The commit graph splits any time different commits are applied to the same
+"parent" commit. Automatic merging done by git integrates the changes from both
+into a new "merge commit"", unsplitting the commit graph.
+{:.notes}
 
 ===
 
-The **origin** will not accept a push before merging. In order to preserve
-integrity, the contributor is always responsible for overseeing the merge on a
-local **clone**.
+The **origin** will not accept a push that requires merging. In order to
+preserve integrity, the contributor is always responsible for overseeing the
+merge on a local **clone**.
 
-![]({% include asset.html path="images/atlassian_after_merge.svg" %}){:width="50%" style="border: none; box-shadow: none;"}  
+![]({% include asset.html path="images/atlassian_after_merge.svg" %}){:width="70%" style="border: none; box-shadow: none;"}  
 *[Image][using-branches] by Atlassian / [CC BY]*
 {:.captioned}
+
+After the merge commit has been created locally, the same situtation now exists that
+was depicted above for a **push** that the origin will accept.
+{:.notes}
 
 [using-branches]: https://www.atlassian.com/git/tutorials/
 [comparing-workflows]: https://www.atlassian.com/git/tutorials/comparing-workflows

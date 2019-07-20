@@ -4,19 +4,20 @@
 ## Collaborators
 
 Collaboration that goes beyond commenting on a final report---integrated work on
-a project from start to finish---raises workflow challenges.
+a project from start to finish---raises serious challenges. Distributed
+repositories, managed by git, help to answer these questions.
+{:.notes}
 
-- Data, script, or report; who has the most up-to-date version?
-- Will a collaborator's work overwrite your own?
-- How to recover a working version of a broken pipeline?
+- Data, script, or report; who has the latest version?
+- Will a collaborator's work erase or break your own?
+- How to recover a working version of a pipeline?
 
-Centralized workflows, managed by git, help to answer these questions.
 
 ===
 
 ### Project Integrity
 
-- The origin becomes the official up-to-date repo, even if *your* work is a
+- The origin becomes the official "latest" version, even if *your* work is a
   few commits ahead.
 - Diverging files are usually automatically merged by git.
 - Manual re-integration is aided by the ability to "checkout" the project at any
@@ -32,12 +33,13 @@ reuse---it's not tied to one pipeline.
 ===
 
 Add a section where you can list collaborators to the README.md file. Our aim is
-to let your collaborators update this list with their own name, so only include yourself. You can use any text editor, and RStudio's is quite handy.
+to let your collaborators update this list with their own name, so only include
+yourself. You can use any text editor, and RStudio's is quite handy.
 
 ~~~
 ## Collaborators
 
-- {{ site.example.name }}
+- {{ site.data.lesson.example.name }}
 ~~~
 {:.text-document.no-eval title="README.md"}
 
@@ -46,7 +48,8 @@ to let your collaborators update this list with their own name, so only include 
 
 ### Stage
 
-Before you can commit changes involving a new file, you have to tell git which modifications you want to commit by staging.
+Before you can commit changes involving a new file, you have to tell git which
+modifications you want to commit by staging.
 
 1. Go to the "Git" tab in RStudio.
 1. Select "Commit" to open the "Review Changes" window.
@@ -80,7 +83,9 @@ the settings tab.
 
 ===
 
-Introduce yourself to your neighbor and assign split the two roles below between you. Be sure to watch eachother perform the steps assigned to your individual roles.
+Introduce yourself to your neighbor and assign split the two roles below between
+you. Be sure to watch eachother perform the steps assigned to your individual
+roles.
 
 1. Owner: add your neighbor as a collaborator.
 1. Collaborator: accept your neighbor's emailed invitation.
@@ -93,9 +98,8 @@ The **Collaborator** now needs to create a new project in RStudio by cloning the
 **Owner's** project. Under the "File" menu item, choose to create a New Project,
 and then choose "Version Control".
 
-You cannot use the same name for two project folders! Before cloning, the
-**Collaborators** should close their project and rename or delete their "handouts"
-folder.
+You cannot use the same name for two project folders! The **Collaborator**
+should chose a different name for their copy of the **Owner's** project.
 {:.notes}
 
 ===
@@ -123,3 +127,7 @@ for an update? No!
 1. Ower **AND** Collaborator: stage, commit, & push.
 1. Owner **OR** Collaborator: if you receive an error message, it tells you
 exactly what to do.
+
+After successfully complete a merge, move back to your own "handouts" project
+in RStudio to access your own worksheets.
+{:.notes}
