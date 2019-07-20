@@ -1,5 +1,6 @@
 title: Collaborative & Reproducible Research
 handouts:
+  - worksheet.R
   - worksheet.sh
 tag: v0.3
 lesson: 3

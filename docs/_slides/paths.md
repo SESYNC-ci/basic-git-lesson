@@ -33,7 +33,7 @@ file.symlink(
   to = 'data'
 )
 ~~~
-{:.input title="Console"}
+{:.input title="{{ site.data.lesson.handouts[0] }}"}
 
 The shortcut works like a normal path to your data---which could be risky on
 certain operating systems or early versions (before 1.6) of "git". It is
