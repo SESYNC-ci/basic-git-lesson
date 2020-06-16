@@ -3,8 +3,8 @@
 
 ## A Plug for Reproducibility
 
-Reproducibility is a core tenent of the scientific method.
-Experiments are reported in sufficient detail for a skilled practitioner to duplicate the result.
+Reproducibility is a core tenet of the scientific method.
+Experiments should be reported in sufficient detail for a skilled practitioner to duplicate the result.
 
 The principle equally applies to modeling and data analysis.
 {:.fragment}
@@ -25,13 +25,13 @@ This table is adapted from "Best practices for computational science: Software i
 
 ### Habits to Cultivate
 
-| **Reviewable** | Thoroughly-comment scripts and share continuously with collaborators          |
+| **Reviewable** | Thoroughly comment scripts and share continuously with collaborators          |
 | **Auditable**  | Maintain project history to correct mistakes when necessary                   | 
-| **Replicable** | Provide "one-click" file & data sharing, of a streamlined analysis "pipeline" | 
+| **Replicable** | Provide "one-click" file & data sharing of a streamlined analysis "pipeline"  | 
 | **Open**       | Publically release on GitHub (or similar) with (implied) open licensing       | 
 
 Learning to use git will take care of much of the work needed to make your
 research reproducible. Once you become efficient at staging, commiting, pushing
 and pulling, it will become the natural way to communicate with your collleagues
-through the process of collaborative development of a analysis pipeline.
+through collaborative development of an analysis pipeline.
 {:.notes}

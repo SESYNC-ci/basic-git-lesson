@@ -8,7 +8,7 @@ Login to your RStudio Server account and upload `handouts.zip`. Click on `handou
 RStudio provides a GUI to the core tools provided by git. Every folder that
 contains a "*.Rproj" file is an RStudio project (simply a collection of files
 and configuration settings). We use `git` to turn our project into a
-"repository", a term from the software development community that encompases a
+"repository", a term from the software development community that encompasses a
 project along with its development history.
 {:.notes}
 
@@ -25,7 +25,7 @@ available from the menu bar under "Tools" > "Version Control" > "Project Setup".
 {:.captioned}
 
 Adding a git repository creates a hidden folder in your project called ".git",
-storing all the data about your project's current and past state.
+storing all the data about your project's current and past states.
 {:.notes}
 
 ===
@@ -34,8 +34,8 @@ storing all the data about your project's current and past state.
 
 Once RStudio refreshes your project, there will be a "Git" tab in the same
 window as the Environment tab. The window shows files that have content not
-already commited in the current state of your project. Choose "Commit" to open a
-new window for easy staging and commiting.
+already committed in the current state of your project. Choose "Commit" to open a
+new window for easy staging and committing.
 
 ===
 
@@ -53,7 +53,7 @@ lets you choose what changes get packaged into a commit.
 
 ### History
 
-The history of your project shows a single commit, every new commit will be
+The history of your project shows a single commit. Every new commit will be
 chained on top of a preceding commit. Note the "Author" data is probably not
 going to be recognized by GitHub and linked to your account.
 
@@ -71,7 +71,7 @@ git commit --no-edit --amend --reset-author
 
 Revisit the commit history to confirm that the author information has been
 amended for the first commit. In the future, configure your `user.name` and
-`user.email` before starting a project, so you do not have to ammend any
+`user.email` before starting a project, so you do not have to amend any
 commits. This is a one-time configuration for each computer on which you use
 RStudio, so you don't have to repeat this for any subsequent repositories you
 create on this machine.
