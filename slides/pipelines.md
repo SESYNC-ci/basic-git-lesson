@@ -3,7 +3,7 @@
 
 ## Reproducible Pipeline
 
-The result of reproducible research is more than a published paper, it includes
+The result of reproducible research is more than a published paper. It includes
 the whole data-to-document **pipeline**. In a typical socio-environmental
 synthesis project, a finished pipeline ideally includes the following steps:
 
