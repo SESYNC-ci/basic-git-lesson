@@ -8,9 +8,9 @@ a project from start to finish---raises serious challenges. Distributed
 repositories, managed by git, help to answer these questions.
 {:.notes}
 
-- Data, script, or report; who has the latest version?
+- Data, script, or report: who has the latest version?
 - Will a collaborator's work erase or break your own?
-- How to recover a working version of a pipeline?
+- How can you recover a working version of a pipeline?
 
 
 ===
@@ -24,15 +24,15 @@ repositories, managed by git, help to answer these questions.
   commit.
 
 Version control software works well with text files. Large, non-text
-components of your project (e.g. very big or binary data files) can slow down
+components of your project (e.g., very big or binary data files) can slow down
 any cloning, merging or branch switching. For that reason, data rarely live in a
-repository with code and. Keeping data and code separate also facilitates data
+repository with code. Keeping data and code separate also facilitates data
 reuse---it's not tied to one pipeline.
 {:.notes}
 
 ===
 
-Add a section where you can list collaborators to the README.md file. Our aim is
+Add a section where you can list collaborators to the `README.md` file. Our aim is
 to let your collaborators update this list with their own name, so only include
 yourself. You can use any text editor, and RStudio's is quite handy.
 
@@ -59,7 +59,7 @@ modifications you want to commit by staging.
 
 ### Commit
 
-1. Enter a brief (<50 chars) descriptive message about the commit.
+1. Enter a brief (<50 characters) descriptive message about the commit.
 1. Commit!
 1. Close the "Review Changes" window.
 
@@ -83,8 +83,8 @@ the settings tab.
 
 ===
 
-Introduce yourself to your neighbor and assign split the two roles below between
-you. Be sure to watch eachother perform the steps assigned to your individual
+Introduce yourself to your neighbor and split the two roles below between
+you. Be sure to watch each other perform the steps assigned to your individual
 roles.
 
 1. Owner: add your neighbor as a collaborator.
@@ -128,6 +128,6 @@ for an update? No!
 1. Owner **OR** Collaborator: if you receive an error message, it tells you
 exactly what to do.
 
-After successfully complete a merge, move back to your own "handouts" project
+After you successfully complete a merge, move back to your own "handouts" project
 in RStudio to access your own worksheets.
 {:.notes}

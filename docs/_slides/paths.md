@@ -3,12 +3,12 @@
 
 ## What about Data?
 
-The scripts that executes your pipeline are plain text files, but the project
+The scripts executed in your pipeline are plain text files, but the project
 may need other assets, such as data, figures, or private configurations.
 
 - Non-text files get little benefit from `git`, and have large costs.
 - Large data files should not be version controlled by `git` and usually live outside the repo (as an "integration").
-- Private information (e.g. personal data) should not be committed to a public repository.
+- Private information (e.g., personal data) should not be committed to a public repository.
 
 ===
 

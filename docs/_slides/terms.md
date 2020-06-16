@@ -7,7 +7,7 @@
 *[Image][comparing-workflows] by Atlassian / [CC BY]*
 {:.captioned}
 
-The **origin** is the central repository, in this case it lives on GitHub. Every member of the team gets a **local** copy of the entire project, called a **clone**.
+The **origin** is the central repository; in this case it lives on GitHub. Every member of the team gets a **local** copy of the entire project, called a **clone**.
 
 ===
 
@@ -72,7 +72,7 @@ commit histories that have diverged.
 
 The commit graph splits any time different commits are applied to the same
 "parent" commit. Automatic merging done by git integrates the changes from both
-into a new "merge commit"", unsplitting the commit graph.
+into a new "merge commit," unsplitting the commit graph.
 {:.notes}
 
 ===
@@ -85,8 +85,9 @@ merge on a local **clone**.
 *[Image][using-branches] by Atlassian / [CC BY]*
 {:.captioned}
 
-After the merge commit has been created locally, the same situtation now exists that
-was depicted above for a **push** that the origin will accept.
+After the merge commit has been created locally, the same situation now exists that
+was depicted above. The conflict has been resolved and the origin will now accept 
+a **push**.
 {:.notes}
 
 [using-branches]: https://www.atlassian.com/git/tutorials/
