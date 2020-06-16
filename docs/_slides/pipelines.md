@@ -9,7 +9,7 @@ synthesis project, a finished pipeline ideally includes the following steps:
 
 ===
 
-1. Aquire raw data from online repository.
+1. Acquire raw data from online repository.
 1. Extract, transform, and load data into storage for analysis.
 1. Perform data analysis (e.g. model inference) and visualization.
 1. Update documentation and reports.

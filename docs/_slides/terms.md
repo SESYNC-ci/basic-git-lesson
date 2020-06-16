@@ -3,7 +3,7 @@
 
 ## Syncing Repos
 
-![]({% include asset.html path="images/atlassian_workflow.svg" %}){:width="70%" style="border: none; box-shadow: none;"}  
+![]({% include asset.html path="images/atlassian_workflow.svg" %}){:width="60%" style="border: none; box-shadow: none;"}  
 *[Image][comparing-workflows] by Atlassian / [CC BY]*
 {:.captioned}
 
@@ -11,11 +11,11 @@ The **origin** is the central repository, in this case it lives on GitHub. Every
 
 ===
 
-![]({% include asset.html path="images/atlassian_pull.svg" %}){:width="70%" style="border: none; box-shadow: none;"}  
+![]({% include asset.html path="images/atlassian_pull.svg" %}){:width="50%" style="border: none; box-shadow: none;"}  
 *[Image][comparing-workflows] by Atlassian / [CC BY]*
 {:.captioned}
 
-Cloning is the initial **pull** of the entire project and all its history. In general, a worker **pulls** the work of other teammates from the **origin** when ready to incorporate their work, and she **pushes** updates to the **origin** when ready to contribute work of her own work.
+Cloning is the initial **pull** of the entire project and all its history. In general, a worker **pulls** the work of other teammates from the **origin** when ready to incorporate their work, and she **pushes** updates to the **origin** when ready to contribute her own work.
 
 ===
 
@@ -31,7 +31,7 @@ in the same state as the **origin**.
 
 When the origin has commits that do not exist in the local repo, it has gotten ahead and a **pull** is required to synchronize state.
 
-![]({% include asset.html path="images/atlassian_after_pull_top.png" %}){:width="60%" style="border: none; box-shadow: none;"}  
+![]({% include asset.html path="images/atlassian_after_pull_top.png" %}){:width="55%" style="border: none; box-shadow: none;"}  
 *[Image][syncing] by Atlassian / [CC BY]*
 {:.captioned}
 

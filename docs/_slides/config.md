@@ -21,7 +21,7 @@ available from the menu bar under "Tools" > "Version Control" > "Project Setup".
 
 ===
 
-![]({% include asset.html path="images/git-init.png" %}){:width=60%}  
+![]({% include asset.html path="images/git-init.png" %}){:width="60%"}  
 {:.captioned}
 
 Adding a git repository creates a hidden folder in your project called ".git",
