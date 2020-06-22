@@ -2,9 +2,9 @@ title: Collaborative & Reproducible Research
 handouts:
   - worksheet.R
   - worksheet.sh
-tag: v0.3
+tag: v0.4
 lesson: 3
-instructor: Ian Carroll
+instructor: Quentin Read
 example:
   name: J. Doe
   user: jdoe

@@ -83,12 +83,12 @@ the settings tab.
 
 ===
 
-Introduce yourself to your neighbor and split the two roles below between
+Choose a partner for this exercise and split the two roles below between
 you. Be sure to watch each other perform the steps assigned to your individual
-roles.
+roles, either in person or by screen sharing.
 
-1. Owner: add your neighbor as a collaborator.
-1. Collaborator: accept your neighbor's emailed invitation.
+1. Owner: add your partner as a collaborator.
+1. Collaborator: accept your partner's emailed invitation.
 
 ===
 
