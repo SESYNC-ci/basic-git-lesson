@@ -34,13 +34,15 @@ file.symlink(
   to = 'data'
 )
 ~~~
-{:.input title="{{ site.data.lesson.handouts[0] }}"}
+{:title="Console" .input}
 
-The shortcut works like a normal path to your data---which could be risky on
-certain operating systems or early versions (before 1.6) of "git". It is
-sometimes possible to add all your data to a commit by accident with `git add
-.`. To avoid this, update git or "ignore" all files and folders below `data/` by
-adding the line `/data/**` to the ".gitignore" file in your repo. The leading
-`/` refers to the root of the git repository, not to the root of your
-filesystem.
+If you replace the `...` above with the path to your data, such as the location
+of your Dropbox folder or network drive, the shortcut `data` works like a normal path to your data, 
+as if it were inside your repo. This usually works seamlessly but could be risky on
+certain operating systems or early versions (before 1.6) of `git`. It is
+sometimes possible to add all your data to a commit by accident with `git add .`. 
+To avoid this, it is a good idea to either update `git` or "ignore" all files 
+and folders below `data/` by adding the line `/data/**` to the ".gitignore" 
+file in your repo. The leading `/` refers to the root of the git repository, 
+not to the root of your filesystem.
 {:.notes}
