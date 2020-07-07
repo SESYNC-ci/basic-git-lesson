@@ -3,13 +3,15 @@
 
 ## RStudio + git
 
-Login to your RStudio Server account and upload `handouts.zip`. Click on `handouts/handouts.Rproj` to open the directory as a project.
+Login to your RStudio Server account and upload `handouts.zip`. (If you are participating in the Summer Institute, instead login to RStudio on [lab.sesync.org](lab.sesync.org), and `handouts.zip` will already be uploaded for you.) Click on `handouts/handouts.Rproj` to open the directory as a project.
 
-RStudio provides a GUI to the core tools provided by git. Every folder that
-contains a "*.Rproj" file is an RStudio project (simply a collection of files
+RStudio provides a GUI (a point-and-click interface) to the core tools provided by git. 
+Every folder that contains a "*.Rproj" file is an RStudio project (simply a collection of files
 and configuration settings). We use `git` to turn our project into a
-"repository", a term from the software development community that encompasses a
-project along with its development history.
+"repository," or "repo" for short, a term from the software development community that encompasses a
+project along with its development history. On your local machine, the repository 
+simply appears as a folder with project-associated files. `git` tracks the history
+of the changes you and collaborators have made to the project files over time.
 {:.notes}
 
 ===
