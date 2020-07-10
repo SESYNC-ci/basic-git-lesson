@@ -5,13 +5,14 @@ handouts:
   - worksheet.sh
 tag: v0.2
 lesson: 3
-instructor: Ian Carroll
+instructor: Quentin Read
 example:
   name: J. Doe
   user: jdoe
   email: jdoe@sesync.org
 authors:
   - Ian Carroll
+  - Quentin Read
 
 # Slides
 
