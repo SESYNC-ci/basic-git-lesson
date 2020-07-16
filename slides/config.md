@@ -43,13 +43,9 @@ new window for easy staging and committing.
 
 1. check `README.md` and `handouts.Rproj`
 1. write a commit message
-1. commit (but heed the warning!)
+1. commit 
 
-Saving, staging, and commiting are each separate steps, none of which imply any
-of the others. This may seem like a hassle, but is a good thing! As your project
-grows larger, you will frequently save changes you don't want to commit: staging
-lets you choose what changes get packaged into a commit.
-{:.notes}
+**You will get an error message!** Read on to resolve it.
 
 ===
 
@@ -65,14 +61,23 @@ git config --global user.email {{ site.data.lesson.example.email }}
 
 ===
 
-After configuring your username and email address
+After configuring your username and email address, return to the Commit
+window and commit your changes. 
 
-Revisit the commit history to confirm that the author information has been
-amended for the first commit. In the future, configure your `user.name` and
-`user.email` before starting a project, so you do not have to amend any
-commits. This is a one-time configuration for each computer on which you use
+===
+
+Now, author information will be associated with the commit.
+In the future, configure your `user.name` and
+`user.email` before starting a project. 
+This is a one-time configuration for each computer on which you use
 RStudio, so you don't have to repeat this for any subsequent repositories you
 create on this machine.
+{:.notes}
+
+Saving, staging, and commiting are each separate steps, none of which imply any
+of the others. This may seem like a hassle, but is a good thing! As your project
+grows larger, you will frequently save changes you don't want to commit: staging
+lets you choose what changes get packaged into a commit.
 {:.notes}
 
 ### History
@@ -94,7 +99,7 @@ repository.
 
 1. Give your repository the same name as your RStudio project.
 1. Add a short "tag line" about your workshop experience.
-1. **Do not check either box.**
+1. **Do not check the "Initialize this repository with a README" box.**
 
 ===
 
