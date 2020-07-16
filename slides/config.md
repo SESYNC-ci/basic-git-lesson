@@ -53,23 +53,19 @@ lets you choose what changes get packaged into a commit.
 
 ===
 
-### History
-
-The history of your project shows a single commit. Every new commit will be
-chained on top of a preceding commit. Note the "Author" data is probably not
-going to be recognized by GitHub and linked to your account.
-
-===
-
-For GitHub to associate commits with your account, configure git with your
-GitHub username and email address.
+For [GitHub](https://github.com) to associate commits with your account, 
+configure git with your GitHub username and email address. 
+(If you don't have a GitHub user account yet, sign up for one now.)
 
 ~~~bash
 git config --global user.name {{ site.data.lesson.example.user }}
 git config --global user.email {{ site.data.lesson.example.email }}
-git commit --no-edit --amend --reset-author
 ~~~
-{:.text-document title="{{ site.data.lesson.handouts[0] }}"}
+{:.text-document title="worksheet.sh"}
+
+===
+
+After configuring your username and email address
 
 Revisit the commit history to confirm that the author information has been
 amended for the first commit. In the future, configure your `user.name` and
@@ -79,11 +75,16 @@ RStudio, so you don't have to repeat this for any subsequent repositories you
 create on this machine.
 {:.notes}
 
+### History
+
+The history of your project shows a single commit. Every new commit will be
+chained on top of a preceding commit.
+
 ===
 
 ### Create the Hub
 
-Sign in or sign up on [GitHub](https://github.com), then create an empty
+Sign in on [GitHub](https://github.com), then create an empty
 repository.
 
 ![]({% include asset.html path="images/new_repo-1.png" %}){:width="50%"}  
@@ -115,7 +116,7 @@ Go back to your GitHub account and check out your "hub".
 - There is a list of files, including a folder for data.
 - You are looking at a branch called `master`.
 - The commit history is available from the top bar.
-- The "Clone or download" button provides a URL.
+- The "Code" button provides a URL.
 
 In addition to being the center point for sharing commits with collaborators,
 GitHub is a rich platform for managing projects and inspecting the history.
