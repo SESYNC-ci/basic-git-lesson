@@ -26,7 +26,7 @@ available from the menu bar under "Tools" > "Version Control" > "Project Setup".
 ![]({% include asset.html path="images/git-init.png" %}){:width="60%"}  
 {:.captioned}
 
-Adding a git repository creates a hidden folder in your project called ".git",
+Adding a git repository creates a hidden folder in your project called `.git`,
 storing all the data about your project's current and past states.
 {:.notes}
 
@@ -36,13 +36,14 @@ storing all the data about your project's current and past states.
 
 Once RStudio refreshes your project, there will be a "Git" tab in the same
 window as the Environment tab. The window shows files that have content not
-already committed in the current state of your project. Choose "Commit" to open a
-new window for easy staging and committing.
+already committed in the current state of your project. At first, this
+will be every file in the directory, because you created a blank repository.
+Choose "Commit" to open a new window for easy staging and committing.
 
 ===
 
 1. check `README.md` and `handouts.Rproj`
-1. write a commit message
+1. write a short and informative (<50 characters) commit message
 1. commit 
 
 **You will get an error message!** Read on to resolve it.
@@ -61,6 +62,8 @@ git config --global user.email {{ site.data.lesson.example.email }}
 
 ===
 
+Configure your username and email address by entering the `git config` 
+commands into RStudio's Terminal window. 
 After configuring your username and email address, return to the Commit
 window and commit your changes. 
 
@@ -105,13 +108,23 @@ repository.
 
 You have created a repository that has no history---it will accept the commits
 made in RStudio without conflict. The quick start information provided by GitHub
-explains how to finish configuration of your local git repo.
+explains how to finish configuration of your local git repo. Copy 
+the code under "...or push an existing repository from the command line" and paste
+it into the RStudio Terminal window.
 
 ~~~bash
 git remote add origin https://github.com/{{ site.data.lesson.example.user }}/handouts.git
 git push -u origin master
 ~~~
 {:.text-document title="Console"}
+
+Enter your username and password when prompted. *Note* that on 
+Unix operating systems, you don't see asterisks appearing when you
+type in the password, but don't worry, it's being typed in! After the first time,
+you will no longer need to use the terminal to push changes if you do not want
+to. You can use the RStudio dropdown menu to both commit and push changes, and
+you won't have to enter your password each time.
+{:.notes}
 
 ===
 
@@ -121,7 +134,7 @@ Go back to your GitHub account and check out your "hub".
 - There is a list of files, including a folder for data.
 - You are looking at a branch called `master`.
 - The commit history is available from the top bar.
-- The "Code" button provides a URL.
+- The "Code" button provides a URL for collaborators to clone the repo.
 
 In addition to being the center point for sharing commits with collaborators,
 GitHub is a rich platform for managing projects and inspecting the history.
