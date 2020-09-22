@@ -16,6 +16,31 @@ of the changes you and collaborators have made to the project files over time.
 
 ===
 
+### New terminology
+
+As of October 1, 2020, the default branch of all new repositories created on GitHub
+is called `main`, where previously it was called `master`. We have updated the 
+settings on SESYNC servers so that the default branch for repos created with git or
+GitLab is called `main`. This change promotes the use of inclusive
+language in the version control world. If you are doing this lesson using the SESYNC
+[RStudio server](https://rstudio.sesync.org) or another SESYNC server, you won't 
+need to take any other action.
+{:.notes}
+
+If you are doing this lesson on your local machine, we recommend setting the
+default branch name for new repositories you create to `main`. Enter the
+following into your terminal prompt. You can access the prompt from RStudio's
+Terminal tab.
+
+~~~bash
+git config --global init.defaultBranch main
+~~~
+{:.text-document title="worksheet.sh"}
+
+This option is available for git version 2.28 or later. 
+
+===
+
 ### Initialize git
 
 Convert your RStudio project to a git repository by enabling version control,
@@ -114,7 +139,7 @@ it into the RStudio Terminal window.
 
 ~~~bash
 git remote add origin https://github.com/{{ site.data.lesson.example.user }}/handouts.git
-git push -u origin master
+git push -u origin main
 ~~~
 {:.text-document title="Console"}
 
@@ -132,7 +157,7 @@ Go back to your GitHub account and check out your "hub".
 
 - `README.md` is a Markdown file giving basic information about the repository.
 - There is a list of files, including a folder for data.
-- You are looking at a branch called `master`.
+- You are looking at a branch called `main`.
 - The commit history is available from the top bar.
 - The "Code" button provides a URL for collaborators to clone the repo.
 

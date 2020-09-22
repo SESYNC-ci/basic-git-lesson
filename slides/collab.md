@@ -68,7 +68,7 @@ modifications you want to commit by staging.
 ### Push
 
 Look at the "Git" tab again and notice that your branch is "ahead of
-origin/master". Push the commit to your GitHub repo.
+origin/main". Push the commit to your GitHub repo.
 
 If you view the "History" tab you can now see that the local repo and
 the remote repo have an identical state.

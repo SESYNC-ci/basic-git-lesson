@@ -26,11 +26,8 @@ in the same state as the **origin**.
 In the following diagrams, the lower box represents the local repo (on your machine)
 and the upper box represents the remote repo (on GitHub). The graph in the middle 
 represents successive commits over time, moving from left to right. Notice that the 
-local and remote (origin) repos are both on a branch called *master* in the diagram
+local and remote (origin) repos are both on a branch called *main* in the diagram
 below. This is the default name given to the primary version of the repository.
-As of June 2020, discussions are underway to 
-[rename the "master"" branch to avoid referencing slavery](https://www.zdnet.com/article/github-to-replace-master-with-alternative-term-to-avoid-slavery-references/),
-so you may notice this terminology change in the near future. 
 {:.notes}
 
 ![]({% include asset.html path="images/atlassian_clone.png" %}){:width="40%" style="border: none; box-shadow: none;"}  
