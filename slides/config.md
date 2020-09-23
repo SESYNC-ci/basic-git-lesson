@@ -25,6 +25,8 @@ GitLab is called `main`. This change promotes the use of inclusive
 language in the version control world. If you are doing this lesson using the SESYNC
 [RStudio server](https://rstudio.sesync.org) or another SESYNC server, you won't 
 need to take any other action.
+However, you should be aware that any documentation, tutorial, or StackOverflow
+post written before 2020 will assume your default branch is called `master`. 
 {:.notes}
 
 If you are doing this lesson on your local machine, we recommend setting the
