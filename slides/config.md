@@ -16,16 +16,15 @@ of the changes you and collaborators have made to the project files over time.
 
 ===
 
-### New terminology
+### Note on terminology and configuration
 
-As of October 1, 2020, the default branch of all new repositories created on GitHub
-is called `main`, where previously it was called `master`. We have updated the 
-settings on SESYNC servers so that the default branch for repos created with git or
-GitLab is called `main`. This change promotes the use of inclusive
-language in the version control world. If you are doing this lesson using the SESYNC
-[RStudio server](https://rstudio.sesync.org) or another SESYNC server, you won't 
-need to take any other action.
-However, you should be aware that any documentation, tutorial, or StackOverflow
+As of October 1, 2020, all new repositories created on GitHub will have a default branch
+called `main`. Previously, the default name was `master`. The change was
+made to promote inclusive language in the version control world. SESYNC is planning to update 
+the GitLab server to match this new default. However, the git client will still
+default to `master` if you create a repository locally, unless you configure it as
+described below.
+You should also be aware that any documentation, tutorial, or StackOverflow
 post written before 2020 will assume your default branch is called `master`. 
 {:.notes}
 

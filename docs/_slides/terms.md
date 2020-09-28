@@ -23,14 +23,8 @@ A git repository is a network of commits, although the current network is a tree
 with no splits. After a worker creates a **clone**, the local repo is
 in the same state as the **origin**.
 
-In the following diagrams, the lower box represents the local repo (on your machine)
-and the upper box represents the remote repo (on GitHub). The graph in the middle 
-represents successive commits over time, moving from left to right. Notice that the 
-local and remote (origin) repos are both on a branch called *master* in the diagram
+Notice that the local and remote (origin) repos are both on a branch called *main* in the diagram
 below. This is the default name given to the primary version of the repository.
-As of June 2020, discussions are underway to 
-[rename the "master"" branch to avoid referencing slavery](https://www.zdnet.com/article/github-to-replace-master-with-alternative-term-to-avoid-slavery-references/),
-so you may notice this terminology change in the near future. 
 {:.notes}
 
 ![]({% include asset.html path="images/atlassian_clone.png" %}){:width="40%" style="border: none; box-shadow: none;"}  
@@ -76,7 +70,7 @@ A **push** copies local commits to the **origin** and applies them remotely.
 An essential component of version control is the ability to merge
 commit histories that have diverged.
 
-![]({% include asset.html path="images/atlassian_before_merge.svg" %}){:width="60%" style="border: none; box-shadow: none;"}  
+![]({% include asset.html path="images/atlassian_before_merge.png" %}){:width="60%" style="border: none; box-shadow: none;"}  
 *[Image][using-branches] by Atlassian / [CC BY]*
 {:.captioned}
 
@@ -91,7 +85,7 @@ The **origin** will not accept a push that requires merging. In order to
 preserve integrity, the contributor is always responsible for overseeing the
 merge on a local **clone**.
 
-![]({% include asset.html path="images/atlassian_after_merge.svg" %}){:width="70%" style="border: none; box-shadow: none;"}  
+![]({% include asset.html path="images/atlassian_after_merge.png" %}){:width="70%" style="border: none; box-shadow: none;"}  
 *[Image][using-branches] by Atlassian / [CC BY]*
 {:.captioned}
 
