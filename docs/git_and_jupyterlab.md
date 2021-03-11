@@ -104,7 +104,7 @@ Congrats! You have now succesfully completed your first commit!
 
 #### Link your local repository to your GitHub repository
 1. Under the Git tab click Add Remote Repository.
-2. Paste the remote repository's URL and click Ok.
+2. Paste the remote repository's URL and click ok.
 
     ![]({% include asset.html path="images/ui-git-add-remote.png" %})
 
@@ -173,6 +173,7 @@ Your repository is empty right now, let's push a notebook to it.
 1. In your project folder create a new notebook by going to: **File -> New Launcher -> Python3**.
 2. Name the Python notebook.
 3. Do your work in the notebook and save it.
+
     ![]({% include asset.html path="images/save-notebook.png" %})
 
 4. Go to terminal and check the status of your repository.
