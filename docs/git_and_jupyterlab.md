@@ -90,7 +90,7 @@ You are now ready to commit your work.
 
     ![]({% include asset.html path="images/ui-git-track.png" %})
 
-You have staged your notebook. You will notice that it is now under the Staged section. 
+    You have staged your notebook. You will notice that it is now under the Staged section. 
 
     ![]({% include asset.html path="images/ui-git-staged.png" %})
 
