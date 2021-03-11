@@ -115,11 +115,11 @@ Congrats! You have now succesfully completed your first commit!
 
 4. If prompted, enter your username and password for your remote repository and click ok.
 
-You wil see a successful push message once the push has been completed.
+    You will see a successful push message once the push has been completed.
 
     ![]({% include asset.html path="images/ui-git-successful-push.png" %})
 
-You can visit the project's GitHub repository and see your commits. 
+    You can visit the project's GitHub repository and see your commits. 
 
     ![]({% include asset.html path="images/ui-check-commits.png" %})
 
@@ -157,13 +157,13 @@ userName@juplab00:~$ mkdir new-project-name
 3. If prompted, enter your GitHub username and password. We suggest you use SSH for the URL to avoid having to repeatedly enter your log-in credentials. If you’re not sure if you’ve set up SSH authentication, see these [GitHub instructions](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh).
 4. Navigate into the newly cloned repository by using the `cd` command.
 
-Let's clone your remote repository by running the following command using the remote repository's ulr:
-```
-git clone https://github.com/githubUserName/my-repo-name.git
+    Let's clone your remote repository by running the following command using the remote repository's ulr:
+    ```
+    git clone https://github.com/githubUserName/my-repo-name.git
 
-ls # lists the names of the folder in your current directory
-cd my-cloned-repo # navigate into the cloned repository
-```
+    ls # lists the names of the folder in your current directory
+    cd my-cloned-repo # navigate into the cloned repository
+    ```
 
 You have successfully cloned your remote repository. Congrats!
 
@@ -207,15 +207,15 @@ You can see that `main.ipynb` is being tracked.
     git pull origin main
     ``` 
 8. Push your changes to the project's Github repository.
-```
-git push origin main
-```
+    ```
+    git push origin main
+    ```
 
-![]({% include asset.html path="images/git-push.png" %})
+    ![]({% include asset.html path="images/git-push.png" %})
 
-You can visit the project's GitHub repository page and see your commits.
+    You can visit the project's GitHub repository page and see your commits.
 
-![]({% include asset.html path="images/git-push-2.png" %})
+    ![]({% include asset.html path="images/git-push-2.png" %})
 
 Congrats! Yout have succesfully cloned a repository and staged, committed, and pushed your local changes to it. 
 
