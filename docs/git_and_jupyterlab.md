@@ -60,12 +60,11 @@ SESYNC's Jupyter Lab server has the [JupyterLab git extension](https://github.co
 ![]({% include asset.html path="images/ui-new-folder.png" %})
 
 #### Create a local git repository
-1. Clik the Git tab.
-2. Click Initialize a Repository.
+1. Under the Git tab click Initialize a Repository.
 
     ![]({% include asset.html path="images/ui-git-init.png" %})
 
-3. Click yes to confirm and initialize the folder as a git repository.
+2. Click yes to confirm and initialize the folder as a git repository.
 
 Congrats! You have initialized a new git repository by using the git extension.
 
@@ -174,7 +173,6 @@ Your repository is empty right now, let's push a notebook to it.
 1. In your project folder create a new notebook by going to: **File -> New Launcher -> Python3**.
 2. Name the Python notebook.
 3. Do your work in the notebook and save it.
-
     ![]({% include asset.html path="images/save-notebook.png" %})
 
 4. Go to terminal and check the status of your repository.
