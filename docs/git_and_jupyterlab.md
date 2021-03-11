@@ -30,7 +30,7 @@ git config --global user.name "email@example.com"
 #### Start JupyterLab
 Start the terminal from the JupyterLab launcher.
 
-1. Log into (SESYNC's Jupyter Server)[https://jupyter.sesync.org].
+1. Log into [SESYNC's Jupyter Server](https://jupyter.sesync.org).
 2. Go to **File -> New Launcher**.
 3. Click on Terminal. The terminal will open in a new tab.
  
@@ -105,14 +105,12 @@ Congrats! You have now succesfully completed your first commit!
 
 #### Link your local repository to your GitHub repository
 1. Under the Git tab click Add Remote Repository.
-2. Paste the remote repository's URL and click ok.
+2. Paste the remote repository's URL and click Ok.
 
 ![]({% include asset.html path="images/ui-git-add-remote.png" %})
-
 3. Go to the Git tab and click Push to Remote.
 
 ![]({% include asset.html path="images/ui-git-push-remote.png" %})
-
 4. If prompted, enter your username and password for your remote repository and click ok.
 
 You wil see a successful push message once the push has been completed.
