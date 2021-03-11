@@ -63,7 +63,7 @@ SESYNC's Jupyter Lab server has the [JupyterLab git extension](https://github.co
 1. Clik the Git tab.
 2. Click Initialize a Repository.
 
-![]({% include asset.html path="images/ui-git-init.png" %})
+    ![]({% include asset.html path="images/ui-git-init.png" %})
 
 3. Click yes to confirm and initialize the folder as a git repository.
 
@@ -73,31 +73,31 @@ Congrats! You have initialized a new git repository by using the git extension.
 Now, it is time to do some work by adding a new notebook. 
 1. Go to **File -> New Launcher -> Python3** and start a new notebook.
 
-![]({% include asset.html path="images/ui-new-notebook.png" %})
+    ![]({% include asset.html path="images/ui-new-notebook.png" %})
 
 2. Work, edit, and save your notebook.
 
-![]({% include asset.html path="images/ui-workbook-save.png" %})
+    ![]({% include asset.html path="images/ui-workbook-save.png" %})
 
 #### Stage, Commit, and Push your work to your local git repository
 You are now ready to commit your work.
 
 1. Click the git extension tab on the side panel.
 
-![]({% include asset.html path="images/ui-git-extension.png" %})
+    ![]({% include asset.html path="images/ui-git-extension.png" %})
 
 2. Track your notebook by clicking on the plus sign next to its name.
 
-![]({% include asset.html path="images/ui-git-track.png" %})
+    ![]({% include asset.html path="images/ui-git-track.png" %})
 
 You have staged your notebook. You will notice that it is now under the Staged section. 
 
-![]({% include asset.html path="images/ui-git-staged.png" %})
+    ![]({% include asset.html path="images/ui-git-staged.png" %})
 
 3. Add a title and a brief message description.
 4. Click Commit.
 
-![]({% include asset.html path="images/ui-git-commit.png" %})
+    ![]({% include asset.html path="images/ui-git-commit.png" %})
 
 5. If prompted enter your name and email. Once the commit is succesfully completed you will see a green message box popup from the bottom right corner. 
 
@@ -107,19 +107,21 @@ Congrats! You have now succesfully completed your first commit!
 1. Under the Git tab click Add Remote Repository.
 2. Paste the remote repository's URL and click Ok.
 
-![]({% include asset.html path="images/ui-git-add-remote.png" %})
+    ![]({% include asset.html path="images/ui-git-add-remote.png" %})
+
 3. Go to the Git tab and click Push to Remote.
 
-![]({% include asset.html path="images/ui-git-push-remote.png" %})
+    ![]({% include asset.html path="images/ui-git-push-remote.png" %})
+
 4. If prompted, enter your username and password for your remote repository and click ok.
 
 You wil see a successful push message once the push has been completed.
 
-![]({% include asset.html path="images/ui-git-successful-push.png" %})
+    ![]({% include asset.html path="images/ui-git-successful-push.png" %})
 
 You can visit the project's GitHub repository and see your commits. 
 
-![]({% include asset.html path="images/ui-check-commits.png" %})
+    ![]({% include asset.html path="images/ui-check-commits.png" %})
 
 #### Push Notebooks to GitHub
 Let's say you have added new changes to your notebook and you would like to commit these changes.
@@ -127,7 +129,7 @@ Let's say you have added new changes to your notebook and you would like to comm
 1. Follow the previous instructions to stage, commit and push to your local repository.
 2. Push your changes to your remote repository by clicking on the cloud icon with the up arrow.
 
-![]({% include asset.html path="images/ui-commit-changes-remote.png" %})
+    ![]({% include asset.html path="images/ui-commit-changes-remote.png" %})
 
 3. If promted, enter your username and password.
 
@@ -173,37 +175,37 @@ Your repository is empty right now, let's push a notebook to it.
 2. Name the Python notebook.
 3. Do your work in the notebook and save it.
 
-![]({% include asset.html path="images/save-notebook.png" %})
+    ![]({% include asset.html path="images/save-notebook.png" %})
 
 4. Go to terminal and check the status of your repository.
-```
-git status
-```
+    ```
+    git status
+    ```
 Your file will be listed under untracked files.
 
-![]({% include asset.html path="images/git-untracked.png" %})
+    ![]({% include asset.html path="images/git-untracked.png" %})
 
 5. Stage your changes with `git add <filename>`.
-```
-git add main.py
-```
+    ```
+    git add main.py
+    ```
 You can check which files are being tracked with `git status`.
 You can see that `main.ipynb` is being tracked. 
 
-![]({% include asset.html path="images/git-add.png" %})
+    ![]({% include asset.html path="images/git-add.png" %})
 
 6. Commit your changes with `git commit -m "Commit Message Here"`. 
 `commit` creates a checkpoint that you can revert back to at any time
-```
-git commit -m "Descriptive statitics."
-```
+    ```
+    git commit -m "Descriptive statitics."
+    ```
 
-![]({% include asset.html path="images/git-commit.png" %})
+    ![]({% include asset.html path="images/git-commit.png" %})
 
 7. Pull down the current version of the repository from GitHub.
-```
-git pull origin main
-``` 
+    ```
+    git pull origin main
+    ``` 
 8. Push your changes to the project's Github repository.
 ```
 git push origin main
