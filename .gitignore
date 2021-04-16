@@ -10,3 +10,4 @@ cache/
 docs/_site
 docs/.bundle
 docs/Gemfile.lock
+.DS_Store
