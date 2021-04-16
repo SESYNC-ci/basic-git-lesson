@@ -18,3 +18,6 @@ The latest software for modeling and analysis in your research field may already
 be on git. Build better pipelines by contributing bug reports or even pull
 requests to projects integral to your own work.
 {:.notes}
+
+[Git Cheat Sheet](https://about.gitlab.com/images/press/git-cheat-sheet.pdf) by GitLab.
+{:.notes}
