@@ -4,7 +4,7 @@
 ## RStudio + git
 
 *Note*: The rest of this lesson walks you through basic git actions with RStudio.
-If you are a Python user, check out the abbreviated version of the [basic git lesson with JupyterLab](git_and_jupyterlab.html). 
+If you are a Python user, check out the abbreviated version of the [basic git lesson with JupyterLab](https://cyberhelp.sesync.org/basic-git-lesson/git_and_jupyterlab.html). 
 SESYNC's JupyterLab server has the [JupyterLab git extension](https://github.com/jupyterlab/jupyterlab-git#readme) 
 installed to make it easy for you to work with git-versioned Python code in Jupyter.
 {:.notes}

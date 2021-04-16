@@ -3,6 +3,12 @@
 
 ## RStudio + git
 
+*Note*: The rest of this lesson walks you through basic git actions with RStudio.
+If you are a Python user, check out the abbreviated version of the [basic git lesson with JupyterLab](https://cyberhelp.sesync.org/basic-git-lesson/git_and_jupyterlab.html). 
+SESYNC's JupyterLab server has the [JupyterLab git extension](https://github.com/jupyterlab/jupyterlab-git#readme) 
+installed to make it easy for you to work with git-versioned Python code in Jupyter.
+{:.notes}
+
 Login to your RStudio Server account and upload `handouts.zip`. (If you are participating in the Summer Institute, instead login to RStudio on [lab.sesync.org](https://lab.sesync.org), and `handouts.zip` will already be uploaded for you.) Click on `handouts/handouts.Rproj` to open the directory as a project.
 
 RStudio provides a GUI (a point-and-click interface) to the core tools provided by git. 
@@ -20,7 +26,7 @@ of the changes you and collaborators have made to the project files over time.
 
 As of October 1, 2020, all new repositories created on GitHub will have a default branch
 called `main`. Previously, the default name was `master`. The [change](https://github.com/github/renaming) was
-made to promote inclusive language in the version control world. SESYNC is planning to update 
+made to promote inclusive language in the version control world. SESYNC has updated 
 the GitLab server to match this new default. However, the git client will still
 default to `master` if you create a repository locally, unless you configure it as
 described below.
