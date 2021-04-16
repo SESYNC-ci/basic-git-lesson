@@ -19,5 +19,5 @@ be on git. Build better pipelines by contributing bug reports or even pull
 requests to projects integral to your own work.
 {:.notes}
 
-[Git Cheat Sheet](https://about.gitlab.com/images/press/git-cheat-sheet.pdf) by GitLab.
+You might find GitLab's [git cheatsheet](https://about.gitlab.com/images/press/git-cheat-sheet.pdf) helpful!
 {:.notes}
