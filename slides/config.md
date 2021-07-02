@@ -154,8 +154,9 @@ explains how to finish configuration of your local git repo. Copy
 the code under "...or push an existing repository from the command line" and paste
 it into the RStudio Terminal window.
 
-Note that the line `git branch -M main` is unnecessary if you already configured
-the default branch to be called `main` locally.
+Make sure that `HTTPS` is selected, not `SSH`, at the top of the page, or you'll
+get the wrong code to copy. Also, the line `git branch -M main` is unnecessary if you already configured
+the default branch to be called `main` locally. 
 {:.notes}
 
 ~~~bash
