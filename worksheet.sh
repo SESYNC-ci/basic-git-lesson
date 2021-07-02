@@ -1,6 +1,6 @@
 # Configure git
 
-# This line is needed to change the default branch name from master to main.
+# This line may be needed to change the default branch name from master to main.
 git config --global init.defaultBranch main 
 
 # Replace the ... in these lines with the user name and email address

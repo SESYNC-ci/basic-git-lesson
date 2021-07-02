@@ -27,7 +27,7 @@ of the changes you and collaborators have made to the project files over time.
 As of October 1, 2020, all new repositories created on GitHub will have a default branch
 called `main`. Previously, the default name was `master`. The [change](https://github.com/github/renaming) was
 made to promote inclusive language in the version control world. SESYNC has updated 
-the GitLab server to match this new default. However, the git client that is running
+the GitLab and teaching lab servers to match this new default. However, the git client that is running
 on the SESYNC RStudio server still defaults to `master` if you create a repository locally, 
 unless you configure it as described below.
 You should also be aware that any code, documentation, tutorial, or StackOverflow
