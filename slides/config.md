@@ -9,7 +9,9 @@ SESYNC's JupyterLab server has the [JupyterLab git extension](https://github.com
 installed to make it easy for you to work with git-versioned Python code in Jupyter.
 {:.notes}
 
-Login to your RStudio Server account and upload `handouts.zip`. (If you are participating in the Summer Institute, instead login to RStudio on [lab.sesync.org](https://lab.sesync.org), and `handouts.zip` will already be uploaded for you.) Click on `handouts/handouts.Rproj` to open the directory as a project.
+In RStudio, open the `handouts` directory that you unzipped from this lesson's `handouts.zip` file. 
+(If you are participating in the Summer Institute, instead login to RStudio on [lab.sesync.org](https://lab.sesync.org), 
+and `handouts.zip` will already be uploaded for you.) Click on `handouts/handouts.Rproj` to open the directory as a project.
 
 RStudio provides a GUI (a point-and-click interface) to the core tools provided by git. 
 Every folder that contains a "*.Rproj" file is an RStudio project (simply a collection of files
@@ -92,6 +94,14 @@ git config --global user.email {{ site.data.lesson.example.email }}
 ~~~
 {:.text-document title="worksheet.sh"}
 
+When you set up your GitHub user account, in addition to selecting a 
+username and password, you will also need to [create a personal access token][pat].
+Because of security concerns, GitHub is making it mandatory to use either SSH
+authentication or a personal access token when you do things like push from
+a local repo to a remote repo on GitHub. Follow the instructions to create your
+token and save it in a safe place; you will need it in a moment.
+{:.notes}
+
 ===
 
 Configure your username and email address by entering the `git config` 
@@ -144,18 +154,23 @@ explains how to finish configuration of your local git repo. Copy
 the code under "...or push an existing repository from the command line" and paste
 it into the RStudio Terminal window.
 
+Note that the line `git branch -M main` is unnecessary if you already configured
+the default branch to be called `main` locally.
+{:.notes}
+
 ~~~bash
 git remote add origin https://github.com/{{ site.data.lesson.example.user }}/handouts.git
 git push -u origin main
 ~~~
 {:.text-document title="Console"}
 
-Enter your username and password when prompted. *Note* that on 
-Unix operating systems, you don't see asterisks appearing when you
-type in the password, but don't worry, it's being typed in! After the first time,
+Here, you are prompted to enter your username and password. Instead of typing in your
+password, use your GitHub [personal access token][pat] that you created earlier.
+*Note* that on Unix-based operating systems, you don't see asterisks appearing when you
+type in the token, but don't worry, it's there! After the first time,
 you will no longer need to use the terminal to push changes if you do not want
 to. You can use the RStudio dropdown menu to both commit and push changes, and
-you won't have to enter your password each time.
+you won't have to enter the token each time.
 {:.notes}
 
 ===
@@ -171,3 +186,5 @@ Go back to your GitHub account and check out your "hub".
 In addition to being the center point for sharing commits with collaborators,
 GitHub is a rich platform for managing projects and inspecting the history.
 {:.notes}
+
+[pat]: https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token
