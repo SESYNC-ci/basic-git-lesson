@@ -99,7 +99,9 @@ username and password, you will also need to [create a personal access token][pa
 Because of security concerns, GitHub is making it mandatory to use either SSH
 authentication or a personal access token when you do things like push from
 a local repo to a remote repo on GitHub. Follow the instructions to create your
-token and save it in a safe place; you will need it in a moment.
+token given in the link above. When you are prompted to select the scopes 
+(permissions) to give the token, check the box marked `repo`. When the token
+is generated, copy it and save it in a safe place; you will need it in a moment.
 {:.notes}
 
 ===
@@ -165,12 +167,12 @@ git push -u origin main
 ~~~
 {:.text-document title="Console"}
 
-Here, you are prompted to enter your username and password. Instead of typing in your
-password, use your GitHub [personal access token][pat] that you created earlier.
-*Note* that on Unix-based operating systems, you don't see asterisks appearing when you
-type in the token, but don't worry, it's there! After the first time,
-you will no longer need to use the terminal to push changes if you do not want
-to. You can use the RStudio dropdown menu to both commit and push changes, and
+Here, you are prompted to enter your username and password. **Instead of typing in your
+password, type or paste your GitHub [personal access token][pat] that you created earlier.**
+On Unix-based operating systems, you don't see asterisks appearing when you
+enter the token, but don't worry, it's there! After this first push,
+you will no longer need to use the terminal to push changes. 
+You can use the RStudio dropdown menu to both commit and push changes, and
 you won't have to enter the token each time.
 {:.notes}
 
