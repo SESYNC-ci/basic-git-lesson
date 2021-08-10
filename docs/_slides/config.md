@@ -94,14 +94,26 @@ git config --global user.email {{ site.data.lesson.example.email }}
 ~~~
 {:.text-document title="worksheet.sh"}
 
+===
+
+### Personal access token
+
 When you set up your GitHub user account, in addition to selecting a 
 username and password, you will also need to [create a personal access token][pat].
-Because of security concerns, GitHub is making it mandatory to use either SSH
-authentication or a personal access token when you do things like push from
-a local repo to a remote repo on GitHub. Follow the instructions to create your
-token given in the link above. When you are prompted to select the scopes 
+Go to the page on GitHub.com to create your token, follow the instructions, copy
+the token, and save it in a safe place.
+
+![]({% include asset.html path="images/token-page-screenshot.png" %}){:width="80%"}  
+*Screenshot of personal access token page after creating token*
+{:.captioned}
+
+As of August 2021, a personal access token is now required to authenticate
+pushing from a local repo to a remote repo on GitHub.com. The link above is to a GitHub documentation page
+with very detailed instructions on how to navigate to the settings page where
+you can generate a token. Follow these instructions! When you are prompted to select the scopes 
 (permissions) to give the token, check the box marked `repo`. When the token
 is generated, copy it and save it in a safe place; you will need it in a moment.
+For long term storage, consider using a password manager like [LastPass][lastpass].
 {:.notes}
 
 ===
@@ -167,11 +179,15 @@ git push -u origin main
 ~~~
 {:.text-document title="Console"}
 
-Here, you are prompted to enter your username and password. **Instead of typing in your
-password, type or paste your GitHub [personal access token][pat] that you created earlier.**
-On Unix-based operating systems, you don't see asterisks appearing when you
-enter the token, but don't worry, it's there! After this first push,
-you will no longer need to use the terminal to push changes. 
+**IMPORTANT**: When you are prompted to enter your password, 
+**paste your GitHub [personal access token][pat]** into the prompt, *not* the password 
+that you use to sign in to GitHub.com in your browser. On Windows you will need to use 
+`Shift`+`Insert` or right-click with the mouse to paste, because `Ctrl`+`V` will not 
+work in a terminal window. You won't see asterisks appearing when you paste the token, 
+as you do in typical password prompts, but don't worry, it's there! 
+{:.notes}
+
+After this first push, you will no longer need to use the terminal to push changes. 
 You can use the RStudio dropdown menu to both commit and push changes, and
 you won't have to enter the token each time.
 {:.notes}
@@ -191,3 +207,4 @@ GitHub is a rich platform for managing projects and inspecting the history.
 {:.notes}
 
 [pat]: https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token
+[lastpass]: https://www.lastpass.com
